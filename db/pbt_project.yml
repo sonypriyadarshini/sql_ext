@@ -42,7 +42,7 @@ jobs:
     scheduler:
       Databricks: {}
     cloudProvider: null
-    jobSize: null
+    jobSize: prophecy_internal_jobs
     scheduleCron: None
     timeout: null
     alerting:
@@ -55,12 +55,13 @@ jobs:
       clusterMode:
         Single: {}
       clusterId: null
-    enabled: null
+    enabled: true
     createdAt: '2024-08-30 06:40:10'
     author: sony@prophecy.io
     models:
     - mod123
-    sqlProjects: []
+    sqlProjects:
+    - '14119'
   jobs/air_job:
     name: air_job
     description: ''

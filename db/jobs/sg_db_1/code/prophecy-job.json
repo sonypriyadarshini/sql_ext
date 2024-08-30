@@ -9,7 +9,7 @@
     "jobClusterMode" : {
       "clusterMode" : "Single"
     },
-    "enabled" : false,
+    "enabled" : true,
     "defaultClusterSize" : "prophecy_internal_jobs",
     "alerting" : {
       "emails" : "",
@@ -72,7 +72,58 @@
           "name" : "mod123"
         } ]
       }
+    },
+    "nhu2GmR1flc5ufRQ0Lzn-$$fTd97ZupVfhJWkIz8gps2" : {
+      "id" : "nhu2GmR1flc5ufRQ0Lzn-$$fTd97ZupVfhJWkIz8gps2",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_1",
+        "slug" : "Model_1",
+        "x" : 260,
+        "y" : 120
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "sEQoW_P6v_7niYD7lmTsZ$$ducAvNk1Y_9xfxkRhb5vh",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "V900MYfJmmCXSFh1kDzmx$$ZLQkCE-Rxi-P77ZyKfJJ0",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "entityId" : null,
+        "execSeed" : true,
+        "execRun" : false,
+        "gitEntity" : "branch",
+        "projectId" : "14119",
+        "runOnlyModel" : "false",
+        "loadingModels" : false,
+        "entityName" : null,
+        "gitEntityValueTag" : null,
+        "profile" : "run_profile",
+        "sqlFabricId" : "2522",
+        "gitEntityValue" : null,
+        "execDeps" : false,
+        "gitEntityValueCommit" : null,
+        "gitEntityValueBranch" : null,
+        "execTest" : true,
+        "currentProjectModels" : [ ]
+      }
     }
   },
-  "connections" : [ ]
+  "connections" : [ {
+    "id" : "hsRIFD8UT3yZ86OysxR5Y$$QjR_e3WzCg4sLOYvQc4Ny",
+    "source" : "9N75DEBq_XNy0yJl98Egj",
+    "target" : "nhu2GmR1flc5ufRQ0Lzn-$$fTd97ZupVfhJWkIz8gps2",
+    "sourcePort" : "out",
+    "targetPort" : "sEQoW_P6v_7niYD7lmTsZ$$ducAvNk1Y_9xfxkRhb5vh"
+  } ]
 }
