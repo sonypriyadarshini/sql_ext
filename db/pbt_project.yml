@@ -61,6 +61,32 @@ jobs:
     models:
     - mod123
     sqlProjects: []
+  jobs/air_job:
+    name: air_job
+    description: ''
+    fabricUID: 735
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-08-30 06:49:08'
+    author: sony@prophecy.io
+    models: []
+    sqlProjects:
+    - '14119'
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
