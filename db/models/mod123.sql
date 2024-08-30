@@ -40,4 +40,4 @@ Subgraph_1 AS (
 
 SELECT *
 
-FROM segment_country_1_2
+FROM Subgraph_1

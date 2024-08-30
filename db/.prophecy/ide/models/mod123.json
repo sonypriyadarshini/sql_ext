@@ -24,7 +24,7 @@
         "customQueryDisabled" : true,
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
-        "query" : "SELECT * \n\nFROM segment_country_1_2\n",
+        "query" : "SELECT * \n\nFROM Subgraph_1\n",
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -35,7 +35,7 @@
           "id" : "O9BXBXh7",
           "schema" : {
             "entityType" : "",
-            "providerType" : "databricks",
+            "providerType" : "Databricks",
             "fields" : [ {
               "name" : "Segment",
               "dataType" : {
@@ -59,22 +59,22 @@
             }, {
               "name" : "Units_Sold",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             }, {
               "name" : "Manufacturing_Price",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             }, {
               "name" : "Sale_Price",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             }, {
               "name" : "Gross_Sales",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             }, {
               "name" : "Discounts",
@@ -84,12 +84,12 @@
             }, {
               "name" : "Sales",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             }, {
               "name" : "COGS",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             }, {
               "name" : "Profit",
@@ -104,7 +104,7 @@
             }, {
               "name" : "Month_Number",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             }, {
               "name" : "Month_Name",
@@ -114,7 +114,7 @@
             }, {
               "name" : "Year",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             }, {
               "name" : "_rescued_data",
@@ -123,7 +123,7 @@
               }
             } ]
           },
-          "slug" : "segment_country_1_2"
+          "slug" : "Subgraph_1"
         } ],
         "outputs" : [ {
           "id" : "eNHHnvaq",
@@ -1207,17 +1207,17 @@
     }
   },
   "connections" : [ {
-    "id" : "Ljh8RzCmy1fR5UXphdDjj",
-    "source" : "bE5siffS58F6DNhMVby6x",
-    "sourcePort" : "Kau_mCC8UN46pSiozWoj6",
-    "target" : "mod123##cGfNyep0",
-    "targetPort" : "O9BXBXh7"
-  }, {
     "id" : "qoMysuEaySGsIT-E4ZqNL",
     "source" : "bE5siffS58F6DNhMVby6x",
     "sourcePort" : "Kau_mCC8UN46pSiozWoj6",
     "target" : "Y0SQgYG-tk8TbV5wVtBat$$sG79XyWB7aaFqDzvqBT_U",
     "targetPort" : "umzpqOBFfLhzA9DJeYQR0$$_zhr0P0GHdQODWEpjYsTR"
+  }, {
+    "id" : "sBRyEscFhSOLhpmz90X_e",
+    "source" : "Y0SQgYG-tk8TbV5wVtBat$$sG79XyWB7aaFqDzvqBT_U",
+    "sourcePort" : "t6e7Juim92gggGsmzCdJL$$PELcBGDIX-lAcgUhzxoJa",
+    "target" : "mod123##cGfNyep0",
+    "targetPort" : "O9BXBXh7"
   } ],
   "component" : "Model"
 }
