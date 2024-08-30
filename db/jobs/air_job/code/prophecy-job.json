@@ -6,7 +6,7 @@
     "name" : "air_job",
     "dagName" : "staging_sony_sql_ext_db_air_job",
     "schedule" : "None",
-    "enabled" : false,
+    "enabled" : true,
     "alerting" : {
       "emails" : "",
       "onStart" : false,

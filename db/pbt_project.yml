@@ -79,9 +79,9 @@ jobs:
     pipelines: []
     jobClusterMode:
       clusterMode:
-        Single: {}
+        Multi: {}
       clusterId: null
-    enabled: null
+    enabled: true
     createdAt: '2024-08-30 06:49:08'
     author: sony@prophecy.io
     models: []
