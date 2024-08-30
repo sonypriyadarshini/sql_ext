@@ -1,6 +1,6 @@
 name: sql_ext_db
 description: ''
-version: '4'
+version: '5'
 author: sony@prophecy.io
 language: sql
 buildSystem: ''
