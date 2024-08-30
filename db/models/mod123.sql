@@ -1,8 +1,8 @@
-WITH parquet_all AS (
+WITH segment_country_1_2 AS (
 
   SELECT * 
   
-  FROM {{ source('hive_metastore.unique_latest', 'parquet_all') }}
+  FROM {{ source('hive_metastore.unique_latest', 'segment_country_1') }}
 
 ),
 
@@ -12,7 +12,7 @@ Subgraph_1 AS (
   
     SELECT * 
     
-    FROM parquet_all AS in0
+    FROM segment_country_1_2 AS in0
   
   ),
   
@@ -22,7 +22,7 @@ Subgraph_1 AS (
     
       SELECT * 
       
-      FROM parquet_all AS in0
+      FROM segment_country_1_2 AS in0
     
     )
     
@@ -40,4 +40,4 @@ Subgraph_1 AS (
 
 SELECT *
 
-FROM Subgraph_1
+FROM segment_country_1_2

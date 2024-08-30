@@ -841,11 +841,6 @@
     "name" : "mod123",
     "type" : "Model",
     "syncedOnce" : false
-  }, {
-    "name" : "parquet_all",
-    "type" : "Source",
-    "sourceName" : "hive_metastore.unique_latest",
-    "syncedOnce" : true
   } ],
   "frontEndLanguage" : "sql"
 }

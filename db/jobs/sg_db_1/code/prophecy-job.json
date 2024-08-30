@@ -1,0 +1,78 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "2522",
+    "jobId" : "jobs/sg_db_1",
+    "name" : "sg_db_1",
+    "schedule" : "None",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "prophecy_internal_jobs",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "retries" : 0,
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    }
+  },
+  "processes" : {
+    "9N75DEBq_XNy0yJl98Egj" : {
+      "id" : "9N75DEBq_XNy0yJl98Egj",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : 100,
+        "y" : 100
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "in",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "out",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "execSeed" : true,
+        "execRun" : true,
+        "gitEntity" : "branch",
+        "model" : "mod123",
+        "projectId" : "14119",
+        "runOnlyModel" : "true",
+        "loadingModels" : false,
+        "profile" : "run_profile",
+        "sqlFabricId" : "2522",
+        "gitEntityValue" : "wqw",
+        "execDeps" : true,
+        "execTest" : false,
+        "currentProjectModels" : [ {
+          "label" : "mod123",
+          "value" : "mod123",
+          "id" : "14119/.prophecy/metadata/sqlmodels/mod123",
+          "name" : "mod123"
+        } ]
+      }
+    }
+  },
+  "connections" : [ ]
+}

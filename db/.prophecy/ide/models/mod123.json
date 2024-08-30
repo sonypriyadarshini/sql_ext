@@ -24,7 +24,7 @@
         "customQueryDisabled" : true,
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
-        "query" : "SELECT * \n\nFROM Subgraph_1\n",
+        "query" : "SELECT * \n\nFROM segment_country_1_2\n",
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -35,184 +35,86 @@
           "id" : "O9BXBXh7",
           "schema" : {
             "entityType" : "",
-            "providerType" : "Databricks",
+            "providerType" : "databricks",
             "fields" : [ {
-              "name" : "c_short",
-              "dataType" : {
-                "type" : "SmallInt"
-              }
-            }, {
-              "name" : "c_int",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "c_long",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "c_decimal",
-              "dataType" : {
-                "type" : "Decimal"
-              }
-            }, {
-              "name" : "c_float",
-              "dataType" : {
-                "type" : "Float"
-              }
-            }, {
-              "name" : "c_boolean",
-              "dataType" : {
-                "type" : "Boolean"
-              }
-            }, {
-              "name" : "c_double",
-              "dataType" : {
-                "type" : "Float"
-              }
-            }, {
-              "name" : "c_string",
+              "name" : "Segment",
               "dataType" : {
                 "type" : "String"
               }
             }, {
-              "name" : "c_date",
+              "name" : "Country",
               "dataType" : {
-                "type" : "Date"
+                "type" : "String"
               }
             }, {
-              "name" : "c_timestamp",
+              "name" : "Product",
               "dataType" : {
-                "type" : "Timestamp"
+                "type" : "String"
               }
             }, {
-              "name" : "c_array_int",
+              "name" : "Discount_Band",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Integer"
-                }
+                "type" : "String"
               }
             }, {
-              "name" : "c_array_string",
+              "name" : "Units_Sold",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "String"
-                }
+                "type" : "Double"
               }
             }, {
-              "name" : "c_array_long",
+              "name" : "Manufacturing_Price",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Bigint"
-                }
+                "type" : "Double"
               }
             }, {
-              "name" : "c_array_boolean",
+              "name" : "Sale_Price",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Boolean"
-                }
+                "type" : "Double"
               }
             }, {
-              "name" : "c_array_date",
+              "name" : "Gross_Sales",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Date"
-                }
+                "type" : "Double"
               }
             }, {
-              "name" : "c_array_timestamp",
+              "name" : "Discounts",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Timestamp"
-                }
+                "type" : "String"
               }
             }, {
-              "name" : "c_array_float",
+              "name" : "Sales",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Float"
-                }
+                "type" : "Double"
               }
             }, {
-              "name" : "c_array_decimal",
+              "name" : "COGS",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Decimal"
-                }
+                "type" : "Double"
               }
             }, {
-              "name" : "c_struct",
+              "name" : "Profit",
               "dataType" : {
-                "type" : "Struct",
-                "fields" : [ {
-                  "name" : "c_short",
-                  "dataType" : {
-                    "type" : "SmallInt"
-                  }
-                }, {
-                  "name" : "c_int",
-                  "dataType" : {
-                    "type" : "Integer"
-                  }
-                }, {
-                  "name" : "c_long",
-                  "dataType" : {
-                    "type" : "Bigint"
-                  }
-                }, {
-                  "name" : "c_decimal",
-                  "dataType" : {
-                    "type" : "Decimal"
-                  }
-                }, {
-                  "name" : "c_float",
-                  "dataType" : {
-                    "type" : "Float"
-                  }
-                }, {
-                  "name" : "c_boolean",
-                  "dataType" : {
-                    "type" : "Boolean"
-                  }
-                }, {
-                  "name" : "c_double",
-                  "dataType" : {
-                    "type" : "Float"
-                  }
-                }, {
-                  "name" : "c_string",
-                  "dataType" : {
-                    "type" : "String"
-                  }
-                }, {
-                  "name" : "c_date",
-                  "dataType" : {
-                    "type" : "Date"
-                  }
-                }, {
-                  "name" : "c_timestamp",
-                  "dataType" : {
-                    "type" : "Timestamp"
-                  }
-                }, {
-                  "name" : "c_array_int",
-                  "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Integer"
-                    }
-                  }
-                } ]
+                "type" : "String"
+              }
+            }, {
+              "name" : "Date",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Month_Number",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Month_Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Year",
+              "dataType" : {
+                "type" : "Double"
               }
             }, {
               "name" : "_rescued_data",
@@ -221,7 +123,7 @@
               }
             } ]
           },
-          "slug" : "Subgraph_1"
+          "slug" : "segment_country_1_2"
         } ],
         "outputs" : [ {
           "id" : "eNHHnvaq",
@@ -229,182 +131,84 @@
             "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
-              "name" : "c_short",
-              "dataType" : {
-                "type" : "SmallInt"
-              }
-            }, {
-              "name" : "c_int",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "c_long",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "c_decimal",
-              "dataType" : {
-                "type" : "Decimal"
-              }
-            }, {
-              "name" : "c_float",
-              "dataType" : {
-                "type" : "Float"
-              }
-            }, {
-              "name" : "c_boolean",
-              "dataType" : {
-                "type" : "Boolean"
-              }
-            }, {
-              "name" : "c_double",
-              "dataType" : {
-                "type" : "Float"
-              }
-            }, {
-              "name" : "c_string",
+              "name" : "Segment",
               "dataType" : {
                 "type" : "String"
               }
             }, {
-              "name" : "c_date",
+              "name" : "Country",
               "dataType" : {
-                "type" : "Date"
+                "type" : "String"
               }
             }, {
-              "name" : "c_timestamp",
+              "name" : "Product",
               "dataType" : {
-                "type" : "Timestamp"
+                "type" : "String"
               }
             }, {
-              "name" : "c_array_int",
+              "name" : "Discount_Band",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Integer"
-                }
+                "type" : "String"
               }
             }, {
-              "name" : "c_array_string",
+              "name" : "Units_Sold",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "String"
-                }
+                "type" : "Float"
               }
             }, {
-              "name" : "c_array_long",
+              "name" : "Manufacturing_Price",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Bigint"
-                }
+                "type" : "Float"
               }
             }, {
-              "name" : "c_array_boolean",
+              "name" : "Sale_Price",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Boolean"
-                }
+                "type" : "Float"
               }
             }, {
-              "name" : "c_array_date",
+              "name" : "Gross_Sales",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Date"
-                }
+                "type" : "Float"
               }
             }, {
-              "name" : "c_array_timestamp",
+              "name" : "Discounts",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Timestamp"
-                }
+                "type" : "String"
               }
             }, {
-              "name" : "c_array_float",
+              "name" : "Sales",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Float"
-                }
+                "type" : "Float"
               }
             }, {
-              "name" : "c_array_decimal",
+              "name" : "COGS",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Decimal"
-                }
+                "type" : "Float"
               }
             }, {
-              "name" : "c_struct",
+              "name" : "Profit",
               "dataType" : {
-                "type" : "Struct",
-                "fields" : [ {
-                  "name" : "c_short",
-                  "dataType" : {
-                    "type" : "SmallInt"
-                  }
-                }, {
-                  "name" : "c_int",
-                  "dataType" : {
-                    "type" : "Integer"
-                  }
-                }, {
-                  "name" : "c_long",
-                  "dataType" : {
-                    "type" : "Bigint"
-                  }
-                }, {
-                  "name" : "c_decimal",
-                  "dataType" : {
-                    "type" : "Decimal"
-                  }
-                }, {
-                  "name" : "c_float",
-                  "dataType" : {
-                    "type" : "Float"
-                  }
-                }, {
-                  "name" : "c_boolean",
-                  "dataType" : {
-                    "type" : "Boolean"
-                  }
-                }, {
-                  "name" : "c_double",
-                  "dataType" : {
-                    "type" : "Float"
-                  }
-                }, {
-                  "name" : "c_string",
-                  "dataType" : {
-                    "type" : "String"
-                  }
-                }, {
-                  "name" : "c_date",
-                  "dataType" : {
-                    "type" : "Date"
-                  }
-                }, {
-                  "name" : "c_timestamp",
-                  "dataType" : {
-                    "type" : "Timestamp"
-                  }
-                }, {
-                  "name" : "c_array_int",
-                  "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Integer"
-                    }
-                  }
-                } ]
+                "type" : "String"
+              }
+            }, {
+              "name" : "Date",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Month_Number",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "Month_Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Year",
+              "dataType" : {
+                "type" : "Float"
               }
             }, {
               "name" : "_rescued_data",
@@ -419,19 +223,19 @@
         "autoUpdateOnRun" : false
       }
     },
-    "FV9Dxve3GQHfcK1wLfEen" : {
-      "id" : "FV9Dxve3GQHfcK1wLfEen",
+    "bE5siffS58F6DNhMVby6x" : {
+      "id" : "bE5siffS58F6DNhMVby6x",
       "component" : "Source",
       "metadata" : {
-        "label" : "parquet_all",
-        "slug" : "parquet_all",
-        "x" : -600,
-        "y" : -220,
+        "label" : "segment_country_1_2",
+        "slug" : "segment_country_1_2",
+        "x" : -920,
+        "y" : -380,
         "phase" : 0
       },
       "properties" : {
         "table" : {
-          "name" : "parquet_all",
+          "name" : "segment_country_1",
           "sourceType" : "Source",
           "sourceName" : "hive_metastore.unique_latest",
           "alias" : ""
@@ -440,198 +244,89 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "-zcofAfer6h5ATOrWWUDZ",
+          "id" : "Kau_mCC8UN46pSiozWoj6",
           "schema" : {
             "entityType" : "",
             "providerType" : "databricks",
             "fields" : [ {
-              "name" : "c_short",
-              "dataType" : {
-                "type" : "SmallInt"
-              }
-            }, {
-              "name" : "c_int",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "c_long",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "c_decimal",
-              "dataType" : {
-                "type" : "Decimal"
-              }
-            }, {
-              "name" : "c_float",
-              "dataType" : {
-                "type" : "Float"
-              }
-            }, {
-              "name" : "c_boolean",
-              "dataType" : {
-                "type" : "Boolean"
-              }
-            }, {
-              "name" : "c_double",
-              "dataType" : {
-                "type" : "Double"
-              }
-            }, {
-              "name" : "c_string",
+              "name" : "Segment",
               "dataType" : {
                 "type" : "String"
               }
             }, {
-              "name" : "c_date",
+              "name" : "Country",
               "dataType" : {
-                "type" : "Date"
+                "type" : "String"
               }
             }, {
-              "name" : "c_timestamp",
+              "name" : "Product",
               "dataType" : {
-                "type" : "Timestamp"
+                "type" : "String"
               }
             }, {
-              "name" : "c_array_int",
+              "name" : "Discount_Band",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Integer"
-                }
+                "type" : "String"
               }
             }, {
-              "name" : "c_array_string",
+              "name" : "Units_Sold",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "String"
-                }
+                "type" : "Double"
               }
             }, {
-              "name" : "c_array_long",
+              "name" : "Manufacturing_Price",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Bigint"
-                }
+                "type" : "Double"
               }
             }, {
-              "name" : "c_array_boolean",
+              "name" : "Sale_Price",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Boolean"
-                }
+                "type" : "Double"
               }
             }, {
-              "name" : "c_array_date",
+              "name" : "Gross_Sales",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Date"
-                }
+                "type" : "Double"
               }
             }, {
-              "name" : "c_array_timestamp",
+              "name" : "Discounts",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Timestamp"
-                }
+                "type" : "String"
               }
             }, {
-              "name" : "c_array_float",
+              "name" : "Sales",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Float"
-                }
+                "type" : "Double"
               }
             }, {
-              "name" : "c_array_decimal",
+              "name" : "COGS",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Decimal"
-                }
+                "type" : "Double"
               }
             }, {
-              "name" : "c_struct",
+              "name" : "Profit",
               "dataType" : {
-                "type" : "Struct",
-                "fields" : [ {
-                  "name" : "c_short",
-                  "dataType" : {
-                    "type" : "SmallInt"
-                  },
-                  "description" : "A short integer value within the structured data."
-                }, {
-                  "name" : "c_int",
-                  "dataType" : {
-                    "type" : "Integer"
-                  },
-                  "description" : "An integer value within the structured data."
-                }, {
-                  "name" : "c_long",
-                  "dataType" : {
-                    "type" : "Bigint"
-                  },
-                  "description" : "Long integer value within the structured data"
-                }, {
-                  "name" : "c_decimal",
-                  "dataType" : {
-                    "type" : "Decimal"
-                  },
-                  "description" : "Decimal value within the structured data"
-                }, {
-                  "name" : "c_float",
-                  "dataType" : {
-                    "type" : "Float"
-                  },
-                  "description" : "Floating-point value within the structured data"
-                }, {
-                  "name" : "c_boolean",
-                  "dataType" : {
-                    "type" : "Boolean"
-                  },
-                  "description" : "Boolean value indicating a specific condition within the structure"
-                }, {
-                  "name" : "c_double",
-                  "dataType" : {
-                    "type" : "Double"
-                  },
-                  "description" : "Double precision number representing a measurement within the structure"
-                }, {
-                  "name" : "c_string",
-                  "dataType" : {
-                    "type" : "String"
-                  },
-                  "description" : "String value containing descriptive information within the structure"
-                }, {
-                  "name" : "c_date",
-                  "dataType" : {
-                    "type" : "Date"
-                  },
-                  "description" : "Date value within the structured data"
-                }, {
-                  "name" : "c_timestamp",
-                  "dataType" : {
-                    "type" : "Timestamp"
-                  },
-                  "description" : "Timestamp value within the structured data"
-                }, {
-                  "name" : "c_array_int",
-                  "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Integer"
-                    }
-                  },
-                  "description" : "Array of integer values within the structured data"
-                } ]
+                "type" : "String"
+              }
+            }, {
+              "name" : "Date",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Month_Number",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Month_Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Year",
+              "dataType" : {
+                "type" : "Double"
               }
             }, {
               "name" : "_rescued_data",
@@ -646,26 +341,26 @@
         "autoUpdateOnRun" : false
       }
     },
-    "AN9WqUByv7gipWJOrU8s3$$s9VRDgBkwSa3-jyg5rKVu" : {
-      "id" : "AN9WqUByv7gipWJOrU8s3$$s9VRDgBkwSa3-jyg5rKVu",
+    "Y0SQgYG-tk8TbV5wVtBat$$sG79XyWB7aaFqDzvqBT_U" : {
+      "id" : "Y0SQgYG-tk8TbV5wVtBat$$sG79XyWB7aaFqDzvqBT_U",
       "component" : "Subgraph",
       "metadata" : {
         "label" : "Subgraph_1",
         "slug" : "Subgraph_1",
-        "x" : -440,
-        "y" : -220,
+        "x" : -360,
+        "y" : -280,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
       "processes" : {
-        "oqxWujPQxFZ8m8GzVkxn3$$IN8IF5U9Q9tbxKBlgvfu1" : {
-          "id" : "oqxWujPQxFZ8m8GzVkxn3$$IN8IF5U9Q9tbxKBlgvfu1",
+        "bbvBElCt6G7nvhLXK2qF1$$WZXZnCZy7gQ7WBQsufr3x" : {
+          "id" : "bbvBElCt6G7nvhLXK2qF1$$WZXZnCZy7gQ7WBQsufr3x",
           "component" : "Reformat",
           "metadata" : {
             "label" : "Reformat_1",
             "slug" : "Reformat_1",
-            "x" : -660,
-            "y" : -240,
+            "x" : -580,
+            "y" : -300,
             "phase" : 0,
             "macroDependencies" : [ ]
           },
@@ -675,198 +370,89 @@
           },
           "ports" : {
             "inputs" : [ {
-              "id" : "ZEeLZF-L6YqRO6vW-RLw4$$ktN0IYRtPeWRpx0xeRC9X",
+              "id" : "zQ9g7LF4UGla7xGP81Tm5$$p8PGYXvO_1_obv7cqZlD2",
               "schema" : {
                 "entityType" : "",
                 "providerType" : "databricks",
                 "fields" : [ {
-                  "name" : "c_short",
-                  "dataType" : {
-                    "type" : "SmallInt"
-                  }
-                }, {
-                  "name" : "c_int",
-                  "dataType" : {
-                    "type" : "Integer"
-                  }
-                }, {
-                  "name" : "c_long",
-                  "dataType" : {
-                    "type" : "Bigint"
-                  }
-                }, {
-                  "name" : "c_decimal",
-                  "dataType" : {
-                    "type" : "Decimal"
-                  }
-                }, {
-                  "name" : "c_float",
-                  "dataType" : {
-                    "type" : "Float"
-                  }
-                }, {
-                  "name" : "c_boolean",
-                  "dataType" : {
-                    "type" : "Boolean"
-                  }
-                }, {
-                  "name" : "c_double",
-                  "dataType" : {
-                    "type" : "Double"
-                  }
-                }, {
-                  "name" : "c_string",
+                  "name" : "Segment",
                   "dataType" : {
                     "type" : "String"
                   }
                 }, {
-                  "name" : "c_date",
+                  "name" : "Country",
                   "dataType" : {
-                    "type" : "Date"
+                    "type" : "String"
                   }
                 }, {
-                  "name" : "c_timestamp",
+                  "name" : "Product",
                   "dataType" : {
-                    "type" : "Timestamp"
+                    "type" : "String"
                   }
                 }, {
-                  "name" : "c_array_int",
+                  "name" : "Discount_Band",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Integer"
-                    }
+                    "type" : "String"
                   }
                 }, {
-                  "name" : "c_array_string",
+                  "name" : "Units_Sold",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "String"
-                    }
+                    "type" : "Double"
                   }
                 }, {
-                  "name" : "c_array_long",
+                  "name" : "Manufacturing_Price",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Bigint"
-                    }
+                    "type" : "Double"
                   }
                 }, {
-                  "name" : "c_array_boolean",
+                  "name" : "Sale_Price",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Boolean"
-                    }
+                    "type" : "Double"
                   }
                 }, {
-                  "name" : "c_array_date",
+                  "name" : "Gross_Sales",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Date"
-                    }
+                    "type" : "Double"
                   }
                 }, {
-                  "name" : "c_array_timestamp",
+                  "name" : "Discounts",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Timestamp"
-                    }
+                    "type" : "String"
                   }
                 }, {
-                  "name" : "c_array_float",
+                  "name" : "Sales",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Float"
-                    }
+                    "type" : "Double"
                   }
                 }, {
-                  "name" : "c_array_decimal",
+                  "name" : "COGS",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Decimal"
-                    }
+                    "type" : "Double"
                   }
                 }, {
-                  "name" : "c_struct",
+                  "name" : "Profit",
                   "dataType" : {
-                    "type" : "Struct",
-                    "fields" : [ {
-                      "name" : "c_short",
-                      "dataType" : {
-                        "type" : "SmallInt"
-                      },
-                      "description" : "A short integer value within the structured data."
-                    }, {
-                      "name" : "c_int",
-                      "dataType" : {
-                        "type" : "Integer"
-                      },
-                      "description" : "An integer value within the structured data."
-                    }, {
-                      "name" : "c_long",
-                      "dataType" : {
-                        "type" : "Bigint"
-                      },
-                      "description" : "Long integer value within the structured data"
-                    }, {
-                      "name" : "c_decimal",
-                      "dataType" : {
-                        "type" : "Decimal"
-                      },
-                      "description" : "Decimal value within the structured data"
-                    }, {
-                      "name" : "c_float",
-                      "dataType" : {
-                        "type" : "Float"
-                      },
-                      "description" : "Floating-point value within the structured data"
-                    }, {
-                      "name" : "c_boolean",
-                      "dataType" : {
-                        "type" : "Boolean"
-                      },
-                      "description" : "Boolean value indicating a specific condition within the structure"
-                    }, {
-                      "name" : "c_double",
-                      "dataType" : {
-                        "type" : "Double"
-                      },
-                      "description" : "Double precision number representing a measurement within the structure"
-                    }, {
-                      "name" : "c_string",
-                      "dataType" : {
-                        "type" : "String"
-                      },
-                      "description" : "String value containing descriptive information within the structure"
-                    }, {
-                      "name" : "c_date",
-                      "dataType" : {
-                        "type" : "Date"
-                      },
-                      "description" : "Date value within the structured data"
-                    }, {
-                      "name" : "c_timestamp",
-                      "dataType" : {
-                        "type" : "Timestamp"
-                      },
-                      "description" : "Timestamp value within the structured data"
-                    }, {
-                      "name" : "c_array_int",
-                      "dataType" : {
-                        "type" : "Array",
-                        "dataType" : {
-                          "type" : "Integer"
-                        }
-                      },
-                      "description" : "Array of integer values within the structured data"
-                    } ]
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "Date",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "Month_Number",
+                  "dataType" : {
+                    "type" : "Double"
+                  }
+                }, {
+                  "name" : "Month_Name",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "Year",
+                  "dataType" : {
+                    "type" : "Double"
                   }
                 }, {
                   "name" : "_rescued_data",
@@ -878,187 +464,89 @@
               "slug" : "in0"
             } ],
             "outputs" : [ {
-              "id" : "6kPGRNuZjRAu98MX7mJqv$$MZ6bVac4ECcr2ftnhzSr-",
+              "id" : "33VZzEAa1DFgs7K4RU_ag$$JLKcNSMh5TZBalxAhLY3-",
               "schema" : {
                 "entityType" : "",
                 "providerType" : "Databricks",
                 "fields" : [ {
-                  "name" : "c_short",
-                  "dataType" : {
-                    "type" : "SmallInt"
-                  }
-                }, {
-                  "name" : "c_int",
-                  "dataType" : {
-                    "type" : "Integer"
-                  }
-                }, {
-                  "name" : "c_long",
-                  "dataType" : {
-                    "type" : "Bigint"
-                  }
-                }, {
-                  "name" : "c_decimal",
-                  "dataType" : {
-                    "type" : "Decimal"
-                  }
-                }, {
-                  "name" : "c_float",
-                  "dataType" : {
-                    "type" : "Float"
-                  }
-                }, {
-                  "name" : "c_boolean",
-                  "dataType" : {
-                    "type" : "Boolean"
-                  }
-                }, {
-                  "name" : "c_double",
-                  "dataType" : {
-                    "type" : "Float"
-                  }
-                }, {
-                  "name" : "c_string",
+                  "name" : "Segment",
                   "dataType" : {
                     "type" : "String"
                   }
                 }, {
-                  "name" : "c_date",
+                  "name" : "Country",
                   "dataType" : {
-                    "type" : "Date"
+                    "type" : "String"
                   }
                 }, {
-                  "name" : "c_timestamp",
+                  "name" : "Product",
                   "dataType" : {
-                    "type" : "Timestamp"
+                    "type" : "String"
                   }
                 }, {
-                  "name" : "c_array_int",
+                  "name" : "Discount_Band",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Integer"
-                    }
+                    "type" : "String"
                   }
                 }, {
-                  "name" : "c_array_string",
+                  "name" : "Units_Sold",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "String"
-                    }
+                    "type" : "Float"
                   }
                 }, {
-                  "name" : "c_array_long",
+                  "name" : "Manufacturing_Price",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Bigint"
-                    }
+                    "type" : "Float"
                   }
                 }, {
-                  "name" : "c_array_boolean",
+                  "name" : "Sale_Price",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Boolean"
-                    }
+                    "type" : "Float"
                   }
                 }, {
-                  "name" : "c_array_date",
+                  "name" : "Gross_Sales",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Date"
-                    }
+                    "type" : "Float"
                   }
                 }, {
-                  "name" : "c_array_timestamp",
+                  "name" : "Discounts",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Timestamp"
-                    }
+                    "type" : "String"
                   }
                 }, {
-                  "name" : "c_array_float",
+                  "name" : "Sales",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Float"
-                    }
+                    "type" : "Float"
                   }
                 }, {
-                  "name" : "c_array_decimal",
+                  "name" : "COGS",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Decimal"
-                    }
+                    "type" : "Float"
                   }
                 }, {
-                  "name" : "c_struct",
+                  "name" : "Profit",
                   "dataType" : {
-                    "type" : "Struct",
-                    "fields" : [ {
-                      "name" : "c_short",
-                      "dataType" : {
-                        "type" : "SmallInt"
-                      }
-                    }, {
-                      "name" : "c_int",
-                      "dataType" : {
-                        "type" : "Integer"
-                      }
-                    }, {
-                      "name" : "c_long",
-                      "dataType" : {
-                        "type" : "Bigint"
-                      }
-                    }, {
-                      "name" : "c_decimal",
-                      "dataType" : {
-                        "type" : "Decimal"
-                      }
-                    }, {
-                      "name" : "c_float",
-                      "dataType" : {
-                        "type" : "Float"
-                      }
-                    }, {
-                      "name" : "c_boolean",
-                      "dataType" : {
-                        "type" : "Boolean"
-                      }
-                    }, {
-                      "name" : "c_double",
-                      "dataType" : {
-                        "type" : "Float"
-                      }
-                    }, {
-                      "name" : "c_string",
-                      "dataType" : {
-                        "type" : "String"
-                      }
-                    }, {
-                      "name" : "c_date",
-                      "dataType" : {
-                        "type" : "Date"
-                      }
-                    }, {
-                      "name" : "c_timestamp",
-                      "dataType" : {
-                        "type" : "Timestamp"
-                      }
-                    }, {
-                      "name" : "c_array_int",
-                      "dataType" : {
-                        "type" : "Array",
-                        "dataType" : {
-                          "type" : "Integer"
-                        }
-                      }
-                    } ]
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "Date",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "Month_Number",
+                  "dataType" : {
+                    "type" : "Float"
+                  }
+                }, {
+                  "name" : "Month_Name",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "Year",
+                  "dataType" : {
+                    "type" : "Float"
                   }
                 }, {
                   "name" : "_rescued_data",
@@ -1073,26 +561,26 @@
             "autoUpdateOnRun" : false
           }
         },
-        "kK4shnMqypDlSTR65V2gw$$4_ToFj4Qko7pbPycUiYq7" : {
-          "id" : "kK4shnMqypDlSTR65V2gw$$4_ToFj4Qko7pbPycUiYq7",
+        "6gwUED2FaPS2aaG7VzlqD$$WxkinwXlOltpye2iq16QE" : {
+          "id" : "6gwUED2FaPS2aaG7VzlqD$$WxkinwXlOltpye2iq16QE",
           "component" : "Subgraph",
           "metadata" : {
             "label" : "Subgraph_1_2",
             "slug" : "Subgraph_1_2",
-            "x" : -640,
-            "y" : -480,
+            "x" : -560,
+            "y" : -540,
             "phase" : 0,
             "macroDependencies" : [ ]
           },
           "processes" : {
-            "hTPU14uQNB7IoaD_gipzK$$pRYkdRpyYMMrK-H_4DfUO" : {
-              "id" : "hTPU14uQNB7IoaD_gipzK$$pRYkdRpyYMMrK-H_4DfUO",
+            "Q2UAIy3YtDXj2xssdqi0y$$cqvj-r8UEP1Y9poaxPh-K" : {
+              "id" : "Q2UAIy3YtDXj2xssdqi0y$$cqvj-r8UEP1Y9poaxPh-K",
               "component" : "Reformat",
               "metadata" : {
                 "label" : "Reformat_1_2",
                 "slug" : "Reformat_1_2",
-                "x" : -858.4000244140625,
-                "y" : -509,
+                "x" : -776.800048828125,
+                "y" : -568,
                 "phase" : 0,
                 "macroDependencies" : [ ]
               },
@@ -1102,198 +590,89 @@
               },
               "ports" : {
                 "inputs" : [ {
-                  "id" : "dGGJZHjh3kOpXGOqal64I$$RXju8zkQqUFu7SmSthJkq",
+                  "id" : "hPJUUYWHLwpGbXHKA6oaA$$5vpgXxalUW7V3EzGnoZm1",
                   "schema" : {
                     "entityType" : "",
                     "providerType" : "databricks",
                     "fields" : [ {
-                      "name" : "c_short",
-                      "dataType" : {
-                        "type" : "SmallInt"
-                      }
-                    }, {
-                      "name" : "c_int",
-                      "dataType" : {
-                        "type" : "Integer"
-                      }
-                    }, {
-                      "name" : "c_long",
-                      "dataType" : {
-                        "type" : "Bigint"
-                      }
-                    }, {
-                      "name" : "c_decimal",
-                      "dataType" : {
-                        "type" : "Decimal"
-                      }
-                    }, {
-                      "name" : "c_float",
-                      "dataType" : {
-                        "type" : "Float"
-                      }
-                    }, {
-                      "name" : "c_boolean",
-                      "dataType" : {
-                        "type" : "Boolean"
-                      }
-                    }, {
-                      "name" : "c_double",
-                      "dataType" : {
-                        "type" : "Double"
-                      }
-                    }, {
-                      "name" : "c_string",
+                      "name" : "Segment",
                       "dataType" : {
                         "type" : "String"
                       }
                     }, {
-                      "name" : "c_date",
+                      "name" : "Country",
                       "dataType" : {
-                        "type" : "Date"
+                        "type" : "String"
                       }
                     }, {
-                      "name" : "c_timestamp",
+                      "name" : "Product",
                       "dataType" : {
-                        "type" : "Timestamp"
+                        "type" : "String"
                       }
                     }, {
-                      "name" : "c_array_int",
+                      "name" : "Discount_Band",
                       "dataType" : {
-                        "type" : "Array",
-                        "dataType" : {
-                          "type" : "Integer"
-                        }
+                        "type" : "String"
                       }
                     }, {
-                      "name" : "c_array_string",
+                      "name" : "Units_Sold",
                       "dataType" : {
-                        "type" : "Array",
-                        "dataType" : {
-                          "type" : "String"
-                        }
+                        "type" : "Double"
                       }
                     }, {
-                      "name" : "c_array_long",
+                      "name" : "Manufacturing_Price",
                       "dataType" : {
-                        "type" : "Array",
-                        "dataType" : {
-                          "type" : "Bigint"
-                        }
+                        "type" : "Double"
                       }
                     }, {
-                      "name" : "c_array_boolean",
+                      "name" : "Sale_Price",
                       "dataType" : {
-                        "type" : "Array",
-                        "dataType" : {
-                          "type" : "Boolean"
-                        }
+                        "type" : "Double"
                       }
                     }, {
-                      "name" : "c_array_date",
+                      "name" : "Gross_Sales",
                       "dataType" : {
-                        "type" : "Array",
-                        "dataType" : {
-                          "type" : "Date"
-                        }
+                        "type" : "Double"
                       }
                     }, {
-                      "name" : "c_array_timestamp",
+                      "name" : "Discounts",
                       "dataType" : {
-                        "type" : "Array",
-                        "dataType" : {
-                          "type" : "Timestamp"
-                        }
+                        "type" : "String"
                       }
                     }, {
-                      "name" : "c_array_float",
+                      "name" : "Sales",
                       "dataType" : {
-                        "type" : "Array",
-                        "dataType" : {
-                          "type" : "Float"
-                        }
+                        "type" : "Double"
                       }
                     }, {
-                      "name" : "c_array_decimal",
+                      "name" : "COGS",
                       "dataType" : {
-                        "type" : "Array",
-                        "dataType" : {
-                          "type" : "Decimal"
-                        }
+                        "type" : "Double"
                       }
                     }, {
-                      "name" : "c_struct",
+                      "name" : "Profit",
                       "dataType" : {
-                        "type" : "Struct",
-                        "fields" : [ {
-                          "name" : "c_short",
-                          "dataType" : {
-                            "type" : "SmallInt"
-                          },
-                          "description" : "A short integer value within the structured data."
-                        }, {
-                          "name" : "c_int",
-                          "dataType" : {
-                            "type" : "Integer"
-                          },
-                          "description" : "An integer value within the structured data."
-                        }, {
-                          "name" : "c_long",
-                          "dataType" : {
-                            "type" : "Bigint"
-                          },
-                          "description" : "Long integer value within the structured data"
-                        }, {
-                          "name" : "c_decimal",
-                          "dataType" : {
-                            "type" : "Decimal"
-                          },
-                          "description" : "Decimal value within the structured data"
-                        }, {
-                          "name" : "c_float",
-                          "dataType" : {
-                            "type" : "Float"
-                          },
-                          "description" : "Floating-point value within the structured data"
-                        }, {
-                          "name" : "c_boolean",
-                          "dataType" : {
-                            "type" : "Boolean"
-                          },
-                          "description" : "Boolean value indicating a specific condition within the structure"
-                        }, {
-                          "name" : "c_double",
-                          "dataType" : {
-                            "type" : "Double"
-                          },
-                          "description" : "Double precision number representing a measurement within the structure"
-                        }, {
-                          "name" : "c_string",
-                          "dataType" : {
-                            "type" : "String"
-                          },
-                          "description" : "String value containing descriptive information within the structure"
-                        }, {
-                          "name" : "c_date",
-                          "dataType" : {
-                            "type" : "Date"
-                          },
-                          "description" : "Date value within the structured data"
-                        }, {
-                          "name" : "c_timestamp",
-                          "dataType" : {
-                            "type" : "Timestamp"
-                          },
-                          "description" : "Timestamp value within the structured data"
-                        }, {
-                          "name" : "c_array_int",
-                          "dataType" : {
-                            "type" : "Array",
-                            "dataType" : {
-                              "type" : "Integer"
-                            }
-                          },
-                          "description" : "Array of integer values within the structured data"
-                        } ]
+                        "type" : "String"
+                      }
+                    }, {
+                      "name" : "Date",
+                      "dataType" : {
+                        "type" : "String"
+                      }
+                    }, {
+                      "name" : "Month_Number",
+                      "dataType" : {
+                        "type" : "Double"
+                      }
+                    }, {
+                      "name" : "Month_Name",
+                      "dataType" : {
+                        "type" : "String"
+                      }
+                    }, {
+                      "name" : "Year",
+                      "dataType" : {
+                        "type" : "Double"
                       }
                     }, {
                       "name" : "_rescued_data",
@@ -1305,187 +684,89 @@
                   "slug" : "in0"
                 } ],
                 "outputs" : [ {
-                  "id" : "WQn3xIEp2A2jLHiVk2tNt$$f_OLzpwxBVSS-riGjQ09y",
+                  "id" : "OsQTGCM_lXr5YXKQa8Tca$$d_LC-mbBls3fKF7hN52VZ",
                   "schema" : {
                     "entityType" : "",
                     "providerType" : "Databricks",
                     "fields" : [ {
-                      "name" : "c_short",
-                      "dataType" : {
-                        "type" : "SmallInt"
-                      }
-                    }, {
-                      "name" : "c_int",
-                      "dataType" : {
-                        "type" : "Integer"
-                      }
-                    }, {
-                      "name" : "c_long",
-                      "dataType" : {
-                        "type" : "Bigint"
-                      }
-                    }, {
-                      "name" : "c_decimal",
-                      "dataType" : {
-                        "type" : "Decimal"
-                      }
-                    }, {
-                      "name" : "c_float",
-                      "dataType" : {
-                        "type" : "Float"
-                      }
-                    }, {
-                      "name" : "c_boolean",
-                      "dataType" : {
-                        "type" : "Boolean"
-                      }
-                    }, {
-                      "name" : "c_double",
-                      "dataType" : {
-                        "type" : "Float"
-                      }
-                    }, {
-                      "name" : "c_string",
+                      "name" : "Segment",
                       "dataType" : {
                         "type" : "String"
                       }
                     }, {
-                      "name" : "c_date",
+                      "name" : "Country",
                       "dataType" : {
-                        "type" : "Date"
+                        "type" : "String"
                       }
                     }, {
-                      "name" : "c_timestamp",
+                      "name" : "Product",
                       "dataType" : {
-                        "type" : "Timestamp"
+                        "type" : "String"
                       }
                     }, {
-                      "name" : "c_array_int",
+                      "name" : "Discount_Band",
                       "dataType" : {
-                        "type" : "Array",
-                        "dataType" : {
-                          "type" : "Integer"
-                        }
+                        "type" : "String"
                       }
                     }, {
-                      "name" : "c_array_string",
+                      "name" : "Units_Sold",
                       "dataType" : {
-                        "type" : "Array",
-                        "dataType" : {
-                          "type" : "String"
-                        }
+                        "type" : "Float"
                       }
                     }, {
-                      "name" : "c_array_long",
+                      "name" : "Manufacturing_Price",
                       "dataType" : {
-                        "type" : "Array",
-                        "dataType" : {
-                          "type" : "Bigint"
-                        }
+                        "type" : "Float"
                       }
                     }, {
-                      "name" : "c_array_boolean",
+                      "name" : "Sale_Price",
                       "dataType" : {
-                        "type" : "Array",
-                        "dataType" : {
-                          "type" : "Boolean"
-                        }
+                        "type" : "Float"
                       }
                     }, {
-                      "name" : "c_array_date",
+                      "name" : "Gross_Sales",
                       "dataType" : {
-                        "type" : "Array",
-                        "dataType" : {
-                          "type" : "Date"
-                        }
+                        "type" : "Float"
                       }
                     }, {
-                      "name" : "c_array_timestamp",
+                      "name" : "Discounts",
                       "dataType" : {
-                        "type" : "Array",
-                        "dataType" : {
-                          "type" : "Timestamp"
-                        }
+                        "type" : "String"
                       }
                     }, {
-                      "name" : "c_array_float",
+                      "name" : "Sales",
                       "dataType" : {
-                        "type" : "Array",
-                        "dataType" : {
-                          "type" : "Float"
-                        }
+                        "type" : "Float"
                       }
                     }, {
-                      "name" : "c_array_decimal",
+                      "name" : "COGS",
                       "dataType" : {
-                        "type" : "Array",
-                        "dataType" : {
-                          "type" : "Decimal"
-                        }
+                        "type" : "Float"
                       }
                     }, {
-                      "name" : "c_struct",
+                      "name" : "Profit",
                       "dataType" : {
-                        "type" : "Struct",
-                        "fields" : [ {
-                          "name" : "c_short",
-                          "dataType" : {
-                            "type" : "SmallInt"
-                          }
-                        }, {
-                          "name" : "c_int",
-                          "dataType" : {
-                            "type" : "Integer"
-                          }
-                        }, {
-                          "name" : "c_long",
-                          "dataType" : {
-                            "type" : "Bigint"
-                          }
-                        }, {
-                          "name" : "c_decimal",
-                          "dataType" : {
-                            "type" : "Decimal"
-                          }
-                        }, {
-                          "name" : "c_float",
-                          "dataType" : {
-                            "type" : "Float"
-                          }
-                        }, {
-                          "name" : "c_boolean",
-                          "dataType" : {
-                            "type" : "Boolean"
-                          }
-                        }, {
-                          "name" : "c_double",
-                          "dataType" : {
-                            "type" : "Float"
-                          }
-                        }, {
-                          "name" : "c_string",
-                          "dataType" : {
-                            "type" : "String"
-                          }
-                        }, {
-                          "name" : "c_date",
-                          "dataType" : {
-                            "type" : "Date"
-                          }
-                        }, {
-                          "name" : "c_timestamp",
-                          "dataType" : {
-                            "type" : "Timestamp"
-                          }
-                        }, {
-                          "name" : "c_array_int",
-                          "dataType" : {
-                            "type" : "Array",
-                            "dataType" : {
-                              "type" : "Integer"
-                            }
-                          }
-                        } ]
+                        "type" : "String"
+                      }
+                    }, {
+                      "name" : "Date",
+                      "dataType" : {
+                        "type" : "String"
+                      }
+                    }, {
+                      "name" : "Month_Number",
+                      "dataType" : {
+                        "type" : "Float"
+                      }
+                    }, {
+                      "name" : "Month_Name",
+                      "dataType" : {
+                        "type" : "String"
+                      }
+                    }, {
+                      "name" : "Year",
+                      "dataType" : {
+                        "type" : "Float"
                       }
                     }, {
                       "name" : "_rescued_data",
@@ -1502,212 +783,103 @@
             }
           },
           "connections" : [ {
-            "id" : "WBLXtRpK0RG5BzYgpj8x9",
-            "source" : "kK4shnMqypDlSTR65V2gw$$4_ToFj4Qko7pbPycUiYq7",
-            "sourcePort" : "3g9VsP4aIhWJMhmfEzAEr$$QQsi_R7AVE2i_av3cCxUm",
-            "target" : "hTPU14uQNB7IoaD_gipzK$$pRYkdRpyYMMrK-H_4DfUO",
-            "targetPort" : "dGGJZHjh3kOpXGOqal64I$$RXju8zkQqUFu7SmSthJkq"
+            "id" : "_Q2c3LSEQZN3RRM-fTreD",
+            "source" : "6gwUED2FaPS2aaG7VzlqD$$WxkinwXlOltpye2iq16QE",
+            "sourcePort" : "Wz2EHnRQlZ7Qi6I1w5J6c$$gNZXmyTqXZI-15x9SxFRr",
+            "target" : "Q2UAIy3YtDXj2xssdqi0y$$cqvj-r8UEP1Y9poaxPh-K",
+            "targetPort" : "hPJUUYWHLwpGbXHKA6oaA$$5vpgXxalUW7V3EzGnoZm1"
           }, {
-            "id" : "II7YGwcDdqVX3DPJCQ7dO",
-            "source" : "hTPU14uQNB7IoaD_gipzK$$pRYkdRpyYMMrK-H_4DfUO",
-            "sourcePort" : "WQn3xIEp2A2jLHiVk2tNt$$f_OLzpwxBVSS-riGjQ09y",
-            "target" : "kK4shnMqypDlSTR65V2gw$$4_ToFj4Qko7pbPycUiYq7",
-            "targetPort" : "SZ45i6R05QcGAkPQzZ85Y$$eXUosXsJnPvNRKgryh-IU"
+            "id" : "Lo-x7uiGFkVJlDBIy_sC6",
+            "source" : "Q2UAIy3YtDXj2xssdqi0y$$cqvj-r8UEP1Y9poaxPh-K",
+            "sourcePort" : "OsQTGCM_lXr5YXKQa8Tca$$d_LC-mbBls3fKF7hN52VZ",
+            "target" : "6gwUED2FaPS2aaG7VzlqD$$WxkinwXlOltpye2iq16QE",
+            "targetPort" : "-d1t8zF3-D8ysSuM_d6i4$$AlLZ32_s-K-x43ziGwRDj"
           } ],
           "ports" : {
             "inputs" : [ {
-              "id" : "3g9VsP4aIhWJMhmfEzAEr$$QQsi_R7AVE2i_av3cCxUm",
+              "id" : "Wz2EHnRQlZ7Qi6I1w5J6c$$gNZXmyTqXZI-15x9SxFRr",
               "schema" : {
                 "entityType" : "",
                 "providerType" : "databricks",
                 "fields" : [ {
-                  "name" : "c_short",
-                  "dataType" : {
-                    "type" : "SmallInt"
-                  }
-                }, {
-                  "name" : "c_int",
-                  "dataType" : {
-                    "type" : "Integer"
-                  }
-                }, {
-                  "name" : "c_long",
-                  "dataType" : {
-                    "type" : "Bigint"
-                  }
-                }, {
-                  "name" : "c_decimal",
-                  "dataType" : {
-                    "type" : "Decimal"
-                  }
-                }, {
-                  "name" : "c_float",
-                  "dataType" : {
-                    "type" : "Float"
-                  }
-                }, {
-                  "name" : "c_boolean",
-                  "dataType" : {
-                    "type" : "Boolean"
-                  }
-                }, {
-                  "name" : "c_double",
-                  "dataType" : {
-                    "type" : "Double"
-                  }
-                }, {
-                  "name" : "c_string",
+                  "name" : "Segment",
                   "dataType" : {
                     "type" : "String"
                   }
                 }, {
-                  "name" : "c_date",
+                  "name" : "Country",
                   "dataType" : {
-                    "type" : "Date"
+                    "type" : "String"
                   }
                 }, {
-                  "name" : "c_timestamp",
+                  "name" : "Product",
                   "dataType" : {
-                    "type" : "Timestamp"
+                    "type" : "String"
                   }
                 }, {
-                  "name" : "c_array_int",
+                  "name" : "Discount_Band",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Integer"
-                    }
+                    "type" : "String"
                   }
                 }, {
-                  "name" : "c_array_string",
+                  "name" : "Units_Sold",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "String"
-                    }
+                    "type" : "Double"
                   }
                 }, {
-                  "name" : "c_array_long",
+                  "name" : "Manufacturing_Price",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Bigint"
-                    }
+                    "type" : "Double"
                   }
                 }, {
-                  "name" : "c_array_boolean",
+                  "name" : "Sale_Price",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Boolean"
-                    }
+                    "type" : "Double"
                   }
                 }, {
-                  "name" : "c_array_date",
+                  "name" : "Gross_Sales",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Date"
-                    }
+                    "type" : "Double"
                   }
                 }, {
-                  "name" : "c_array_timestamp",
+                  "name" : "Discounts",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Timestamp"
-                    }
+                    "type" : "String"
                   }
                 }, {
-                  "name" : "c_array_float",
+                  "name" : "Sales",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Float"
-                    }
+                    "type" : "Double"
                   }
                 }, {
-                  "name" : "c_array_decimal",
+                  "name" : "COGS",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Decimal"
-                    }
+                    "type" : "Double"
                   }
                 }, {
-                  "name" : "c_struct",
+                  "name" : "Profit",
                   "dataType" : {
-                    "type" : "Struct",
-                    "fields" : [ {
-                      "name" : "c_short",
-                      "dataType" : {
-                        "type" : "SmallInt"
-                      },
-                      "description" : "A short integer value within the structured data."
-                    }, {
-                      "name" : "c_int",
-                      "dataType" : {
-                        "type" : "Integer"
-                      },
-                      "description" : "An integer value within the structured data."
-                    }, {
-                      "name" : "c_long",
-                      "dataType" : {
-                        "type" : "Bigint"
-                      },
-                      "description" : "Long integer value within the structured data"
-                    }, {
-                      "name" : "c_decimal",
-                      "dataType" : {
-                        "type" : "Decimal"
-                      },
-                      "description" : "Decimal value within the structured data"
-                    }, {
-                      "name" : "c_float",
-                      "dataType" : {
-                        "type" : "Float"
-                      },
-                      "description" : "Floating-point value within the structured data"
-                    }, {
-                      "name" : "c_boolean",
-                      "dataType" : {
-                        "type" : "Boolean"
-                      },
-                      "description" : "Boolean value indicating a specific condition within the structure"
-                    }, {
-                      "name" : "c_double",
-                      "dataType" : {
-                        "type" : "Double"
-                      },
-                      "description" : "Double precision number representing a measurement within the structure"
-                    }, {
-                      "name" : "c_string",
-                      "dataType" : {
-                        "type" : "String"
-                      },
-                      "description" : "String value containing descriptive information within the structure"
-                    }, {
-                      "name" : "c_date",
-                      "dataType" : {
-                        "type" : "Date"
-                      },
-                      "description" : "Date value within the structured data"
-                    }, {
-                      "name" : "c_timestamp",
-                      "dataType" : {
-                        "type" : "Timestamp"
-                      },
-                      "description" : "Timestamp value within the structured data"
-                    }, {
-                      "name" : "c_array_int",
-                      "dataType" : {
-                        "type" : "Array",
-                        "dataType" : {
-                          "type" : "Integer"
-                        }
-                      },
-                      "description" : "Array of integer values within the structured data"
-                    } ]
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "Date",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "Month_Number",
+                  "dataType" : {
+                    "type" : "Double"
+                  }
+                }, {
+                  "name" : "Month_Name",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "Year",
+                  "dataType" : {
+                    "type" : "Double"
                   }
                 }, {
                   "name" : "_rescued_data",
@@ -1716,190 +888,92 @@
                   }
                 } ]
               },
-              "slug" : "parquet_all"
+              "slug" : "segment_country_1_2"
             } ],
             "outputs" : [ {
-              "id" : "SZ45i6R05QcGAkPQzZ85Y$$eXUosXsJnPvNRKgryh-IU",
+              "id" : "-d1t8zF3-D8ysSuM_d6i4$$AlLZ32_s-K-x43ziGwRDj",
               "schema" : {
                 "entityType" : "",
                 "providerType" : "Databricks",
                 "fields" : [ {
-                  "name" : "c_short",
-                  "dataType" : {
-                    "type" : "SmallInt"
-                  }
-                }, {
-                  "name" : "c_int",
-                  "dataType" : {
-                    "type" : "Integer"
-                  }
-                }, {
-                  "name" : "c_long",
-                  "dataType" : {
-                    "type" : "Bigint"
-                  }
-                }, {
-                  "name" : "c_decimal",
-                  "dataType" : {
-                    "type" : "Decimal"
-                  }
-                }, {
-                  "name" : "c_float",
-                  "dataType" : {
-                    "type" : "Float"
-                  }
-                }, {
-                  "name" : "c_boolean",
-                  "dataType" : {
-                    "type" : "Boolean"
-                  }
-                }, {
-                  "name" : "c_double",
-                  "dataType" : {
-                    "type" : "Float"
-                  }
-                }, {
-                  "name" : "c_string",
+                  "name" : "Segment",
                   "dataType" : {
                     "type" : "String"
                   }
                 }, {
-                  "name" : "c_date",
+                  "name" : "Country",
                   "dataType" : {
-                    "type" : "Date"
+                    "type" : "String"
                   }
                 }, {
-                  "name" : "c_timestamp",
+                  "name" : "Product",
                   "dataType" : {
-                    "type" : "Timestamp"
+                    "type" : "String"
                   }
                 }, {
-                  "name" : "c_array_int",
+                  "name" : "Discount_Band",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Integer"
-                    }
+                    "type" : "String"
                   }
                 }, {
-                  "name" : "c_array_string",
+                  "name" : "Units_Sold",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "String"
-                    }
+                    "type" : "Float"
                   }
                 }, {
-                  "name" : "c_array_long",
+                  "name" : "Manufacturing_Price",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Bigint"
-                    }
+                    "type" : "Float"
                   }
                 }, {
-                  "name" : "c_array_boolean",
+                  "name" : "Sale_Price",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Boolean"
-                    }
+                    "type" : "Float"
                   }
                 }, {
-                  "name" : "c_array_date",
+                  "name" : "Gross_Sales",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Date"
-                    }
+                    "type" : "Float"
                   }
                 }, {
-                  "name" : "c_array_timestamp",
+                  "name" : "Discounts",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Timestamp"
-                    }
+                    "type" : "String"
                   }
                 }, {
-                  "name" : "c_array_float",
+                  "name" : "Sales",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Float"
-                    }
+                    "type" : "Float"
                   }
                 }, {
-                  "name" : "c_array_decimal",
+                  "name" : "COGS",
                   "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Decimal"
-                    }
+                    "type" : "Float"
                   }
                 }, {
-                  "name" : "c_struct",
+                  "name" : "Profit",
                   "dataType" : {
-                    "type" : "Struct",
-                    "fields" : [ {
-                      "name" : "c_short",
-                      "dataType" : {
-                        "type" : "SmallInt"
-                      }
-                    }, {
-                      "name" : "c_int",
-                      "dataType" : {
-                        "type" : "Integer"
-                      }
-                    }, {
-                      "name" : "c_long",
-                      "dataType" : {
-                        "type" : "Bigint"
-                      }
-                    }, {
-                      "name" : "c_decimal",
-                      "dataType" : {
-                        "type" : "Decimal"
-                      }
-                    }, {
-                      "name" : "c_float",
-                      "dataType" : {
-                        "type" : "Float"
-                      }
-                    }, {
-                      "name" : "c_boolean",
-                      "dataType" : {
-                        "type" : "Boolean"
-                      }
-                    }, {
-                      "name" : "c_double",
-                      "dataType" : {
-                        "type" : "Float"
-                      }
-                    }, {
-                      "name" : "c_string",
-                      "dataType" : {
-                        "type" : "String"
-                      }
-                    }, {
-                      "name" : "c_date",
-                      "dataType" : {
-                        "type" : "Date"
-                      }
-                    }, {
-                      "name" : "c_timestamp",
-                      "dataType" : {
-                        "type" : "Timestamp"
-                      }
-                    }, {
-                      "name" : "c_array_int",
-                      "dataType" : {
-                        "type" : "Array",
-                        "dataType" : {
-                          "type" : "Integer"
-                        }
-                      }
-                    } ]
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "Date",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "Month_Number",
+                  "dataType" : {
+                    "type" : "Float"
+                  }
+                }, {
+                  "name" : "Month_Name",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "Year",
+                  "dataType" : {
+                    "type" : "Float"
                   }
                 }, {
                   "name" : "_rescued_data",
@@ -1918,218 +992,109 @@
         }
       },
       "connections" : [ {
-        "id" : "TKa0nMxlmEmBa1WGl82Ck",
-        "source" : "AN9WqUByv7gipWJOrU8s3$$s9VRDgBkwSa3-jyg5rKVu",
-        "sourcePort" : "QFjWHjoV8iY7laZpLdN1B$$HGt0CTlrENvusM1wL5xQi",
-        "target" : "oqxWujPQxFZ8m8GzVkxn3$$IN8IF5U9Q9tbxKBlgvfu1",
-        "targetPort" : "ZEeLZF-L6YqRO6vW-RLw4$$ktN0IYRtPeWRpx0xeRC9X"
+        "id" : "2bIRnSb3VepjnGBryQ2cn",
+        "source" : "Y0SQgYG-tk8TbV5wVtBat$$sG79XyWB7aaFqDzvqBT_U",
+        "sourcePort" : "umzpqOBFfLhzA9DJeYQR0$$_zhr0P0GHdQODWEpjYsTR",
+        "target" : "bbvBElCt6G7nvhLXK2qF1$$WZXZnCZy7gQ7WBQsufr3x",
+        "targetPort" : "zQ9g7LF4UGla7xGP81Tm5$$p8PGYXvO_1_obv7cqZlD2"
       }, {
-        "id" : "TEJzqFrgyOnAPAQeNI7mf",
-        "source" : "AN9WqUByv7gipWJOrU8s3$$s9VRDgBkwSa3-jyg5rKVu",
-        "sourcePort" : "QFjWHjoV8iY7laZpLdN1B$$HGt0CTlrENvusM1wL5xQi",
-        "target" : "kK4shnMqypDlSTR65V2gw$$4_ToFj4Qko7pbPycUiYq7",
-        "targetPort" : "3g9VsP4aIhWJMhmfEzAEr$$QQsi_R7AVE2i_av3cCxUm"
+        "id" : "l0SnGbNBNiGBf1fAUyaOk",
+        "source" : "Y0SQgYG-tk8TbV5wVtBat$$sG79XyWB7aaFqDzvqBT_U",
+        "sourcePort" : "umzpqOBFfLhzA9DJeYQR0$$_zhr0P0GHdQODWEpjYsTR",
+        "target" : "6gwUED2FaPS2aaG7VzlqD$$WxkinwXlOltpye2iq16QE",
+        "targetPort" : "Wz2EHnRQlZ7Qi6I1w5J6c$$gNZXmyTqXZI-15x9SxFRr"
       }, {
-        "id" : "n3ZV_UEcQWle3ZdThZs4O",
-        "source" : "kK4shnMqypDlSTR65V2gw$$4_ToFj4Qko7pbPycUiYq7",
-        "sourcePort" : "SZ45i6R05QcGAkPQzZ85Y$$eXUosXsJnPvNRKgryh-IU",
-        "target" : "AN9WqUByv7gipWJOrU8s3$$s9VRDgBkwSa3-jyg5rKVu",
-        "targetPort" : "-qlnXqHzQzEp2DV5qT518$$h-0mD-CkafDlxGA3pFsgQ"
+        "id" : "Zkz0NEWtrLbF0--bdkscg",
+        "source" : "6gwUED2FaPS2aaG7VzlqD$$WxkinwXlOltpye2iq16QE",
+        "sourcePort" : "-d1t8zF3-D8ysSuM_d6i4$$AlLZ32_s-K-x43ziGwRDj",
+        "target" : "Y0SQgYG-tk8TbV5wVtBat$$sG79XyWB7aaFqDzvqBT_U",
+        "targetPort" : "t6e7Juim92gggGsmzCdJL$$PELcBGDIX-lAcgUhzxoJa"
       } ],
       "ports" : {
         "inputs" : [ {
-          "id" : "QFjWHjoV8iY7laZpLdN1B$$HGt0CTlrENvusM1wL5xQi",
+          "id" : "umzpqOBFfLhzA9DJeYQR0$$_zhr0P0GHdQODWEpjYsTR",
           "schema" : {
             "entityType" : "",
             "providerType" : "databricks",
             "fields" : [ {
-              "name" : "c_short",
-              "dataType" : {
-                "type" : "SmallInt"
-              }
-            }, {
-              "name" : "c_int",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "c_long",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "c_decimal",
-              "dataType" : {
-                "type" : "Decimal"
-              }
-            }, {
-              "name" : "c_float",
-              "dataType" : {
-                "type" : "Float"
-              }
-            }, {
-              "name" : "c_boolean",
-              "dataType" : {
-                "type" : "Boolean"
-              }
-            }, {
-              "name" : "c_double",
-              "dataType" : {
-                "type" : "Double"
-              }
-            }, {
-              "name" : "c_string",
+              "name" : "Segment",
               "dataType" : {
                 "type" : "String"
               }
             }, {
-              "name" : "c_date",
+              "name" : "Country",
               "dataType" : {
-                "type" : "Date"
+                "type" : "String"
               }
             }, {
-              "name" : "c_timestamp",
+              "name" : "Product",
               "dataType" : {
-                "type" : "Timestamp"
+                "type" : "String"
               }
             }, {
-              "name" : "c_array_int",
+              "name" : "Discount_Band",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Integer"
-                }
+                "type" : "String"
               }
             }, {
-              "name" : "c_array_string",
+              "name" : "Units_Sold",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "String"
-                }
+                "type" : "Double"
               }
             }, {
-              "name" : "c_array_long",
+              "name" : "Manufacturing_Price",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Bigint"
-                }
+                "type" : "Double"
               }
             }, {
-              "name" : "c_array_boolean",
+              "name" : "Sale_Price",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Boolean"
-                }
+                "type" : "Double"
               }
             }, {
-              "name" : "c_array_date",
+              "name" : "Gross_Sales",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Date"
-                }
+                "type" : "Double"
               }
             }, {
-              "name" : "c_array_timestamp",
+              "name" : "Discounts",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Timestamp"
-                }
+                "type" : "String"
               }
             }, {
-              "name" : "c_array_float",
+              "name" : "Sales",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Float"
-                }
+                "type" : "Double"
               }
             }, {
-              "name" : "c_array_decimal",
+              "name" : "COGS",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Decimal"
-                }
+                "type" : "Double"
               }
             }, {
-              "name" : "c_struct",
+              "name" : "Profit",
               "dataType" : {
-                "type" : "Struct",
-                "fields" : [ {
-                  "name" : "c_short",
-                  "dataType" : {
-                    "type" : "SmallInt"
-                  },
-                  "description" : "A short integer value within the structured data."
-                }, {
-                  "name" : "c_int",
-                  "dataType" : {
-                    "type" : "Integer"
-                  },
-                  "description" : "An integer value within the structured data."
-                }, {
-                  "name" : "c_long",
-                  "dataType" : {
-                    "type" : "Bigint"
-                  },
-                  "description" : "Long integer value within the structured data"
-                }, {
-                  "name" : "c_decimal",
-                  "dataType" : {
-                    "type" : "Decimal"
-                  },
-                  "description" : "Decimal value within the structured data"
-                }, {
-                  "name" : "c_float",
-                  "dataType" : {
-                    "type" : "Float"
-                  },
-                  "description" : "Floating-point value within the structured data"
-                }, {
-                  "name" : "c_boolean",
-                  "dataType" : {
-                    "type" : "Boolean"
-                  },
-                  "description" : "Boolean value indicating a specific condition within the structure"
-                }, {
-                  "name" : "c_double",
-                  "dataType" : {
-                    "type" : "Double"
-                  },
-                  "description" : "Double precision number representing a measurement within the structure"
-                }, {
-                  "name" : "c_string",
-                  "dataType" : {
-                    "type" : "String"
-                  },
-                  "description" : "String value containing descriptive information within the structure"
-                }, {
-                  "name" : "c_date",
-                  "dataType" : {
-                    "type" : "Date"
-                  },
-                  "description" : "Date value within the structured data"
-                }, {
-                  "name" : "c_timestamp",
-                  "dataType" : {
-                    "type" : "Timestamp"
-                  },
-                  "description" : "Timestamp value within the structured data"
-                }, {
-                  "name" : "c_array_int",
-                  "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Integer"
-                    }
-                  },
-                  "description" : "Array of integer values within the structured data"
-                } ]
+                "type" : "String"
+              }
+            }, {
+              "name" : "Date",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Month_Number",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Month_Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Year",
+              "dataType" : {
+                "type" : "Double"
               }
             }, {
               "name" : "_rescued_data",
@@ -2138,190 +1103,92 @@
               }
             } ]
           },
-          "slug" : "parquet_all"
+          "slug" : "segment_country_1_2"
         } ],
         "outputs" : [ {
-          "id" : "-qlnXqHzQzEp2DV5qT518$$h-0mD-CkafDlxGA3pFsgQ",
+          "id" : "t6e7Juim92gggGsmzCdJL$$PELcBGDIX-lAcgUhzxoJa",
           "schema" : {
             "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
-              "name" : "c_short",
-              "dataType" : {
-                "type" : "SmallInt"
-              }
-            }, {
-              "name" : "c_int",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "c_long",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "c_decimal",
-              "dataType" : {
-                "type" : "Decimal"
-              }
-            }, {
-              "name" : "c_float",
-              "dataType" : {
-                "type" : "Float"
-              }
-            }, {
-              "name" : "c_boolean",
-              "dataType" : {
-                "type" : "Boolean"
-              }
-            }, {
-              "name" : "c_double",
-              "dataType" : {
-                "type" : "Float"
-              }
-            }, {
-              "name" : "c_string",
+              "name" : "Segment",
               "dataType" : {
                 "type" : "String"
               }
             }, {
-              "name" : "c_date",
+              "name" : "Country",
               "dataType" : {
-                "type" : "Date"
+                "type" : "String"
               }
             }, {
-              "name" : "c_timestamp",
+              "name" : "Product",
               "dataType" : {
-                "type" : "Timestamp"
+                "type" : "String"
               }
             }, {
-              "name" : "c_array_int",
+              "name" : "Discount_Band",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Integer"
-                }
+                "type" : "String"
               }
             }, {
-              "name" : "c_array_string",
+              "name" : "Units_Sold",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "String"
-                }
+                "type" : "Float"
               }
             }, {
-              "name" : "c_array_long",
+              "name" : "Manufacturing_Price",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Bigint"
-                }
+                "type" : "Float"
               }
             }, {
-              "name" : "c_array_boolean",
+              "name" : "Sale_Price",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Boolean"
-                }
+                "type" : "Float"
               }
             }, {
-              "name" : "c_array_date",
+              "name" : "Gross_Sales",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Date"
-                }
+                "type" : "Float"
               }
             }, {
-              "name" : "c_array_timestamp",
+              "name" : "Discounts",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Timestamp"
-                }
+                "type" : "String"
               }
             }, {
-              "name" : "c_array_float",
+              "name" : "Sales",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Float"
-                }
+                "type" : "Float"
               }
             }, {
-              "name" : "c_array_decimal",
+              "name" : "COGS",
               "dataType" : {
-                "type" : "Array",
-                "dataType" : {
-                  "type" : "Decimal"
-                }
+                "type" : "Float"
               }
             }, {
-              "name" : "c_struct",
+              "name" : "Profit",
               "dataType" : {
-                "type" : "Struct",
-                "fields" : [ {
-                  "name" : "c_short",
-                  "dataType" : {
-                    "type" : "SmallInt"
-                  }
-                }, {
-                  "name" : "c_int",
-                  "dataType" : {
-                    "type" : "Integer"
-                  }
-                }, {
-                  "name" : "c_long",
-                  "dataType" : {
-                    "type" : "Bigint"
-                  }
-                }, {
-                  "name" : "c_decimal",
-                  "dataType" : {
-                    "type" : "Decimal"
-                  }
-                }, {
-                  "name" : "c_float",
-                  "dataType" : {
-                    "type" : "Float"
-                  }
-                }, {
-                  "name" : "c_boolean",
-                  "dataType" : {
-                    "type" : "Boolean"
-                  }
-                }, {
-                  "name" : "c_double",
-                  "dataType" : {
-                    "type" : "Float"
-                  }
-                }, {
-                  "name" : "c_string",
-                  "dataType" : {
-                    "type" : "String"
-                  }
-                }, {
-                  "name" : "c_date",
-                  "dataType" : {
-                    "type" : "Date"
-                  }
-                }, {
-                  "name" : "c_timestamp",
-                  "dataType" : {
-                    "type" : "Timestamp"
-                  }
-                }, {
-                  "name" : "c_array_int",
-                  "dataType" : {
-                    "type" : "Array",
-                    "dataType" : {
-                      "type" : "Integer"
-                    }
-                  }
-                } ]
+                "type" : "String"
+              }
+            }, {
+              "name" : "Date",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Month_Number",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "Month_Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Year",
+              "dataType" : {
+                "type" : "Float"
               }
             }, {
               "name" : "_rescued_data",
@@ -2340,17 +1207,17 @@
     }
   },
   "connections" : [ {
-    "id" : "tghiE7Ep2Vk8CYImSzW18",
-    "source" : "FV9Dxve3GQHfcK1wLfEen",
-    "sourcePort" : "-zcofAfer6h5ATOrWWUDZ",
-    "target" : "AN9WqUByv7gipWJOrU8s3$$s9VRDgBkwSa3-jyg5rKVu",
-    "targetPort" : "QFjWHjoV8iY7laZpLdN1B$$HGt0CTlrENvusM1wL5xQi"
-  }, {
-    "id" : "i8n8sXqemrejxtR_qdwUT",
-    "source" : "AN9WqUByv7gipWJOrU8s3$$s9VRDgBkwSa3-jyg5rKVu",
-    "sourcePort" : "-qlnXqHzQzEp2DV5qT518$$h-0mD-CkafDlxGA3pFsgQ",
+    "id" : "Ljh8RzCmy1fR5UXphdDjj",
+    "source" : "bE5siffS58F6DNhMVby6x",
+    "sourcePort" : "Kau_mCC8UN46pSiozWoj6",
     "target" : "mod123##cGfNyep0",
     "targetPort" : "O9BXBXh7"
+  }, {
+    "id" : "qoMysuEaySGsIT-E4ZqNL",
+    "source" : "bE5siffS58F6DNhMVby6x",
+    "sourcePort" : "Kau_mCC8UN46pSiozWoj6",
+    "target" : "Y0SQgYG-tk8TbV5wVtBat$$sG79XyWB7aaFqDzvqBT_U",
+    "targetPort" : "umzpqOBFfLhzA9DJeYQR0$$_zhr0P0GHdQODWEpjYsTR"
   } ],
   "component" : "Model"
 }

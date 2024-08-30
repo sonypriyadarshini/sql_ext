@@ -7,153 +7,78 @@ sources:
   config:
     enabled: true
   tables:
-  - name: "parquet_all"
-    description: "Comprehensive dataset capturing various data types and structures,\
-      \ enabling detailed analysis across multiple dimensions."
+  - name: "segment_country_1"
+    description: "Sales performance data segmented by country, providing insights\
+      \ into pricing, sales volume, and profitability across different products and\
+      \ time periods."
     columns:
-    - name: "c_short"
-      description: "A small integer value representing a specific metric."
-      dataType:
-        type: "SmallInt"
-    - name: "c_int"
-      description: "An integer value used for various calculations."
-      dataType:
-        type: "Integer"
-    - name: "c_long"
-      description: "A large integer value for extensive numerical data."
-      dataType:
-        type: "Bigint"
-    - name: "c_decimal"
-      description: "A decimal value representing precise numerical data"
-      dataType:
-        type: "Decimal"
-    - name: "c_float"
-      description: "A floating-point number for representing approximate values"
-      dataType:
-        type: "Float"
-    - name: "c_boolean"
-      description: "A true/false value indicating a binary state"
-      dataType:
-        type: "Boolean"
-    - name: "c_double"
-      description: "A double-precision floating-point number for precise calculations."
-      dataType:
-        type: "Double"
-    - name: "c_string"
-      description: "A string of text representing various information."
+    - name: "Segment"
+      description: "The market segment to which the product belongs"
       dataType:
         type: "String"
-    - name: "c_date"
-      description: "A date value indicating a specific day."
+    - name: "Country"
+      description: "The name of the country where the sales occurred"
       dataType:
-        type: "Date"
-    - name: "c_timestamp"
-      description: "Timestamp indicating a specific point in time"
+        type: "String"
+    - name: "Product"
+      description: "The name of the product sold"
       dataType:
-        type: "Timestamp"
-    - name: "c_array_int"
-      description: "Array of integer values"
+        type: "String"
+    - name: "Discount_Band"
+      description: "The category of discount applied to the product"
       dataType:
-        type: "Array"
-        dataType:
-          type: "Integer"
-    - name: "c_array_string"
-      description: "Array of string values"
+        type: "String"
+    - name: "Units_Sold"
+      description: "Total number of units sold for the product"
       dataType:
-        type: "Array"
-        dataType:
-          type: "String"
-    - name: "c_array_long"
-      description: "Array of long integer values"
+        type: "Double"
+    - name: "Manufacturing_Price"
+      description: "The cost incurred to manufacture the product"
       dataType:
-        type: "Array"
-        dataType:
-          type: "Bigint"
-    - name: "c_array_boolean"
-      description: "Array of boolean values"
+        type: "Double"
+    - name: "Sale_Price"
+      description: "The price at which the product is sold to customers"
       dataType:
-        type: "Array"
-        dataType:
-          type: "Boolean"
-    - name: "c_array_date"
-      description: "Array of date values"
+        type: "Double"
+    - name: "Gross_Sales"
+      description: "Total revenue generated from sales before any discounts are applied"
       dataType:
-        type: "Array"
-        dataType:
-          type: "Date"
-    - name: "c_array_timestamp"
-      description: "Array of timestamp values"
+        type: "Double"
+    - name: "Discounts"
+      description: "Details of discounts applied to sales transactions"
       dataType:
-        type: "Array"
-        dataType:
-          type: "Timestamp"
-    - name: "c_array_float"
-      description: "Array of float values"
+        type: "String"
+    - name: "Sales"
+      description: "Total revenue generated from product sales."
       dataType:
-        type: "Array"
-        dataType:
-          type: "Float"
-    - name: "c_array_decimal"
-      description: "Array of decimal values"
+        type: "Double"
+    - name: "COGS"
+      description: "Cost of goods sold, representing the direct costs attributable\
+        \ to the production of the products sold."
       dataType:
-        type: "Array"
-        dataType:
-          type: "Decimal"
-    - name: "c_struct"
-      description: "A structured data type containing multiple related fields."
+        type: "Double"
+    - name: "Profit"
+      description: "The profit generated from sales after deducting costs"
       dataType:
-        type: "Struct"
-        fields:
-        - name: "c_short"
-          dataType:
-            type: "SmallInt"
-          description: "A short integer value within the structured data."
-        - name: "c_int"
-          dataType:
-            type: "Integer"
-          description: "An integer value within the structured data."
-        - name: "c_long"
-          dataType:
-            type: "Bigint"
-          description: "Long integer value within the structured data"
-        - name: "c_decimal"
-          dataType:
-            type: "Decimal"
-          description: "Decimal value within the structured data"
-        - name: "c_float"
-          dataType:
-            type: "Float"
-          description: "Floating-point value within the structured data"
-        - name: "c_boolean"
-          dataType:
-            type: "Boolean"
-          description: "Boolean value indicating a specific condition within the structure"
-        - name: "c_double"
-          dataType:
-            type: "Double"
-          description: "Double precision number representing a measurement within\
-            \ the structure"
-        - name: "c_string"
-          dataType:
-            type: "String"
-          description: "String value containing descriptive information within the\
-            \ structure"
-        - name: "c_date"
-          dataType:
-            type: "Date"
-          description: "Date value within the structured data"
-        - name: "c_timestamp"
-          dataType:
-            type: "Timestamp"
-          description: "Timestamp value within the structured data"
-        - name: "c_array_int"
-          dataType:
-            type: "Array"
-            dataType:
-              type: "Integer"
-          description: "Array of integer values within the structured data"
+        type: "String"
+    - name: "Date"
+      description: "The date when the sales data was recorded"
+      dataType:
+        type: "String"
+    - name: "Month_Number"
+      description: "Numeric representation of the month in which sales occurred"
+      dataType:
+        type: "Double"
+    - name: "Month_Name"
+      description: "Name of the month in which the sales occurred"
+      dataType:
+        type: "String"
+    - name: "Year"
+      description: "The year in which the sales data was recorded"
+      dataType:
+        type: "Double"
     - name: "_rescued_data"
-      description: "Data that was rescued during processing, typically containing\
-        \ errors or anomalies."
+      description: "Information about data that was recovered or corrected during\
+        \ processing"
       dataType:
         type: "String"
