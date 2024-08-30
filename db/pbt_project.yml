@@ -1,0 +1,350 @@
+name: sql_ext_db
+description: ''
+version: 0.0.1
+author: sony@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs:
+  jobs/sg_db:
+    name: sg_db
+    description: ''
+    fabricUID: 2522
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-08-30 06:30:41'
+    author: sony@prophecy.io
+    models: []
+    sqlProjects:
+    - '14119'
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2024-08-30 06:25:05'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/mod123:
+    name: mod123
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: c_short
+        dataType:
+          type: SmallInt
+      - name: c_int
+        dataType:
+          type: Integer
+      - name: c_long
+        dataType:
+          type: Bigint
+      - name: c_decimal
+        dataType:
+          type: Decimal
+      - name: c_float
+        dataType:
+          type: Float
+      - name: c_boolean
+        dataType:
+          type: Boolean
+      - name: c_double
+        dataType:
+          type: Float
+      - name: c_string
+        dataType:
+          type: String
+      - name: c_date
+        dataType:
+          type: Date
+      - name: c_timestamp
+        dataType:
+          type: Timestamp
+      - name: c_array_int
+        dataType:
+          type: Array
+          dataType:
+            type: Integer
+      - name: c_array_string
+        dataType:
+          type: Array
+          dataType:
+            type: String
+      - name: c_array_long
+        dataType:
+          type: Array
+          dataType:
+            type: Bigint
+      - name: c_array_boolean
+        dataType:
+          type: Array
+          dataType:
+            type: Boolean
+      - name: c_array_date
+        dataType:
+          type: Array
+          dataType:
+            type: Date
+      - name: c_array_timestamp
+        dataType:
+          type: Array
+          dataType:
+            type: Timestamp
+      - name: c_array_float
+        dataType:
+          type: Array
+          dataType:
+            type: Float
+      - name: c_array_decimal
+        dataType:
+          type: Array
+          dataType:
+            type: Decimal
+      - name: c_struct
+        dataType:
+          type: Struct
+          fields:
+          - name: c_short
+            dataType:
+              type: SmallInt
+          - name: c_int
+            dataType:
+              type: Integer
+          - name: c_long
+            dataType:
+              type: Bigint
+          - name: c_decimal
+            dataType:
+              type: Decimal
+          - name: c_float
+            dataType:
+              type: Float
+          - name: c_boolean
+            dataType:
+              type: Boolean
+          - name: c_double
+            dataType:
+              type: Float
+          - name: c_string
+            dataType:
+              type: String
+          - name: c_date
+            dataType:
+              type: Date
+          - name: c_timestamp
+            dataType:
+              type: Timestamp
+          - name: c_array_int
+            dataType:
+              type: Array
+              dataType:
+                type: Integer
+      - name: _rescued_data
+        dataType:
+          type: String
+    description: null
+    author: sony@prophecy.io
+    files:
+    - models/mod123.sql
+    - .prophecy/ide/models/mod123.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-08-30 06:29:34'
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: sony@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2024-08-30 06:25:13'
+sqlSeeds: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/hive_metastore_unique_latest:
+    name: hive_metastore.unique_latest
+    description: null
+    author: sony@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2024-08-30 06:29:48'
+    tables:
+    - name: parquet_all
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: c_short
+          dataType:
+            type: SmallInt
+        - name: c_int
+          dataType:
+            type: Integer
+        - name: c_long
+          dataType:
+            type: Bigint
+        - name: c_decimal
+          dataType:
+            type: Decimal
+        - name: c_float
+          dataType:
+            type: Float
+        - name: c_boolean
+          dataType:
+            type: Boolean
+        - name: c_double
+          dataType:
+            type: Double
+        - name: c_string
+          dataType:
+            type: String
+        - name: c_date
+          dataType:
+            type: Date
+        - name: c_timestamp
+          dataType:
+            type: Timestamp
+        - name: c_array_int
+          dataType:
+            type: Array
+            dataType:
+              type: Integer
+        - name: c_array_string
+          dataType:
+            type: Array
+            dataType:
+              type: String
+        - name: c_array_long
+          dataType:
+            type: Array
+            dataType:
+              type: Bigint
+        - name: c_array_boolean
+          dataType:
+            type: Array
+            dataType:
+              type: Boolean
+        - name: c_array_date
+          dataType:
+            type: Array
+            dataType:
+              type: Date
+        - name: c_array_timestamp
+          dataType:
+            type: Array
+            dataType:
+              type: Timestamp
+        - name: c_array_float
+          dataType:
+            type: Array
+            dataType:
+              type: Float
+        - name: c_array_decimal
+          dataType:
+            type: Array
+            dataType:
+              type: Decimal
+        - name: c_struct
+          dataType:
+            type: Struct
+            fields:
+            - name: c_short
+              dataType:
+                type: SmallInt
+              description: A short integer value within the structured data.
+            - name: c_int
+              dataType:
+                type: Integer
+              description: An integer value within the structured data.
+            - name: c_long
+              dataType:
+                type: Bigint
+              description: Long integer value within the structured data
+            - name: c_decimal
+              dataType:
+                type: Decimal
+              description: Decimal value within the structured data
+            - name: c_float
+              dataType:
+                type: Float
+              description: Floating-point value within the structured data
+            - name: c_boolean
+              dataType:
+                type: Boolean
+              description: Boolean value indicating a specific condition within the
+                structure
+            - name: c_double
+              dataType:
+                type: Double
+              description: Double precision number representing a measurement within
+                the structure
+            - name: c_string
+              dataType:
+                type: String
+              description: String value containing descriptive information within
+                the structure
+            - name: c_date
+              dataType:
+                type: Date
+              description: Date value within the structured data
+            - name: c_timestamp
+              dataType:
+                type: Timestamp
+              description: Timestamp value within the structured data
+            - name: c_array_int
+              dataType:
+                type: Array
+                dataType:
+                  type: Integer
+              description: Array of integer values within the structured data
+        - name: _rescued_data
+          dataType:
+            type: String
+      description: Comprehensive dataset capturing various data types and structures,
+        enabling detailed analysis across multiple dimensions.
+      author: sony@prophecy.io
+      createdAt: '2024-08-30 06:29:48'
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: sony@prophecy.io
+  createdAt: '2024-08-30 06:25:05'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}

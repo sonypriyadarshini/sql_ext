@@ -1,0 +1,77 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "2522",
+    "jobId" : "jobs/sg_db",
+    "name" : "sg_db",
+    "schedule" : "None",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "prophecy_internal_jobs",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "retries" : 0,
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    }
+  },
+  "processes" : {
+    "rqivLdEkIdVbTKxFQILco$$V29oJfVfkz_tlCgaeW1PY" : {
+      "id" : "rqivLdEkIdVbTKxFQILco$$V29oJfVfkz_tlCgaeW1PY",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : -660,
+        "y" : -260
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "yUhoIfgckiM-yYXPm-6dG$$Np5BvhowZnIziEW1q3aav",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "9FEVxE8y3x4SQgKL2clj_$$ixjUM5mhBCS7f-8EpnJ9b",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "entityId" : null,
+        "execSeed" : true,
+        "execRun" : false,
+        "gitEntity" : "branch",
+        "projectId" : "14119",
+        "runOnlyModel" : "false",
+        "loadingModels" : false,
+        "entityName" : null,
+        "gitEntityValueTag" : null,
+        "profile" : "run_profile",
+        "sqlFabricId" : "2522",
+        "gitEntityValue" : null,
+        "execDeps" : false,
+        "gitEntityValueCommit" : null,
+        "gitEntityValueBranch" : null,
+        "execTest" : true,
+        "currentProjectModels" : [ ]
+      }
+    }
+  },
+  "connections" : [ ]
+}
