@@ -1,0 +1,41 @@
+---
+version: 2
+sources:
+- name: "hive_metastore.upload_latest"
+  database: "hive_metastore"
+  schema: "upload_latest"
+  config:
+    enabled: true
+  tables:
+  - name: "ordedetails"
+    description: "Order details capturing customer transactions, statuses, and categories,\
+      \ enabling insights into sales performance and customer behavior."
+    columns:
+    - name: "order_id"
+      description: "Unique identifier for each order placed by a customer"
+      dataType:
+        type: "Integer"
+    - name: "customer_id"
+      description: "The unique ID of the customer who placed the order"
+      dataType:
+        type: "Integer"
+    - name: "order_status"
+      description: "Current status of the order"
+      dataType:
+        type: "String"
+    - name: "order_category"
+      description: "Category of the order placed by the customer"
+      dataType:
+        type: "String"
+    - name: "order_date"
+      description: "The date when the order was placed"
+      dataType:
+        type: "Date"
+    - name: "amount"
+      description: "Total monetary value of the order"
+      dataType:
+        type: "Double"
+    - name: "_rescued_data"
+      description: "Additional data that was recovered related to the order"
+      dataType:
+        type: "String"

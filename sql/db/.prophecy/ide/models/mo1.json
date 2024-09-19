@@ -1,0 +1,1419 @@
+{
+  "id" : "mo1",
+  "metainfo" : {
+    "label" : "mo1",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ {
+        "source" : {
+          "table" : {
+            "name" : "k1",
+            "sourceName" : "hive_metastore.upload_latest",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "k1",
+        "canJoinWith" : [ {
+          "processLabel" : "ordedetails",
+          "processId" : "qpwi6jCVelyN3Pjy3Ie_S",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "_rescued_data" ],
+            "conditions" : [ {
+              "alias" : "k1",
+              "expression" : {
+                "expression" : "k1._rescued_data = ordedetails._rescued_data"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "k1.c_short"
+              },
+              "alias" : "c_short"
+            }, {
+              "expression" : {
+                "expression" : "k1.c_int"
+              },
+              "alias" : "c_int"
+            }, {
+              "expression" : {
+                "expression" : "k1.c_long"
+              },
+              "alias" : "c_long"
+            }, {
+              "expression" : {
+                "expression" : "k1.c_decimal"
+              },
+              "alias" : "c_decimal"
+            }, {
+              "expression" : {
+                "expression" : "k1.c_float"
+              },
+              "alias" : "c_float"
+            }, {
+              "expression" : {
+                "expression" : "k1.c_boolean"
+              },
+              "alias" : "c_boolean"
+            }, {
+              "expression" : {
+                "expression" : "k1.c_double"
+              },
+              "alias" : "c_double"
+            }, {
+              "expression" : {
+                "expression" : "k1.c_string"
+              },
+              "alias" : "c_string"
+            }, {
+              "expression" : {
+                "expression" : "k1.c_date"
+              },
+              "alias" : "c_date"
+            }, {
+              "expression" : {
+                "expression" : "k1.c_timestamp"
+              },
+              "alias" : "c_timestamp"
+            }, {
+              "expression" : {
+                "expression" : "k1.c_array_int"
+              },
+              "alias" : "c_array_int"
+            }, {
+              "expression" : {
+                "expression" : "k1.c_array_string"
+              },
+              "alias" : "c_array_string"
+            }, {
+              "expression" : {
+                "expression" : "k1.c_array_long"
+              },
+              "alias" : "c_array_long"
+            }, {
+              "expression" : {
+                "expression" : "k1.c_array_boolean"
+              },
+              "alias" : "c_array_boolean"
+            }, {
+              "expression" : {
+                "expression" : "k1.c_array_date"
+              },
+              "alias" : "c_array_date"
+            }, {
+              "expression" : {
+                "expression" : "k1.c_array_timestamp"
+              },
+              "alias" : "c_array_timestamp"
+            }, {
+              "expression" : {
+                "expression" : "k1.c_array_float"
+              },
+              "alias" : "c_array_float"
+            }, {
+              "expression" : {
+                "expression" : "k1.c_array_decimal"
+              },
+              "alias" : "c_array_decimal"
+            }, {
+              "expression" : {
+                "expression" : "k1.c_struct"
+              },
+              "alias" : "c_struct"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_status"
+              },
+              "alias" : "order_status"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.amount"
+              },
+              "alias" : "amount"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_id"
+              },
+              "alias" : "order_id"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.customer_id"
+              },
+              "alias" : "customer_id"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_category"
+              },
+              "alias" : "order_category"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails._rescued_data"
+              },
+              "alias" : "_rescued_data"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_date"
+              },
+              "alias" : "order_date"
+            } ],
+            "headAlias" : "k1",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "_rescued_data" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "mod2",
+            "sourceName" : "hive_metastore.upload_latest",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "mod2",
+        "canJoinWith" : [ {
+          "processLabel" : "ordedetails",
+          "processId" : "qpwi6jCVelyN3Pjy3Ie_S",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "_rescued_data" ],
+            "conditions" : [ {
+              "alias" : "mod2",
+              "expression" : {
+                "expression" : "mod2._rescued_data = ordedetails._rescued_data"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "mod2.c_short"
+              },
+              "alias" : "c_short"
+            }, {
+              "expression" : {
+                "expression" : "mod2.c_int"
+              },
+              "alias" : "c_int"
+            }, {
+              "expression" : {
+                "expression" : "mod2.c_long"
+              },
+              "alias" : "c_long"
+            }, {
+              "expression" : {
+                "expression" : "mod2.c_decimal"
+              },
+              "alias" : "c_decimal"
+            }, {
+              "expression" : {
+                "expression" : "mod2.c_float"
+              },
+              "alias" : "c_float"
+            }, {
+              "expression" : {
+                "expression" : "mod2.c_boolean"
+              },
+              "alias" : "c_boolean"
+            }, {
+              "expression" : {
+                "expression" : "mod2.c_double"
+              },
+              "alias" : "c_double"
+            }, {
+              "expression" : {
+                "expression" : "mod2.c_string"
+              },
+              "alias" : "c_string"
+            }, {
+              "expression" : {
+                "expression" : "mod2.c_date"
+              },
+              "alias" : "c_date"
+            }, {
+              "expression" : {
+                "expression" : "mod2.c_timestamp"
+              },
+              "alias" : "c_timestamp"
+            }, {
+              "expression" : {
+                "expression" : "mod2.c_array_int"
+              },
+              "alias" : "c_array_int"
+            }, {
+              "expression" : {
+                "expression" : "mod2.c_array_string"
+              },
+              "alias" : "c_array_string"
+            }, {
+              "expression" : {
+                "expression" : "mod2.c_array_long"
+              },
+              "alias" : "c_array_long"
+            }, {
+              "expression" : {
+                "expression" : "mod2.c_array_boolean"
+              },
+              "alias" : "c_array_boolean"
+            }, {
+              "expression" : {
+                "expression" : "mod2.c_array_date"
+              },
+              "alias" : "c_array_date"
+            }, {
+              "expression" : {
+                "expression" : "mod2.c_array_timestamp"
+              },
+              "alias" : "c_array_timestamp"
+            }, {
+              "expression" : {
+                "expression" : "mod2.c_array_float"
+              },
+              "alias" : "c_array_float"
+            }, {
+              "expression" : {
+                "expression" : "mod2.c_array_decimal"
+              },
+              "alias" : "c_array_decimal"
+            }, {
+              "expression" : {
+                "expression" : "mod2.c_struct"
+              },
+              "alias" : "c_struct"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_status"
+              },
+              "alias" : "order_status"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.amount"
+              },
+              "alias" : "amount"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_id"
+              },
+              "alias" : "order_id"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.customer_id"
+              },
+              "alias" : "customer_id"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_category"
+              },
+              "alias" : "order_category"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails._rescued_data"
+              },
+              "alias" : "_rescued_data"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_date"
+              },
+              "alias" : "order_date"
+            } ],
+            "headAlias" : "mod2",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "_rescued_data" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "newmod111",
+            "sourceName" : "hive_metastore.upload_latest",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "newmod111",
+        "canJoinWith" : [ {
+          "processLabel" : "ordedetails",
+          "processId" : "qpwi6jCVelyN3Pjy3Ie_S",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "_rescued_data" ],
+            "conditions" : [ {
+              "alias" : "newmod111",
+              "expression" : {
+                "expression" : "newmod111._rescued_data = ordedetails._rescued_data"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "newmod111.c_short"
+              },
+              "alias" : "c_short"
+            }, {
+              "expression" : {
+                "expression" : "newmod111.c_int"
+              },
+              "alias" : "c_int"
+            }, {
+              "expression" : {
+                "expression" : "newmod111.c_long"
+              },
+              "alias" : "c_long"
+            }, {
+              "expression" : {
+                "expression" : "newmod111.c_decimal"
+              },
+              "alias" : "c_decimal"
+            }, {
+              "expression" : {
+                "expression" : "newmod111.c_float"
+              },
+              "alias" : "c_float"
+            }, {
+              "expression" : {
+                "expression" : "newmod111.c_boolean"
+              },
+              "alias" : "c_boolean"
+            }, {
+              "expression" : {
+                "expression" : "newmod111.c_double"
+              },
+              "alias" : "c_double"
+            }, {
+              "expression" : {
+                "expression" : "newmod111.c_string"
+              },
+              "alias" : "c_string"
+            }, {
+              "expression" : {
+                "expression" : "newmod111.c_date"
+              },
+              "alias" : "c_date"
+            }, {
+              "expression" : {
+                "expression" : "newmod111.c_timestamp"
+              },
+              "alias" : "c_timestamp"
+            }, {
+              "expression" : {
+                "expression" : "newmod111.c_array_int"
+              },
+              "alias" : "c_array_int"
+            }, {
+              "expression" : {
+                "expression" : "newmod111.c_array_string"
+              },
+              "alias" : "c_array_string"
+            }, {
+              "expression" : {
+                "expression" : "newmod111.c_array_long"
+              },
+              "alias" : "c_array_long"
+            }, {
+              "expression" : {
+                "expression" : "newmod111.c_array_boolean"
+              },
+              "alias" : "c_array_boolean"
+            }, {
+              "expression" : {
+                "expression" : "newmod111.c_array_date"
+              },
+              "alias" : "c_array_date"
+            }, {
+              "expression" : {
+                "expression" : "newmod111.c_array_timestamp"
+              },
+              "alias" : "c_array_timestamp"
+            }, {
+              "expression" : {
+                "expression" : "newmod111.c_array_float"
+              },
+              "alias" : "c_array_float"
+            }, {
+              "expression" : {
+                "expression" : "newmod111.c_array_decimal"
+              },
+              "alias" : "c_array_decimal"
+            }, {
+              "expression" : {
+                "expression" : "newmod111.c_struct"
+              },
+              "alias" : "c_struct"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_status"
+              },
+              "alias" : "order_status"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.amount"
+              },
+              "alias" : "amount"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_id"
+              },
+              "alias" : "order_id"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.customer_id"
+              },
+              "alias" : "customer_id"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_category"
+              },
+              "alias" : "order_category"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails._rescued_data"
+              },
+              "alias" : "_rescued_data"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_date"
+              },
+              "alias" : "order_date"
+            } ],
+            "headAlias" : "newmod111",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "_rescued_data" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "overr",
+            "sourceName" : "hive_metastore.upload_latest",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "overr",
+        "canJoinWith" : [ {
+          "processLabel" : "ordedetails",
+          "processId" : "qpwi6jCVelyN3Pjy3Ie_S",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "customer_id", "order_id", "_rescued_data" ],
+            "conditions" : [ {
+              "alias" : "overr",
+              "expression" : {
+                "expression" : "overr._rescued_data = ordedetails._rescued_data AND overr.customer_id = ordedetails.customer_id AND overr.order_id = ordedetails.order_id"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "ordedetails.order_status"
+              },
+              "alias" : "order_status"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.amount"
+              },
+              "alias" : "amount"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_id"
+              },
+              "alias" : "order_id"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.customer_id"
+              },
+              "alias" : "customer_id"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_category"
+              },
+              "alias" : "order_category"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails._rescued_data"
+              },
+              "alias" : "_rescued_data"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_date"
+              },
+              "alias" : "order_date"
+            } ],
+            "headAlias" : "overr",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "customer_id", "order_id", "_rescued_data" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "simple_subgraph",
+            "sourceName" : "hive_metastore.upload_latest",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "simple_subgraph",
+        "canJoinWith" : [ {
+          "processLabel" : "ordedetails",
+          "processId" : "qpwi6jCVelyN3Pjy3Ie_S",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "_rescued_data" ],
+            "conditions" : [ {
+              "alias" : "simple_subgraph",
+              "expression" : {
+                "expression" : "simple_subgraph._rescued_data = ordedetails._rescued_data"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "simple_subgraph.Segment"
+              },
+              "alias" : "Segment"
+            }, {
+              "expression" : {
+                "expression" : "simple_subgraph.Country"
+              },
+              "alias" : "Country"
+            }, {
+              "expression" : {
+                "expression" : "simple_subgraph.Product"
+              },
+              "alias" : "Product"
+            }, {
+              "expression" : {
+                "expression" : "simple_subgraph.Discount_Band"
+              },
+              "alias" : "Discount_Band"
+            }, {
+              "expression" : {
+                "expression" : "simple_subgraph.Units_Sold"
+              },
+              "alias" : "Units_Sold"
+            }, {
+              "expression" : {
+                "expression" : "simple_subgraph.Manufacturing_Price"
+              },
+              "alias" : "Manufacturing_Price"
+            }, {
+              "expression" : {
+                "expression" : "simple_subgraph.Sale_Price"
+              },
+              "alias" : "Sale_Price"
+            }, {
+              "expression" : {
+                "expression" : "simple_subgraph.Gross_Sales"
+              },
+              "alias" : "Gross_Sales"
+            }, {
+              "expression" : {
+                "expression" : "simple_subgraph.Discounts"
+              },
+              "alias" : "Discounts"
+            }, {
+              "expression" : {
+                "expression" : "simple_subgraph.Sales"
+              },
+              "alias" : "Sales"
+            }, {
+              "expression" : {
+                "expression" : "simple_subgraph.COGS"
+              },
+              "alias" : "COGS"
+            }, {
+              "expression" : {
+                "expression" : "simple_subgraph.Profit"
+              },
+              "alias" : "Profit"
+            }, {
+              "expression" : {
+                "expression" : "simple_subgraph.Date"
+              },
+              "alias" : "Date"
+            }, {
+              "expression" : {
+                "expression" : "simple_subgraph.Month_Number"
+              },
+              "alias" : "Month_Number"
+            }, {
+              "expression" : {
+                "expression" : "simple_subgraph.Month_Name"
+              },
+              "alias" : "Month_Name"
+            }, {
+              "expression" : {
+                "expression" : "simple_subgraph.Year"
+              },
+              "alias" : "Year"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_status"
+              },
+              "alias" : "order_status"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.amount"
+              },
+              "alias" : "amount"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_id"
+              },
+              "alias" : "order_id"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.customer_id"
+              },
+              "alias" : "customer_id"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_category"
+              },
+              "alias" : "order_category"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails._rescued_data"
+              },
+              "alias" : "_rescued_data"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_date"
+              },
+              "alias" : "order_date"
+            } ],
+            "headAlias" : "simple_subgraph",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "_rescued_data" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "append_1",
+            "sourceName" : "hive_metastore.upload_latest",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "append_1",
+        "canJoinWith" : [ {
+          "processLabel" : "ordedetails",
+          "processId" : "qpwi6jCVelyN3Pjy3Ie_S",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "_rescued_data" ],
+            "conditions" : [ {
+              "alias" : "append_1",
+              "expression" : {
+                "expression" : "append_1._rescued_data = ordedetails._rescued_data"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "append_1.c_short"
+              },
+              "alias" : "c_short"
+            }, {
+              "expression" : {
+                "expression" : "append_1.c_int"
+              },
+              "alias" : "c_int"
+            }, {
+              "expression" : {
+                "expression" : "append_1.c_long"
+              },
+              "alias" : "c_long"
+            }, {
+              "expression" : {
+                "expression" : "append_1.c_decimal"
+              },
+              "alias" : "c_decimal"
+            }, {
+              "expression" : {
+                "expression" : "append_1.c_float"
+              },
+              "alias" : "c_float"
+            }, {
+              "expression" : {
+                "expression" : "append_1.c_boolean"
+              },
+              "alias" : "c_boolean"
+            }, {
+              "expression" : {
+                "expression" : "append_1.c_double"
+              },
+              "alias" : "c_double"
+            }, {
+              "expression" : {
+                "expression" : "append_1.c_string"
+              },
+              "alias" : "c_string"
+            }, {
+              "expression" : {
+                "expression" : "append_1.c_date"
+              },
+              "alias" : "c_date"
+            }, {
+              "expression" : {
+                "expression" : "append_1.c_timestamp"
+              },
+              "alias" : "c_timestamp"
+            }, {
+              "expression" : {
+                "expression" : "append_1.c_array_int"
+              },
+              "alias" : "c_array_int"
+            }, {
+              "expression" : {
+                "expression" : "append_1.c_array_string"
+              },
+              "alias" : "c_array_string"
+            }, {
+              "expression" : {
+                "expression" : "append_1.c_array_long"
+              },
+              "alias" : "c_array_long"
+            }, {
+              "expression" : {
+                "expression" : "append_1.c_array_boolean"
+              },
+              "alias" : "c_array_boolean"
+            }, {
+              "expression" : {
+                "expression" : "append_1.c_array_date"
+              },
+              "alias" : "c_array_date"
+            }, {
+              "expression" : {
+                "expression" : "append_1.c_array_timestamp"
+              },
+              "alias" : "c_array_timestamp"
+            }, {
+              "expression" : {
+                "expression" : "append_1.c_array_float"
+              },
+              "alias" : "c_array_float"
+            }, {
+              "expression" : {
+                "expression" : "append_1.c_array_decimal"
+              },
+              "alias" : "c_array_decimal"
+            }, {
+              "expression" : {
+                "expression" : "append_1.c_struct"
+              },
+              "alias" : "c_struct"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_status"
+              },
+              "alias" : "order_status"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.amount"
+              },
+              "alias" : "amount"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_id"
+              },
+              "alias" : "order_id"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.customer_id"
+              },
+              "alias" : "customer_id"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_category"
+              },
+              "alias" : "order_category"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails._rescued_data"
+              },
+              "alias" : "_rescued_data"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_date"
+              },
+              "alias" : "order_date"
+            } ],
+            "headAlias" : "append_1",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "_rescued_data" ],
+          "isRecommended" : false
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "jsonnew",
+            "sourceName" : "hive_metastore.upload_latest",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "jsonnew",
+        "canJoinWith" : [ {
+          "processLabel" : "ordedetails",
+          "processId" : "qpwi6jCVelyN3Pjy3Ie_S",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "_rescued_data" ],
+            "conditions" : [ {
+              "alias" : "jsonnew",
+              "expression" : {
+                "expression" : "jsonnew._rescued_data = ordedetails._rescued_data"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "jsonnew.account_flags"
+              },
+              "alias" : "account_flags"
+            }, {
+              "expression" : {
+                "expression" : "jsonnew.account_open_date"
+              },
+              "alias" : "account_open_date"
+            }, {
+              "expression" : {
+                "expression" : "jsonnew.country_code"
+              },
+              "alias" : "country_code"
+            }, {
+              "expression" : {
+                "expression" : "jsonnew.email"
+              },
+              "alias" : "email"
+            }, {
+              "expression" : {
+                "expression" : "jsonnew.first_name"
+              },
+              "alias" : "first_name"
+            }, {
+              "expression" : {
+                "expression" : "jsonnew.last_name"
+              },
+              "alias" : "last_name"
+            }, {
+              "expression" : {
+                "expression" : "jsonnew.phone"
+              },
+              "alias" : "phone"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_status"
+              },
+              "alias" : "order_status"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.amount"
+              },
+              "alias" : "amount"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_id"
+              },
+              "alias" : "order_id"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.customer_id"
+              },
+              "alias" : "customer_id"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_category"
+              },
+              "alias" : "order_category"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails._rescued_data"
+              },
+              "alias" : "_rescued_data"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_date"
+              },
+              "alias" : "order_date"
+            } ],
+            "headAlias" : "jsonnew",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "_rescued_data" ],
+          "isRecommended" : false
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "newmod",
+            "sourceName" : "hive_metastore.upload_latest",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "newmod",
+        "canJoinWith" : [ {
+          "processLabel" : "ordedetails",
+          "processId" : "qpwi6jCVelyN3Pjy3Ie_S",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "_rescued_data" ],
+            "conditions" : [ {
+              "alias" : "newmod",
+              "expression" : {
+                "expression" : "newmod._rescued_data = ordedetails._rescued_data"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "newmod.Segment"
+              },
+              "alias" : "Segment"
+            }, {
+              "expression" : {
+                "expression" : "newmod.Country"
+              },
+              "alias" : "Country"
+            }, {
+              "expression" : {
+                "expression" : "newmod.Product"
+              },
+              "alias" : "Product"
+            }, {
+              "expression" : {
+                "expression" : "newmod.Discount_Band"
+              },
+              "alias" : "Discount_Band"
+            }, {
+              "expression" : {
+                "expression" : "newmod.Units_Sold"
+              },
+              "alias" : "Units_Sold"
+            }, {
+              "expression" : {
+                "expression" : "newmod.Manufacturing_Price"
+              },
+              "alias" : "Manufacturing_Price"
+            }, {
+              "expression" : {
+                "expression" : "newmod.Sale_Price"
+              },
+              "alias" : "Sale_Price"
+            }, {
+              "expression" : {
+                "expression" : "newmod.Gross_Sales"
+              },
+              "alias" : "Gross_Sales"
+            }, {
+              "expression" : {
+                "expression" : "newmod.Discounts"
+              },
+              "alias" : "Discounts"
+            }, {
+              "expression" : {
+                "expression" : "newmod.Sales"
+              },
+              "alias" : "Sales"
+            }, {
+              "expression" : {
+                "expression" : "newmod.COGS"
+              },
+              "alias" : "COGS"
+            }, {
+              "expression" : {
+                "expression" : "newmod.Profit"
+              },
+              "alias" : "Profit"
+            }, {
+              "expression" : {
+                "expression" : "newmod.Date"
+              },
+              "alias" : "Date"
+            }, {
+              "expression" : {
+                "expression" : "newmod.Month_Number"
+              },
+              "alias" : "Month_Number"
+            }, {
+              "expression" : {
+                "expression" : "newmod.Month_Name"
+              },
+              "alias" : "Month_Name"
+            }, {
+              "expression" : {
+                "expression" : "newmod.Year"
+              },
+              "alias" : "Year"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_status"
+              },
+              "alias" : "order_status"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.amount"
+              },
+              "alias" : "amount"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_id"
+              },
+              "alias" : "order_id"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.customer_id"
+              },
+              "alias" : "customer_id"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_category"
+              },
+              "alias" : "order_category"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails._rescued_data"
+              },
+              "alias" : "_rescued_data"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_date"
+              },
+              "alias" : "order_date"
+            } ],
+            "headAlias" : "newmod",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "_rescued_data" ],
+          "isRecommended" : false
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "scd211",
+            "sourceName" : "hive_metastore.upload_latest",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "scd211",
+        "canJoinWith" : [ {
+          "processLabel" : "ordedetails",
+          "processId" : "qpwi6jCVelyN3Pjy3Ie_S",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "_rescued_data" ],
+            "conditions" : [ {
+              "alias" : "scd211",
+              "expression" : {
+                "expression" : "scd211._rescued_data = ordedetails._rescued_data"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "scd211.account_flags"
+              },
+              "alias" : "account_flags"
+            }, {
+              "expression" : {
+                "expression" : "scd211.account_open_date"
+              },
+              "alias" : "account_open_date"
+            }, {
+              "expression" : {
+                "expression" : "scd211.country_code"
+              },
+              "alias" : "country_code"
+            }, {
+              "expression" : {
+                "expression" : "scd211.email"
+              },
+              "alias" : "email"
+            }, {
+              "expression" : {
+                "expression" : "scd211.first_name"
+              },
+              "alias" : "first_name"
+            }, {
+              "expression" : {
+                "expression" : "scd211.last_name"
+              },
+              "alias" : "last_name"
+            }, {
+              "expression" : {
+                "expression" : "scd211.phone"
+              },
+              "alias" : "phone"
+            }, {
+              "expression" : {
+                "expression" : "scd211.dbt_scd_id"
+              },
+              "alias" : "dbt_scd_id"
+            }, {
+              "expression" : {
+                "expression" : "scd211.dbt_updated_at"
+              },
+              "alias" : "dbt_updated_at"
+            }, {
+              "expression" : {
+                "expression" : "scd211.dbt_valid_from"
+              },
+              "alias" : "dbt_valid_from"
+            }, {
+              "expression" : {
+                "expression" : "scd211.dbt_valid_to"
+              },
+              "alias" : "dbt_valid_to"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_status"
+              },
+              "alias" : "order_status"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.amount"
+              },
+              "alias" : "amount"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_id"
+              },
+              "alias" : "order_id"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.customer_id"
+              },
+              "alias" : "customer_id"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_category"
+              },
+              "alias" : "order_category"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails._rescued_data"
+              },
+              "alias" : "_rescued_data"
+            }, {
+              "expression" : {
+                "expression" : "ordedetails.order_date"
+              },
+              "alias" : "order_date"
+            } ],
+            "headAlias" : "scd211",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "_rescued_data" ],
+          "isRecommended" : false
+        } ]
+      } ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "mo1##h68Intjv" : {
+      "id" : "mo1##h68Intjv",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "mo1",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM ordedetails\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "TMfzgH7e",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "order_category",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "amount",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "_rescued_data",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "ordedetails"
+        } ],
+        "outputs" : [ {
+          "id" : "avwnxtGy",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "order_category",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "_rescued_data",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "qpwi6jCVelyN3Pjy3Ie_S" : {
+      "id" : "qpwi6jCVelyN3Pjy3Ie_S",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ordedetails",
+        "slug" : "ordedetails",
+        "x" : -600,
+        "y" : -180,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "ordedetails",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.upload_latest",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "b2NHOSs9RDqr8ijCB8Qpy",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "order_category",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "amount",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "_rescued_data",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "HwcCeYmCJqdadxEHc1jir",
+    "source" : "qpwi6jCVelyN3Pjy3Ie_S",
+    "sourcePort" : "b2NHOSs9RDqr8ijCB8Qpy",
+    "target" : "mo1##h68Intjv",
+    "targetPort" : "TMfzgH7e"
+  } ],
+  "component" : "Model"
+}
