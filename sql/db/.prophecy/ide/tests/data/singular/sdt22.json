@@ -1,7 +1,7 @@
 {
-  "id" : "mo1",
+  "id" : "sdt22",
   "metainfo" : {
-    "label" : "mo1",
+    "label" : "sdt22",
     "autoLayout" : false,
     "staleState" : "none",
     "sourceSuggestions" : {
@@ -10,34 +10,27 @@
     "version" : 3
   },
   "processes" : {
-    "mo1##h68Intjv" : {
-      "id" : "mo1##h68Intjv",
-      "component" : "TargetModel",
+    "sdt22##Ml7IKvrP" : {
+      "id" : "sdt22##Ml7IKvrP",
+      "component" : "TargetSingularDataTest",
       "metadata" : {
-        "label" : "mo1",
+        "label" : "sdt22",
         "x" : 20,
         "y" : 20,
         "phase" : 0,
-        "macroDependencies" : [ ],
-        "comment" : "Retrieves all details related to orders.",
-        "autoUpdateComment" : true
+        "macroDependencies" : [ ]
       },
       "properties" : {
-        "customQueryDisabled" : true,
+        "query" : "SELECT * \n\nFROM mo1\n",
         "customQuery" : false,
-        "incrementalEditorDisabled" : true,
-        "query" : "SELECT * \n\nFROM ordedetails\n",
-        "incrementalKey" : false,
-        "incremental" : {
-          "expression" : "true"
-        }
+        "customQueryDisabled" : true
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "TMfzgH7e",
+          "id" : "tTODj8iD",
           "schema" : {
             "entityType" : "",
-            "providerType" : "databricks",
+            "providerType" : "Databricks",
             "fields" : [ {
               "name" : "order_id",
               "dataType" : {
@@ -66,7 +59,7 @@
             }, {
               "name" : "amount",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             }, {
               "name" : "_rescued_data",
@@ -75,10 +68,10 @@
               }
             } ]
           },
-          "slug" : "ordedetails"
+          "slug" : "mo1"
         } ],
         "outputs" : [ {
-          "id" : "avwnxtGy",
+          "id" : "rfsGsjT4",
           "schema" : {
             "entityType" : "",
             "providerType" : "Databricks",
@@ -125,32 +118,30 @@
         "autoUpdateOnRun" : false
       }
     },
-    "qpwi6jCVelyN3Pjy3Ie_S" : {
-      "id" : "qpwi6jCVelyN3Pjy3Ie_S",
-      "component" : "Source",
+    "A1OWyvX2K8xA03Es-W6aM" : {
+      "id" : "A1OWyvX2K8xA03Es-W6aM",
+      "component" : "Model",
       "metadata" : {
-        "label" : "ordedetails",
-        "slug" : "ordedetails",
+        "label" : "mo1",
+        "slug" : "mo1",
         "x" : -600,
         "y" : -180,
         "phase" : 0
       },
       "properties" : {
         "table" : {
-          "name" : "ordedetails",
-          "sourceType" : "Source",
-          "sourceName" : "hive_metastore.upload_latest",
-          "alias" : "",
-          "additionalProperties" : null
+          "name" : "mo1",
+          "sourceType" : "Model",
+          "alias" : ""
         }
       },
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "b2NHOSs9RDqr8ijCB8Qpy",
+          "id" : "4sLUXur_2rfqs8-DAiGFJ",
           "schema" : {
             "entityType" : "",
-            "providerType" : "databricks",
+            "providerType" : "Databricks",
             "fields" : [ {
               "name" : "order_id",
               "dataType" : {
@@ -179,7 +170,7 @@
             }, {
               "name" : "amount",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             }, {
               "name" : "_rescued_data",
@@ -196,11 +187,11 @@
     }
   },
   "connections" : [ {
-    "id" : "HwcCeYmCJqdadxEHc1jir",
-    "source" : "qpwi6jCVelyN3Pjy3Ie_S",
-    "sourcePort" : "b2NHOSs9RDqr8ijCB8Qpy",
-    "target" : "mo1##h68Intjv",
-    "targetPort" : "TMfzgH7e"
+    "id" : "1GkrJpADje6zsxQEK58_T",
+    "source" : "A1OWyvX2K8xA03Es-W6aM",
+    "sourcePort" : "4sLUXur_2rfqs8-DAiGFJ",
+    "target" : "sdt22##Ml7IKvrP",
+    "targetPort" : "tTODj8iD"
   } ],
-  "component" : "Model"
+  "component" : "SingularDataTest"
 }

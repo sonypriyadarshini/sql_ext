@@ -6,7 +6,7 @@ WITH seed_check AS (
 
 )
 
-{#Retrieves all records from the seed check for review.#}
+{#Retrieves data from the seed check for review or analysis.#}
 SELECT *
 
 FROM seed_check

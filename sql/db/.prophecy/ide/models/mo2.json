@@ -1,7 +1,7 @@
 {
-  "id" : "mo1",
+  "id" : "mo2",
   "metainfo" : {
-    "label" : "mo1",
+    "label" : "mo2",
     "autoLayout" : false,
     "staleState" : "none",
     "sourceSuggestions" : {
@@ -10,11 +10,11 @@
     "version" : 3
   },
   "processes" : {
-    "mo1##h68Intjv" : {
-      "id" : "mo1##h68Intjv",
+    "mo2##KEtrxXrN" : {
+      "id" : "mo2##KEtrxXrN",
       "component" : "TargetModel",
       "metadata" : {
-        "label" : "mo1",
+        "label" : "mo2",
         "x" : 20,
         "y" : 20,
         "phase" : 0,
@@ -34,7 +34,7 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "TMfzgH7e",
+          "id" : "zoGkiwxD",
           "schema" : {
             "entityType" : "",
             "providerType" : "databricks",
@@ -78,7 +78,7 @@
           "slug" : "ordedetails"
         } ],
         "outputs" : [ {
-          "id" : "avwnxtGy",
+          "id" : "XXc6G59L",
           "schema" : {
             "entityType" : "",
             "providerType" : "Databricks",
@@ -125,14 +125,14 @@
         "autoUpdateOnRun" : false
       }
     },
-    "qpwi6jCVelyN3Pjy3Ie_S" : {
-      "id" : "qpwi6jCVelyN3Pjy3Ie_S",
+    "ANgPrEqgFySqBC887H2QO" : {
+      "id" : "ANgPrEqgFySqBC887H2QO",
       "component" : "Source",
       "metadata" : {
         "label" : "ordedetails",
         "slug" : "ordedetails",
-        "x" : -600,
-        "y" : -180,
+        "x" : -940,
+        "y" : -300,
         "phase" : 0
       },
       "properties" : {
@@ -140,14 +140,13 @@
           "name" : "ordedetails",
           "sourceType" : "Source",
           "sourceName" : "hive_metastore.upload_latest",
-          "alias" : "",
-          "additionalProperties" : null
+          "alias" : ""
         }
       },
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "b2NHOSs9RDqr8ijCB8Qpy",
+          "id" : "FdR_cCW4TBNggUjfNxRuo",
           "schema" : {
             "entityType" : "",
             "providerType" : "databricks",
@@ -196,11 +195,11 @@
     }
   },
   "connections" : [ {
-    "id" : "HwcCeYmCJqdadxEHc1jir",
-    "source" : "qpwi6jCVelyN3Pjy3Ie_S",
-    "sourcePort" : "b2NHOSs9RDqr8ijCB8Qpy",
-    "target" : "mo1##h68Intjv",
-    "targetPort" : "TMfzgH7e"
+    "id" : "F6RJM7m9A38f2DP1k04MH",
+    "source" : "ANgPrEqgFySqBC887H2QO",
+    "sourcePort" : "FdR_cCW4TBNggUjfNxRuo",
+    "target" : "mo2##KEtrxXrN",
+    "targetPort" : "zoGkiwxD"
   } ],
   "component" : "Model"
 }

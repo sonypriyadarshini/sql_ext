@@ -24,6 +24,33 @@ functions:
   businessRules: {}
 subgraphs: {}
 sqlModels:
+  .prophecy/metadata/sqlmodels/k1:
+    name: k1
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: name
+        dataType:
+          type: String
+      - name: surname
+        dataType:
+          type: String
+      - name: age
+        dataType:
+          type: Integer
+    description: null
+    author: sony@prophecy.io
+    files:
+    - models/k1.sql
+    - .prophecy/ide/models/k1.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-09-23 10:13:17'
   .prophecy/metadata/sqlmodels/mo1:
     name: mo1
     schema:
@@ -56,6 +83,7 @@ sqlModels:
     files:
     - models/mo1.sql
     - .prophecy/ide/models/mo1.json
+    - models/schema.yml
     sqlDependencies:
       models: []
       datasets: []
@@ -63,6 +91,164 @@ sqlModels:
       sources: []
       snapshots: []
     createdAt: '2024-09-19 08:58:02'
+  .prophecy/metadata/sqlmodels/repro1:
+    name: repro1
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: name
+        dataType:
+          type: String
+      - name: id
+        dataType:
+          type: Integer
+      - name: place
+        dataType:
+          type: String
+      - name: food
+        dataType:
+          type: String
+    description: null
+    author: sony@prophecy.io
+    files:
+    - models/repro1.sql
+    - .prophecy/ide/models/repro1.json
+    - models/schema.yml
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-09-20 08:44:23'
+  .prophecy/metadata/sqlmodels/newmo1_data:
+    name: newmo1_data
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: name
+        dataType:
+          type: String
+      - name: surname
+        dataType:
+          type: String
+      - name: age
+        dataType:
+          type: Integer
+    description: null
+    author: sony@prophecy.io
+    files:
+    - models/newmo1_data.sql
+    - .prophecy/ide/models/newmo1_data.json
+    - models/schema.yml
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-09-19 14:02:43'
+  .prophecy/metadata/sqlmodels/mo2:
+    name: mo2
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: order_id
+        dataType:
+          type: Integer
+      - name: customer_id
+        dataType:
+          type: Integer
+      - name: order_status
+        dataType:
+          type: String
+      - name: order_category
+        dataType:
+          type: String
+      - name: order_date
+        dataType:
+          type: Date
+      - name: amount
+        dataType:
+          type: Float
+      - name: _rescued_data
+        dataType:
+          type: String
+    description: null
+    author: sony@prophecy.io
+    files:
+    - models/mo2.sql
+    - .prophecy/ide/models/mo2.json
+    - models/schema.yml
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-09-19 14:06:38'
+  .prophecy/metadata/sqlmodels/seedview:
+    name: seedview
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: m1
+        dataType:
+          type: String
+      - name: m2
+        dataType:
+          type: String
+      - name: m3
+        dataType:
+          type: String
+      - name: m4
+        dataType:
+          type: String
+    description: null
+    author: sony@prophecy.io
+    files:
+    - models/seedview.sql
+    - .prophecy/ide/models/seedview.json
+    - models/schema.yml
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-09-20 09:25:27'
+  .prophecy/metadata/sqlmodels/mo3:
+    name: mo3
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: name
+        dataType:
+          type: String
+      - name: surname
+        dataType:
+          type: String
+      - name: age
+        dataType:
+          type: Integer
+    description: null
+    author: sony@prophecy.io
+    files:
+    - models/mo3.sql
+    - .prophecy/ide/models/mo3.json
+    - models/schema.yml
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-09-19 14:11:18'
   .prophecy/metadata/sqlmodels/seedOne:
     name: seedOne
     schema:
@@ -86,6 +272,7 @@ sqlModels:
     files:
     - models/nestedseed/seedOne.sql
     - .prophecy/ide/models/seedOne.json
+    - models/nestedseed/schema.yml
     sqlDependencies:
       models: []
       datasets: []
@@ -94,17 +281,91 @@ sqlModels:
       snapshots: []
     createdAt: '2024-09-19 09:38:09'
 sqlSnapshots: {}
-sqlTests: {}
-sqlMacros:
-  .prophecy/metadata/sqlmacros/generate_schema_name:
-    name: generate_schema_name
-    macroType: expression
+sqlTests:
+  .prophecy/metadata/sqltests/checkdatatypes:
+    name: checkdatatypes
     description: null
     author: sony@prophecy.io
     files:
-    - macros/generate_schema_name.sql
-    - .prophecy/ide/macros/generate_schema_name.json
-    createdAt: '2024-09-19 08:57:51'
+    - tests/generic/checkdatatypes.sql
+    testType: GenericDataTest
+    createdAt: '2024-09-23 08:09:03'
+  .prophecy/metadata/sqltests/new11:
+    name: new11
+    description: null
+    author: sony@prophecy.io
+    files:
+    - tests/generic/new11.sql
+    testType: GenericDataTest
+    createdAt: '2024-09-23 09:50:37'
+  .prophecy/metadata/sqltests/sdt22:
+    name: sdt22
+    description: null
+    author: sony@prophecy.io
+    files:
+    - tests/sdt22.sql
+    - .prophecy/ide/tests/data/singular/sdt22.json
+    testType: SingularDataTest
+    createdAt: '2024-09-20 09:25:27'
+  .prophecy/metadata/sqltests/testdef123:
+    name: testdef123
+    description: null
+    author: sony@prophecy.io
+    files:
+    - tests/generic/testdef123.sql
+    testType: GenericDataTest
+    createdAt: '2024-09-19 13:46:04'
+  .prophecy/metadata/sqltests/sdt111:
+    name: sdt111
+    description: null
+    author: sony@prophecy.io
+    files:
+    - tests/sdt111.sql
+    - .prophecy/ide/tests/data/singular/sdt111.json
+    testType: SingularDataTest
+    createdAt: '2024-09-19 13:18:24'
+  .prophecy/metadata/sqltests/test45:
+    name: test45
+    description: null
+    author: sony@prophecy.io
+    files:
+    - tests/generic/test45.sql
+    testType: GenericDataTest
+    createdAt: '2024-09-19 10:36:37'
+  .prophecy/metadata/sqltests/test123:
+    name: test123
+    description: null
+    author: sony@prophecy.io
+    files:
+    - tests/generic/test123.sql
+    testType: GenericDataTest
+    createdAt: '2024-09-19 13:26:06'
+  .prophecy/metadata/sqltests/www_89:
+    name: www_89
+    description: null
+    author: sony@prophecy.io
+    files:
+    - tests/generic/wewe/www_89.sql
+    testType: GenericDataTest
+    createdAt: '2024-09-23 09:08:21'
+  .prophecy/metadata/sqltests/wewewewe:
+    name: wewewewe
+    description: null
+    author: sony@prophecy.io
+    files:
+    - tests/generic/w1/eq/wewewewe.sql
+    testType: GenericDataTest
+    createdAt: '2024-09-23 08:54:50'
+  .prophecy/metadata/sqltests/seedtest:
+    name: seedtest
+    description: null
+    author: sony@prophecy.io
+    files:
+    - tests/seedtest.sql
+    - .prophecy/ide/tests/data/singular/seedtest.json
+    testType: SingularDataTest
+    createdAt: '2024-09-20 09:25:27'
+sqlMacros: {}
 sqlSeeds:
   .prophecy/metadata/sqlseeds/seed_check:
     name: seed_check
@@ -128,7 +389,51 @@ sqlSeeds:
     author: sony@prophecy.io
     files:
     - seeds/seed_check.csv
+    - models/nestedseed/schema.yml
     createdAt: '2024-09-19 09:37:06'
+  .prophecy/metadata/sqlseeds/seeddata1:
+    name: seeddata1
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: name
+        dataType:
+          type: String
+      - name: surname
+        dataType:
+          type: String
+      - name: age
+        dataType:
+          type: Integer
+    description: null
+    author: sony@prophecy.io
+    files:
+    - seeds/seeddata1.csv
+    createdAt: '2024-09-19 14:02:54'
+  .prophecy/metadata/sqlseeds/seednew:
+    name: seednew
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: m1
+        dataType:
+          type: String
+      - name: m2
+        dataType:
+          type: String
+      - name: m3
+        dataType:
+          type: String
+      - name: m4
+        dataType:
+          type: String
+    description: null
+    author: sony@prophecy.io
+    files:
+    - seeds/seednew.csv
+    createdAt: '2024-09-20 09:25:27'
 sqlSources:
   .prophecy/metadata/sqlsources/hive_metastore_upload_latest:
     name: hive_metastore.upload_latest

@@ -1,0 +1,49 @@
+---
+version: 2
+models:
+- name: "seedOne"
+  columns:
+  - name: "name"
+    tests: []
+    dataType:
+      type: "String"
+  - name: "id"
+    tests:
+    - not_null:
+        config: {}
+    dataType:
+      type: "Integer"
+  - name: "place"
+    tests:
+    - testdef123:
+        config: {}
+    dataType:
+      type: "String"
+  - name: "food"
+    tests: []
+    dataType:
+      type: "String"
+  tests:
+  - testdef123:
+      config:
+        where: "name BETWEEN CASE\n  WHEN place IS NULL\n    THEN 'dsafadsffsad'\n\
+          END AND {# valuePlaceHolder #}"
+        severity: "error"
+        store_failures: true
+        limit: 3
+      column_name: "customer_id"
+  - testdef123:
+      config:
+        where: "wq >= CASE\n  WHEN food >= lead('wqwqqw')\n    THEN 'qwwqqw'\nEND"
+      column_name: "order_category"
+  - unique:
+      config: {}
+      column_name: "place"
+  - test123:
+      config: {}
+  - test45:
+      config: {}
+seeds:
+- name: "seed_check"
+  columns: []
+sources: []

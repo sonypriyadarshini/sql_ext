@@ -1,0 +1,413 @@
+{
+  "id" : "mo3",
+  "metainfo" : {
+    "label" : "mo3",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "mo3##DrKlihD7" : {
+      "id" : "mo3##DrKlihD7",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "mo3",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "Retrieves all records from the initial dataset for analysis.",
+        "autoUpdateComment" : true
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM seeddata1\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "F4Wv9CGa",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "surname",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "age",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            } ]
+          },
+          "slug" : "seeddata1"
+        } ],
+        "outputs" : [ {
+          "id" : "dRCobkbB",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "surname",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "age",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "UYwEDXIz6jVo7kwfgOgTF" : {
+      "id" : "UYwEDXIz6jVo7kwfgOgTF",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "seeddata1",
+        "slug" : "seeddata1",
+        "x" : -600,
+        "y" : -180,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "seeddata1",
+          "sourceType" : "Seed",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "fIFNe-6RFMEyXusNcT78e",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "surname",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "age",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "xL27RgxcAnCUVxtel7GMH$$UaT4mawpHBeqGWFQ4R5AH" : {
+      "id" : "xL27RgxcAnCUVxtel7GMH$$UaT4mawpHBeqGWFQ4R5AH",
+      "component" : "Subgraph",
+      "metadata" : {
+        "label" : "Subgraph_1",
+        "slug" : "Subgraph_1",
+        "x" : -280,
+        "y" : -220,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "processes" : {
+        "siN5V715mfEatI3bOM0O_" : {
+          "id" : "siN5V715mfEatI3bOM0O_",
+          "component" : "Model",
+          "metadata" : {
+            "label" : "mo1",
+            "slug" : "mo1",
+            "x" : -660,
+            "y" : -220,
+            "phase" : 0
+          },
+          "properties" : {
+            "table" : {
+              "name" : "mo1",
+              "sourceType" : "Model",
+              "alias" : ""
+            }
+          },
+          "ports" : {
+            "inputs" : [ ],
+            "outputs" : [ {
+              "id" : "IrtoiSOfgZyCLE4pn1IJK",
+              "schema" : {
+                "entityType" : "",
+                "providerType" : "Databricks",
+                "fields" : [ {
+                  "name" : "order_id",
+                  "dataType" : {
+                    "type" : "Integer"
+                  }
+                }, {
+                  "name" : "customer_id",
+                  "dataType" : {
+                    "type" : "Integer"
+                  }
+                }, {
+                  "name" : "order_status",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "order_category",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "order_date",
+                  "dataType" : {
+                    "type" : "Date"
+                  }
+                }, {
+                  "name" : "amount",
+                  "dataType" : {
+                    "type" : "Float"
+                  }
+                }, {
+                  "name" : "_rescued_data",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                } ]
+              },
+              "slug" : "out"
+            } ],
+            "isCustomOutputSchema" : false,
+            "autoUpdateOnRun" : false
+          }
+        },
+        "3D61O8v9d6Z_7r2N986IC" : {
+          "id" : "3D61O8v9d6Z_7r2N986IC",
+          "component" : "Seed",
+          "metadata" : {
+            "label" : "seeddata1_1",
+            "slug" : "seeddata1_1",
+            "x" : -1280,
+            "y" : -400,
+            "phase" : 0
+          },
+          "properties" : {
+            "table" : {
+              "name" : "seeddata1",
+              "sourceType" : "Seed",
+              "alias" : ""
+            }
+          },
+          "ports" : {
+            "inputs" : [ ],
+            "outputs" : [ {
+              "id" : "tY2lBa4HAsdBJjnujwmgM",
+              "schema" : {
+                "entityType" : "",
+                "providerType" : "Databricks",
+                "fields" : [ {
+                  "name" : "name",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "surname",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "age",
+                  "dataType" : {
+                    "type" : "Integer"
+                  }
+                } ]
+              },
+              "slug" : "out"
+            } ],
+            "isCustomOutputSchema" : false,
+            "autoUpdateOnRun" : false
+          }
+        },
+        "Qu2pEy3rlmXZyb5gs5mRa$$tWO8tqJZ_svmcMs_LGNkq" : {
+          "id" : "Qu2pEy3rlmXZyb5gs5mRa$$tWO8tqJZ_svmcMs_LGNkq",
+          "component" : "Reformat",
+          "metadata" : {
+            "label" : "Reformat_1",
+            "slug" : "Reformat_1",
+            "x" : -1140,
+            "y" : -400,
+            "phase" : 0,
+            "macroDependencies" : [ ]
+          },
+          "properties" : {
+            "columnsSelector" : [ ],
+            "expressions" : [ ]
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "0Hg3ARGKoI3wloEWOTIlS$$AX35ddYPrA6qTkkKfVjA_",
+              "schema" : {
+                "entityType" : "",
+                "providerType" : "Databricks",
+                "fields" : [ {
+                  "name" : "name",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "surname",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "age",
+                  "dataType" : {
+                    "type" : "Integer"
+                  }
+                } ]
+              },
+              "slug" : "in0"
+            } ],
+            "outputs" : [ {
+              "id" : "Nsg_STT1U18YCD211JizG$$mBAQa5gmGdJ61werxYfW_",
+              "schema" : {
+                "entityType" : "",
+                "providerType" : "Databricks",
+                "fields" : [ {
+                  "name" : "name",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "surname",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "age",
+                  "dataType" : {
+                    "type" : "Integer"
+                  }
+                } ]
+              },
+              "slug" : "out"
+            } ],
+            "isCustomOutputSchema" : false,
+            "autoUpdateOnRun" : false
+          }
+        }
+      },
+      "connections" : [ {
+        "id" : "t8f1BNmypI52cWfctuym1",
+        "source" : "xL27RgxcAnCUVxtel7GMH$$UaT4mawpHBeqGWFQ4R5AH",
+        "sourcePort" : "0vFB4NI-bAFBOIgtCiknY$$u196Oi_1e9iR33ORW55gV",
+        "target" : "Qu2pEy3rlmXZyb5gs5mRa$$tWO8tqJZ_svmcMs_LGNkq",
+        "targetPort" : "0Hg3ARGKoI3wloEWOTIlS$$AX35ddYPrA6qTkkKfVjA_"
+      }, {
+        "id" : "vytGUIfFKrv1Q1gDOv37P",
+        "source" : "Qu2pEy3rlmXZyb5gs5mRa$$tWO8tqJZ_svmcMs_LGNkq",
+        "sourcePort" : "Nsg_STT1U18YCD211JizG$$mBAQa5gmGdJ61werxYfW_",
+        "target" : "xL27RgxcAnCUVxtel7GMH$$UaT4mawpHBeqGWFQ4R5AH",
+        "targetPort" : "fEvC7phcwVKfuHyMdKl5N$$AUBL8lq1tUs2yKKRMrq_T"
+      } ],
+      "ports" : {
+        "inputs" : [ {
+          "id" : "0vFB4NI-bAFBOIgtCiknY$$u196Oi_1e9iR33ORW55gV",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "surname",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "age",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            } ]
+          },
+          "slug" : "seeddata1"
+        } ],
+        "outputs" : [ {
+          "id" : "fEvC7phcwVKfuHyMdKl5N$$AUBL8lq1tUs2yKKRMrq_T",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "surname",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "age",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { },
+      "canonical" : false
+    }
+  },
+  "connections" : [ {
+    "id" : "PjQAa2c2EWy18Y6gOfi1x",
+    "source" : "UYwEDXIz6jVo7kwfgOgTF",
+    "sourcePort" : "fIFNe-6RFMEyXusNcT78e",
+    "target" : "mo3##DrKlihD7",
+    "targetPort" : "F4Wv9CGa"
+  }, {
+    "id" : "iRSY2l9vQOhBqXin7OLmL",
+    "source" : "UYwEDXIz6jVo7kwfgOgTF",
+    "sourcePort" : "fIFNe-6RFMEyXusNcT78e",
+    "target" : "xL27RgxcAnCUVxtel7GMH$$UaT4mawpHBeqGWFQ4R5AH",
+    "targetPort" : "0vFB4NI-bAFBOIgtCiknY$$u196Oi_1e9iR33ORW55gV"
+  } ],
+  "component" : "Model"
+}

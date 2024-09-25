@@ -1,7 +1,7 @@
 {
-  "id" : "seedOne",
+  "id" : "sdt111",
   "metainfo" : {
-    "label" : "seedOne",
+    "label" : "sdt111",
     "autoLayout" : false,
     "staleState" : "none",
     "sourceSuggestions" : {
@@ -10,31 +10,24 @@
     "version" : 3
   },
   "processes" : {
-    "seedOne##dZhtjEZ2" : {
-      "id" : "seedOne##dZhtjEZ2",
-      "component" : "TargetModel",
+    "sdt111##GIQl71mg" : {
+      "id" : "sdt111##GIQl71mg",
+      "component" : "TargetSingularDataTest",
       "metadata" : {
-        "label" : "seedOne",
+        "label" : "sdt111",
         "x" : 20,
         "y" : 20,
         "phase" : 0,
-        "macroDependencies" : [ ],
-        "comment" : "Retrieves all records from the seed check for review.",
-        "autoUpdateComment" : true
+        "macroDependencies" : [ ]
       },
       "properties" : {
-        "customQueryDisabled" : true,
+        "query" : "SELECT * \n\nFROM seedOne\n",
         "customQuery" : false,
-        "incrementalEditorDisabled" : true,
-        "query" : "SELECT * \n\nFROM seed_check\n",
-        "incrementalKey" : false,
-        "incremental" : {
-          "expression" : "true"
-        }
+        "customQueryDisabled" : true
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "FhwFmjE3",
+          "id" : "SAwdTgwJ",
           "schema" : {
             "entityType" : "",
             "providerType" : "Databricks",
@@ -60,10 +53,10 @@
               }
             } ]
           },
-          "slug" : "seed_check"
+          "slug" : "seedOne"
         } ],
         "outputs" : [ {
-          "id" : "BLK5hf4e",
+          "id" : "t5EN8O0H",
           "schema" : {
             "entityType" : "",
             "providerType" : "Databricks",
@@ -95,27 +88,27 @@
         "autoUpdateOnRun" : false
       }
     },
-    "FkTYR1tkKz4em8Xc7pVvl" : {
-      "id" : "FkTYR1tkKz4em8Xc7pVvl",
-      "component" : "Seed",
+    "uVAEwAgDV_7Je80MHLsAv" : {
+      "id" : "uVAEwAgDV_7Je80MHLsAv",
+      "component" : "Snapshot",
       "metadata" : {
-        "label" : "seed_check",
-        "slug" : "seed_check",
+        "label" : "seedOne",
+        "slug" : "seedOne",
         "x" : -600,
-        "y" : -80,
+        "y" : -180,
         "phase" : 0
       },
       "properties" : {
         "table" : {
-          "name" : "seed_check",
-          "sourceType" : "Seed",
+          "name" : "seedOne",
+          "sourceType" : "Snapshot",
           "alias" : ""
         }
       },
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "TWTzpjKJTCLZqpbXRGK7z",
+          "id" : "oexS-4F_ddJRsGnf_dWAQ",
           "schema" : {
             "entityType" : "",
             "providerType" : "Databricks",
@@ -149,11 +142,11 @@
     }
   },
   "connections" : [ {
-    "id" : "lTlw4HZAmx7lj_mtpJrhc",
-    "source" : "FkTYR1tkKz4em8Xc7pVvl",
-    "sourcePort" : "TWTzpjKJTCLZqpbXRGK7z",
-    "target" : "seedOne##dZhtjEZ2",
-    "targetPort" : "FhwFmjE3"
+    "id" : "SAy4ZmiuCdvH-D7NGSz8a",
+    "source" : "uVAEwAgDV_7Je80MHLsAv",
+    "sourcePort" : "oexS-4F_ddJRsGnf_dWAQ",
+    "target" : "sdt111##GIQl71mg",
+    "targetPort" : "SAwdTgwJ"
   } ],
-  "component" : "Model"
+  "component" : "SingularDataTest"
 }

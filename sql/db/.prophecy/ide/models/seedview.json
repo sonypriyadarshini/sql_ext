@@ -1,7 +1,7 @@
 {
-  "id" : "seedOne",
+  "id" : "seedview",
   "metainfo" : {
-    "label" : "seedOne",
+    "label" : "seedview",
     "autoLayout" : false,
     "staleState" : "none",
     "sourceSuggestions" : {
@@ -10,23 +10,23 @@
     "version" : 3
   },
   "processes" : {
-    "seedOne##dZhtjEZ2" : {
-      "id" : "seedOne##dZhtjEZ2",
+    "seedview##MjHyA0ry" : {
+      "id" : "seedview##MjHyA0ry",
       "component" : "TargetModel",
       "metadata" : {
-        "label" : "seedOne",
+        "label" : "seedview",
         "x" : 20,
         "y" : 20,
         "phase" : 0,
         "macroDependencies" : [ ],
-        "comment" : "Retrieves all records from the seed check for review.",
+        "comment" : "Retrieves all records from the seednew dataset for further analysis.",
         "autoUpdateComment" : true
       },
       "properties" : {
-        "customQueryDisabled" : true,
-        "customQuery" : false,
+        "customQueryDisabled" : false,
+        "customQuery" : true,
         "incrementalEditorDisabled" : true,
-        "query" : "SELECT * \n\nFROM seed_check\n",
+        "query" : "SELECT * \n\nFROM seednew\n",
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -34,56 +34,56 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "FhwFmjE3",
+          "id" : "A233gsVd",
           "schema" : {
             "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
-              "name" : "name",
+              "name" : "m1",
               "dataType" : {
                 "type" : "String"
               }
             }, {
-              "name" : "id",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "place",
+              "name" : "m2",
               "dataType" : {
                 "type" : "String"
               }
             }, {
-              "name" : "food",
+              "name" : "m3",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "m4",
               "dataType" : {
                 "type" : "String"
               }
             } ]
           },
-          "slug" : "seed_check"
+          "slug" : "seednew"
         } ],
         "outputs" : [ {
-          "id" : "BLK5hf4e",
+          "id" : "LtlIQpaF",
           "schema" : {
             "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
-              "name" : "name",
+              "name" : "m1",
               "dataType" : {
                 "type" : "String"
               }
             }, {
-              "name" : "id",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "place",
+              "name" : "m2",
               "dataType" : {
                 "type" : "String"
               }
             }, {
-              "name" : "food",
+              "name" : "m3",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "m4",
               "dataType" : {
                 "type" : "String"
               }
@@ -95,19 +95,19 @@
         "autoUpdateOnRun" : false
       }
     },
-    "FkTYR1tkKz4em8Xc7pVvl" : {
-      "id" : "FkTYR1tkKz4em8Xc7pVvl",
+    "BBWGXmarYnCLiz7GEd4L1" : {
+      "id" : "BBWGXmarYnCLiz7GEd4L1",
       "component" : "Seed",
       "metadata" : {
-        "label" : "seed_check",
-        "slug" : "seed_check",
+        "label" : "seednew",
+        "slug" : "seednew",
         "x" : -600,
-        "y" : -80,
+        "y" : -180,
         "phase" : 0
       },
       "properties" : {
         "table" : {
-          "name" : "seed_check",
+          "name" : "seednew",
           "sourceType" : "Seed",
           "alias" : ""
         }
@@ -115,27 +115,27 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "TWTzpjKJTCLZqpbXRGK7z",
+          "id" : "OttGwL8lr_Q72yK4Ju2IH",
           "schema" : {
             "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
-              "name" : "name",
+              "name" : "m1",
               "dataType" : {
                 "type" : "String"
               }
             }, {
-              "name" : "id",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "place",
+              "name" : "m2",
               "dataType" : {
                 "type" : "String"
               }
             }, {
-              "name" : "food",
+              "name" : "m3",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "m4",
               "dataType" : {
                 "type" : "String"
               }
@@ -149,11 +149,11 @@
     }
   },
   "connections" : [ {
-    "id" : "lTlw4HZAmx7lj_mtpJrhc",
-    "source" : "FkTYR1tkKz4em8Xc7pVvl",
-    "sourcePort" : "TWTzpjKJTCLZqpbXRGK7z",
-    "target" : "seedOne##dZhtjEZ2",
-    "targetPort" : "FhwFmjE3"
+    "id" : "HrdFbH2BzG7X88BI7cpHN",
+    "source" : "BBWGXmarYnCLiz7GEd4L1",
+    "sourcePort" : "OttGwL8lr_Q72yK4Ju2IH",
+    "target" : "seedview##MjHyA0ry",
+    "targetPort" : "A233gsVd"
   } ],
   "component" : "Model"
 }

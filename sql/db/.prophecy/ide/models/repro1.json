@@ -1,7 +1,7 @@
 {
-  "id" : "seedOne",
+  "id" : "repro1",
   "metainfo" : {
-    "label" : "seedOne",
+    "label" : "repro1",
     "autoLayout" : false,
     "staleState" : "none",
     "sourceSuggestions" : {
@@ -10,16 +10,16 @@
     "version" : 3
   },
   "processes" : {
-    "seedOne##dZhtjEZ2" : {
-      "id" : "seedOne##dZhtjEZ2",
+    "repro1##TSPPz582" : {
+      "id" : "repro1##TSPPz582",
       "component" : "TargetModel",
       "metadata" : {
-        "label" : "seedOne",
+        "label" : "repro1",
         "x" : 20,
         "y" : 20,
         "phase" : 0,
         "macroDependencies" : [ ],
-        "comment" : "Retrieves all records from the seed check for review.",
+        "comment" : "Retrieves data from the seed check for review or analysis.",
         "autoUpdateComment" : true
       },
       "properties" : {
@@ -34,7 +34,7 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "FhwFmjE3",
+          "id" : "PEkoUbkg",
           "schema" : {
             "entityType" : "",
             "providerType" : "Databricks",
@@ -63,7 +63,7 @@
           "slug" : "seed_check"
         } ],
         "outputs" : [ {
-          "id" : "BLK5hf4e",
+          "id" : "gMIxDY3l",
           "schema" : {
             "entityType" : "",
             "providerType" : "Databricks",
@@ -95,14 +95,14 @@
         "autoUpdateOnRun" : false
       }
     },
-    "FkTYR1tkKz4em8Xc7pVvl" : {
-      "id" : "FkTYR1tkKz4em8Xc7pVvl",
+    "OnnSj-frcP_MVJbkS1tRX" : {
+      "id" : "OnnSj-frcP_MVJbkS1tRX",
       "component" : "Seed",
       "metadata" : {
         "label" : "seed_check",
         "slug" : "seed_check",
         "x" : -600,
-        "y" : -80,
+        "y" : -180,
         "phase" : 0
       },
       "properties" : {
@@ -115,7 +115,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "TWTzpjKJTCLZqpbXRGK7z",
+          "id" : "ftVkXL3f0Z9-BV2ux_1km",
           "schema" : {
             "entityType" : "",
             "providerType" : "Databricks",
@@ -149,11 +149,11 @@
     }
   },
   "connections" : [ {
-    "id" : "lTlw4HZAmx7lj_mtpJrhc",
-    "source" : "FkTYR1tkKz4em8Xc7pVvl",
-    "sourcePort" : "TWTzpjKJTCLZqpbXRGK7z",
-    "target" : "seedOne##dZhtjEZ2",
-    "targetPort" : "FhwFmjE3"
+    "id" : "YF6j8YB3f4uT0WmOfYYEG",
+    "source" : "OnnSj-frcP_MVJbkS1tRX",
+    "sourcePort" : "ftVkXL3f0Z9-BV2ux_1km",
+    "target" : "repro1##TSPPz582",
+    "targetPort" : "PEkoUbkg"
   } ],
   "component" : "Model"
 }

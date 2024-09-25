@@ -1,7 +1,7 @@
 {
-  "id" : "seedOne",
+  "id" : "newmo1_data",
   "metainfo" : {
-    "label" : "seedOne",
+    "label" : "newmo1_data",
     "autoLayout" : false,
     "staleState" : "none",
     "sourceSuggestions" : {
@@ -10,23 +10,23 @@
     "version" : 3
   },
   "processes" : {
-    "seedOne##dZhtjEZ2" : {
-      "id" : "seedOne##dZhtjEZ2",
+    "newmo1_data##yX0RFFkE" : {
+      "id" : "newmo1_data##yX0RFFkE",
       "component" : "TargetModel",
       "metadata" : {
-        "label" : "seedOne",
+        "label" : "newmo1_data",
         "x" : 20,
         "y" : 20,
         "phase" : 0,
         "macroDependencies" : [ ],
-        "comment" : "Retrieves all records from the seed check for review.",
+        "comment" : "Retrieves all records from the initial seed data for analysis.",
         "autoUpdateComment" : true
       },
       "properties" : {
         "customQueryDisabled" : true,
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
-        "query" : "SELECT * \n\nFROM seed_check\n",
+        "query" : "SELECT * \n\nFROM seeddata1\n",
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -34,7 +34,7 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "FhwFmjE3",
+          "id" : "Z6OPsb7X",
           "schema" : {
             "entityType" : "",
             "providerType" : "Databricks",
@@ -44,26 +44,21 @@
                 "type" : "String"
               }
             }, {
-              "name" : "id",
+              "name" : "surname",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "age",
               "dataType" : {
                 "type" : "Integer"
-              }
-            }, {
-              "name" : "place",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "food",
-              "dataType" : {
-                "type" : "String"
               }
             } ]
           },
-          "slug" : "seed_check"
+          "slug" : "seeddata1"
         } ],
         "outputs" : [ {
-          "id" : "BLK5hf4e",
+          "id" : "j0zuracv",
           "schema" : {
             "entityType" : "",
             "providerType" : "Databricks",
@@ -73,19 +68,14 @@
                 "type" : "String"
               }
             }, {
-              "name" : "id",
+              "name" : "surname",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "age",
               "dataType" : {
                 "type" : "Integer"
-              }
-            }, {
-              "name" : "place",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "food",
-              "dataType" : {
-                "type" : "String"
               }
             } ]
           },
@@ -95,19 +85,19 @@
         "autoUpdateOnRun" : false
       }
     },
-    "FkTYR1tkKz4em8Xc7pVvl" : {
-      "id" : "FkTYR1tkKz4em8Xc7pVvl",
+    "kv6C6nNVwbNh3wK3IiLFM" : {
+      "id" : "kv6C6nNVwbNh3wK3IiLFM",
       "component" : "Seed",
       "metadata" : {
-        "label" : "seed_check",
-        "slug" : "seed_check",
+        "label" : "seeddata1",
+        "slug" : "seeddata1",
         "x" : -600,
-        "y" : -80,
+        "y" : -180,
         "phase" : 0
       },
       "properties" : {
         "table" : {
-          "name" : "seed_check",
+          "name" : "seeddata1",
           "sourceType" : "Seed",
           "alias" : ""
         }
@@ -115,7 +105,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "TWTzpjKJTCLZqpbXRGK7z",
+          "id" : "e2EEsWMzE3z30qmyWO9qS",
           "schema" : {
             "entityType" : "",
             "providerType" : "Databricks",
@@ -125,19 +115,14 @@
                 "type" : "String"
               }
             }, {
-              "name" : "id",
+              "name" : "surname",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "age",
               "dataType" : {
                 "type" : "Integer"
-              }
-            }, {
-              "name" : "place",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "food",
-              "dataType" : {
-                "type" : "String"
               }
             } ]
           },
@@ -149,11 +134,11 @@
     }
   },
   "connections" : [ {
-    "id" : "lTlw4HZAmx7lj_mtpJrhc",
-    "source" : "FkTYR1tkKz4em8Xc7pVvl",
-    "sourcePort" : "TWTzpjKJTCLZqpbXRGK7z",
-    "target" : "seedOne##dZhtjEZ2",
-    "targetPort" : "FhwFmjE3"
+    "id" : "afCpkUHqNg6DWmJ0LbL85",
+    "source" : "kv6C6nNVwbNh3wK3IiLFM",
+    "sourcePort" : "e2EEsWMzE3z30qmyWO9qS",
+    "target" : "newmo1_data##yX0RFFkE",
+    "targetPort" : "Z6OPsb7X"
   } ],
   "component" : "Model"
 }

@@ -1,0 +1,182 @@
+---
+version: 2
+models:
+- name: "newmo1_data"
+  columns: []
+  tests:
+  - unique:
+      config: {}
+      column_name: "name"
+- name: "mo2"
+  columns:
+  - name: "name"
+    tests: []
+    dataType:
+      type: "String"
+  - name: "surname"
+    tests: []
+    dataType:
+      type: "String"
+  - name: "age"
+    tests: []
+    dataType:
+      type: "Integer"
+  tests:
+  - accepted_values:
+      config: {}
+      column_name: "m3"
+      values:
+      - "ewewewewew"
+      - "weewew"
+      - "wedewefwefwef"
+      - "!@#$%^&*()"
+  - unique:
+      config: {}
+      column_name: "surname"
+  - testdef123:
+      config:
+        where: "ai_generate_text(customer_id, order_status) IS NULL"
+        severity: "warn"
+        store_failures: true
+        limit: 2
+      column_name: "order_category"
+  - wewewewe:
+      config:
+        where: "CASE\n  WHEN (\n    SELECT MAX(order_category)\n    \n    FROM \"\
+          \ ~ this ~ \"\n   ) <= order_date\n    THEN array_intersect(22, (\n    \
+          \  SELECT MAX(amount)\n      \n      FROM \" ~ this ~ \"\n     ))\nEND =\
+          \ CASE\n  WHEN schema_of_csv(array_except(amount, 21212)) BETWEEN amount\
+          \ AND order_date\n    THEN amount\nEND\nOR CASE\n     WHEN array_distinct()\n\
+          \       THEN {# valuePlaceHolder #}\n   END"
+      column_name: "age"
+      num: "'7h'"
+  - relationships:
+      config: {}
+      to: "mo2"
+      field: "name"
+      column_name: "order_status"
+  - unique:
+      config: {}
+  - not_null:
+      config: {}
+- name: "mo3"
+  columns:
+  - name: "name"
+    tests: []
+    dataType:
+      type: "String"
+  - name: "surname"
+    tests:
+    - relationships:
+        config: {}
+    dataType:
+      type: "String"
+  - name: "age"
+    tests: []
+    dataType:
+      type: "Integer"
+  tests:
+  - relationships:
+      config: {}
+      column_name: "customer_id"
+      to: "ref('mo3')"
+      field: "surname"
+  - unique:
+      config: {}
+      column_name: "customer_id"
+- name: "mo1"
+  columns:
+  - name: "order_id"
+    dataType:
+      type: "Integer"
+  - name: "customer_id"
+    dataType:
+      type: "Integer"
+  - name: "order_status"
+    tests:
+    - www_89:
+        config: {}
+        column_name: "order_status"
+        num1: "21"
+    dataType:
+      type: "String"
+  - name: "order_category"
+    tests:
+    - www_89:
+        config:
+          fail_calc: ""
+          error_if: " BETWEEN CASE\n  WHEN order_date >= amount\n    THEN order_date\n\
+            END AND {# valuePlaceHolder #}"
+          warn_if: "count() BETWEEN {# valuePlaceHolder #} AND {# valuePlaceHolder\
+            \ #}"
+        column_name: "order_category"
+        num1: "2222"
+    dataType:
+      type: "String"
+  - name: "order_date"
+    dataType:
+      type: "Date"
+  - name: "amount"
+    dataType:
+      type: "Float"
+  - name: "_rescued_data"
+    dataType:
+      type: "String"
+  tests:
+  - not_null:
+      config:
+        error_if: "\"\\\"count()\\\" != {# valuePlaceHolder #}\" BETWEEN {# valuePlaceHolder\
+          \ #} AND {# valuePlaceHolder #}"
+      column_name: "order_id"
+  - checkdatatypes:
+      config: {}
+      valu1: "'ewewewe we we we ew'"
+      column_name: "place"
+      col1: ""
+  - wewewewe:
+      config:
+        error_if: "\"\\\"\\\"count()\\\" < {# valuePlaceHolder #}\\\" < {# valuePlaceHolder\
+          \ #}\" != {# valuePlaceHolder #}"
+        where: "avg()"
+      column_name: "name"
+      num: "2"
+  - wewewewe:
+      config: {}
+      num: "72"
+      column_name: "surname"
+- name: "repro1"
+  columns:
+  - name: "name"
+    dataType:
+      type: "String"
+  - name: "id"
+    dataType:
+      type: "Integer"
+  - name: "place"
+    dataType:
+      type: "String"
+  - name: "food"
+    dataType:
+      type: "String"
+  tests:
+  - not_null:
+      config: {}
+      column_name: "id"
+- name: "seedview"
+  columns:
+  - name: "m1"
+    dataType:
+      type: "String"
+  - name: "m2"
+    dataType:
+      type: "String"
+  - name: "m3"
+    tests:
+    - not_null:
+        config: {}
+    dataType:
+      type: "String"
+  - name: "m4"
+    dataType:
+      type: "String"
+sources: []

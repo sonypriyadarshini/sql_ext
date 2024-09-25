@@ -1835,13 +1835,17 @@
     "prophecyProjectDependencies" : { }
   },
   "entitiesToSync" : [ {
-    "name" : "mo1",
+    "name" : "k1",
     "type" : "Model",
     "syncedOnce" : false
   }, {
-    "name" : "seedOne",
+    "name" : "mo2",
     "type" : "Model",
-    "syncedOnce" : false
+    "syncedOnce" : true
+  }, {
+    "name" : "newmo1_data",
+    "type" : "Model",
+    "syncedOnce" : true
   } ],
   "frontEndLanguage" : "sql"
 }
