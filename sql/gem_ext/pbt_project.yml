@@ -1,0 +1,160 @@
+name: sql_gem_ext
+description: ''
+version: 0.0.1
+author: sony@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs:
+  jobs/gem_db:
+    name: gem_db
+    description: ''
+    fabricUID: 11647
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: prophecy_internal_jobs
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: true
+    createdAt: '2024-10-02 09:02:30'
+    author: sony@prophecy.io
+    models:
+    - 51915/.prophecy/metadata/sqlmodels/run_mod
+    sqlProjects: []
+  jobs/gem_air:
+    name: gem_air
+    description: ''
+    fabricUID: 5313
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Multi: {}
+      clusterId: null
+    enabled: true
+    createdAt: '2024-10-02 09:03:42'
+    author: sony@prophecy.io
+    models: []
+    sqlProjects:
+    - '51915'
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2024-10-02 08:59:18'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/run_mod:
+    name: run_mod
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: id
+        dataType:
+          type: Integer
+      - name: name
+        dataType:
+          type: String
+      - name: city
+        dataType:
+          type: String
+    description: null
+    author: sony@prophecy.io
+    files:
+    - models/run_mod.sql
+    - .prophecy/ide/models/run_mod.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-10-02 09:01:05'
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/gem_custom:
+    name: gem_custom
+    macroType: query
+    description: null
+    author: sony@prophecy.io
+    files:
+    - macros/gem_custom.sql
+    - .prophecy/ide/macros/gem_custom.json
+    - gems/gem_custom.py
+    createdAt: '2024-10-02 09:01:45'
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: sony@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2024-10-02 08:59:25'
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/cu1:
+    name: cu1
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: id
+        dataType:
+          type: Integer
+      - name: name
+        dataType:
+          type: String
+      - name: city
+        dataType:
+          type: String
+    description: null
+    author: sony@prophecy.io
+    files:
+    - seeds/cu1.csv
+    createdAt: '2024-10-02 09:01:09'
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: sony@prophecy.io
+  createdAt: '2024-10-02 08:59:18'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}

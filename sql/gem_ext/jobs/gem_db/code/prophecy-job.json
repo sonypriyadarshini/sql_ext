@@ -1,0 +1,84 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "11647",
+    "jobId" : "jobs/gem_db",
+    "name" : "gem_db",
+    "schedule" : "None",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : true,
+    "defaultClusterSize" : "prophecy_internal_jobs",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "retries" : 0,
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    }
+  },
+  "processes" : {
+    "1Rfg9pu3RjvXQCrQvC3HC$$K0OCg6LpXJ2O3tnJhlzin" : {
+      "id" : "1Rfg9pu3RjvXQCrQvC3HC$$K0OCg6LpXJ2O3tnJhlzin",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : -660,
+        "y" : -220
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "g8DluG0WFQD-3Y9jBVsXr$$q8Gjq01OsRUm71ZPS4Wtu",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "PgIshedFtDfTx75lUXmrb$$4P7_NFW1BFsUM_FGPa0kH",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "entityId" : null,
+        "execSeed" : true,
+        "execRun" : false,
+        "gitEntity" : "branch",
+        "model" : "51915/.prophecy/metadata/sqlmodels/run_mod",
+        "customVersion" : true,
+        "projectId" : "51915",
+        "runOnlyModel" : "true",
+        "loadingModels" : false,
+        "entityName" : null,
+        "gitEntityValueTag" : null,
+        "profile" : "run_profile",
+        "sqlFabricId" : "11647",
+        "gitEntityValue" : "erty",
+        "execDeps" : false,
+        "gitEntityValueCommit" : null,
+        "gitEntityValueBranch" : "erty",
+        "execTest" : true,
+        "currentProjectModels" : [ {
+          "label" : "run_mod",
+          "value" : "run_mod",
+          "id" : "51915/.prophecy/metadata/sqlmodels/run_mod",
+          "name" : "run_mod"
+        } ]
+      }
+    }
+  },
+  "connections" : [ ]
+}
