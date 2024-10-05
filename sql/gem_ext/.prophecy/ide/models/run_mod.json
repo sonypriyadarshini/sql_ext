@@ -1,0 +1,230 @@
+{
+  "id" : "run_mod",
+  "metainfo" : {
+    "label" : "run_mod",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "run_mod##wsSI4Wkr" : {
+      "id" : "run_mod##wsSI4Wkr",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "run_mod",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM gem_custom_cu1\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Mdr82zSg",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "city",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "gem_custom_cu1"
+        } ],
+        "outputs" : [ {
+          "id" : "vWFVkbzE",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "city",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "6hGmL6mrnLT1adAd22M5p" : {
+      "id" : "6hGmL6mrnLT1adAd22M5p",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "cu1",
+        "slug" : "cu1",
+        "x" : -600,
+        "y" : -160,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "cu1",
+          "sourceType" : "Seed",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "jDZ0RnftEWfN6b7VI3Ssa",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "city",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "cFptcxWk3Q32ru_zT8sER$$IEdn1wGazxbCueIXilvHI" : {
+      "id" : "cFptcxWk3Q32ru_zT8sER$$IEdn1wGazxbCueIXilvHI",
+      "component" : "gem_custom",
+      "metadata" : {
+        "label" : "gem_custom_cu1",
+        "slug" : "gem_custom_cu1",
+        "x" : -920,
+        "y" : -260,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "Creates a custom gem for 'cu1'."
+      },
+      "properties" : {
+        "parameter1" : "'cu1'",
+        "_oldMacroProperties" : {
+          "macroName" : "gem_custom",
+          "projectName" : "sql_gem_ext",
+          "parameters" : [ {
+            "name" : "parameter1",
+            "value" : "'cu1'"
+          } ]
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "_83IdgWmzyHVhDquQsg7S$$Vk07-znMBCTGKAwUgaSEO",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "city",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "czb4Ql6iKHtVsYJyfMxDy$$NPzsHHKU--xA5vczwRopy",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "city",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "componentInfo" : {
+        "gemId" : "gem_custom_sql_gem_ext",
+        "name" : "gem_custom",
+        "projectName" : "sql_gem_ext",
+        "sourceProjectName" : "sql_gem_ext"
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "gGN2EpRzLxXTvItVmNBsa",
+    "source" : "6hGmL6mrnLT1adAd22M5p",
+    "sourcePort" : "jDZ0RnftEWfN6b7VI3Ssa",
+    "target" : "cFptcxWk3Q32ru_zT8sER$$IEdn1wGazxbCueIXilvHI",
+    "targetPort" : "_83IdgWmzyHVhDquQsg7S$$Vk07-znMBCTGKAwUgaSEO"
+  }, {
+    "id" : "A9ikzC8GyUUAOt_uGJLsT",
+    "source" : "cFptcxWk3Q32ru_zT8sER$$IEdn1wGazxbCueIXilvHI",
+    "sourcePort" : "czb4Ql6iKHtVsYJyfMxDy$$NPzsHHKU--xA5vczwRopy",
+    "target" : "run_mod##wsSI4Wkr",
+    "targetPort" : "Mdr82zSg"
+  } ],
+  "component" : "Model"
+}
