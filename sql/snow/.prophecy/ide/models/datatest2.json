@@ -1,0 +1,91 @@
+{
+  "id" : "datatest2",
+  "metainfo" : {
+    "label" : "datatest2",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "materialized" : "table",
+        "type" : "ModelConfig"
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "datatest2##fxto1zg8" : {
+      "id" : "datatest2##fxto1zg8",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "datatest2",
+        "x" : -100,
+        "y" : -220,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "Retrieves all data from a specified test dataset for analysis.",
+        "autoUpdateComment" : true
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM C_TEST_USEALL_ALIAS\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "AajKdHkJ",
+          "slug" : "C_TEST_USEALL_ALIAS"
+        } ],
+        "outputs" : [ {
+          "id" : "dnNV852x",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "qfAjkUfebCmlBMf7UC3Hy" : {
+      "id" : "qfAjkUfebCmlBMf7UC3Hy",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "C_TEST_USEALL_ALIAS",
+        "slug" : "C_TEST_USEALL_ALIAS",
+        "x" : -600,
+        "y" : -220,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "C_TEST_USEALL_ALIAS",
+          "sourceType" : "Source",
+          "sourceName" : "QA_DATABASE.QA_SCHEMA_QA_SCHEMA",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "trdyZYDZzBsE3suvjJCJ3",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "NhD_Te0EIKqEpbUhXYVWs",
+    "source" : "qfAjkUfebCmlBMf7UC3Hy",
+    "sourcePort" : "trdyZYDZzBsE3suvjJCJ3",
+    "target" : "datatest2##fxto1zg8",
+    "targetPort" : "AajKdHkJ"
+  } ],
+  "component" : "Model"
+}

@@ -1,0 +1,1306 @@
+{
+  "id" : "datatest1",
+  "metainfo" : {
+    "label" : "datatest1",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ {
+        "source" : {
+          "table" : {
+            "name" : "ALL_TYPE_TABLE_100MILLION_ROWS",
+            "sourceName" : "QA_DATABASE.QA_SCHEMA",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "ALL_TYPE_TABLE_100MILLION_ROWS",
+        "canJoinWith" : [ {
+          "processLabel" : "C_TEST_USEALL_ALIAS",
+          "processId" : "IBp1AhP6JNNTafTOS0ztc",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "C_INT", "C_STRING", "C_TIMESTAMP" ],
+            "conditions" : [ {
+              "alias" : "ALL_TYPE_TABLE_100MILLION_ROWS",
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_INT = C_TEST_USEALL_ALIAS.C_INT AND ALL_TYPE_TABLE_100MILLION_ROWS.C_STRING = C_TEST_USEALL_ALIAS.C_STRING AND ALL_TYPE_TABLE_100MILLION_ROWS.C_TIMESTAMP = C_TEST_USEALL_ALIAS.C_TIMESTAMP"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_NUM"
+              },
+              "alias" : "C_NUM"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_NUM10"
+              },
+              "alias" : "C_NUM10"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_DEC"
+              },
+              "alias" : "C_DEC"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_NUMERIC"
+              },
+              "alias" : "C_NUMERIC"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_INTEGER"
+              },
+              "alias" : "C_INTEGER"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_DOUBLE"
+              },
+              "alias" : "C_DOUBLE"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_FLOAT"
+              },
+              "alias" : "C_FLOAT"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_COUBLE_PRECISION"
+              },
+              "alias" : "C_COUBLE_PRECISION"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_REAL"
+              },
+              "alias" : "C_REAL"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_VARCHAR"
+              },
+              "alias" : "C_VARCHAR"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_VARCHAR50"
+              },
+              "alias" : "C_VARCHAR50"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_CHAR"
+              },
+              "alias" : "C_CHAR"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_CHAR10"
+              },
+              "alias" : "C_CHAR10"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_STRING20"
+              },
+              "alias" : "C_STRING20"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_TEXT"
+              },
+              "alias" : "C_TEXT"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_TEXT30"
+              },
+              "alias" : "C_TEXT30"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_BINARY"
+              },
+              "alias" : "C_BINARY"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_BINARY100"
+              },
+              "alias" : "C_BINARY100"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_VARBINARY"
+              },
+              "alias" : "C_VARBINARY"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_BOOL"
+              },
+              "alias" : "C_BOOL"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_DATE"
+              },
+              "alias" : "C_DATE"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_DATETIME"
+              },
+              "alias" : "C_DATETIME"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_TIME"
+              },
+              "alias" : "C_TIME"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_TIMESTAMPLTZ"
+              },
+              "alias" : "C_TIMESTAMPLTZ"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_TIMESTAMP_NTZ"
+              },
+              "alias" : "C_TIMESTAMP_NTZ"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_VARIANT"
+              },
+              "alias" : "C_VARIANT"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_ARRAY"
+              },
+              "alias" : "C_ARRAY"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_OBJECT"
+              },
+              "alias" : "C_OBJECT"
+            }, {
+              "expression" : {
+                "expression" : "ALL_TYPE_TABLE_100MILLION_ROWS.C_GEOGRAPHY"
+              },
+              "alias" : "C_GEOGRAPHY"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.SERVICE_LABEL_1"
+              },
+              "alias" : "SERVICE_LABEL_1"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_INT1"
+              },
+              "alias" : "C_INT1"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_AVG"
+              },
+              "alias" : "C_AVG"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_ARRAY_INT"
+              },
+              "alias" : "C_ARRAY_INT"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_INT"
+              },
+              "alias" : "C_INT"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_STRING"
+              },
+              "alias" : "C_STRING"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_TIMESTAMP"
+              },
+              "alias" : "C_TIMESTAMP"
+            } ],
+            "headAlias" : "ALL_TYPE_TABLE_100MILLION_ROWS",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "C_INT", "C_STRING", "C_TIMESTAMP" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "AUTOMATION_SNOWFLAKE_LOGS_SEED_1725900715787",
+            "sourceName" : "QA_DATABASE.QA_SCHEMA",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "AUTOMATION_SNOWFLAKE_LOGS_SEED_1725900715787",
+        "canJoinWith" : [ {
+          "processLabel" : "C_TEST_USEALL_ALIAS",
+          "processId" : "IBp1AhP6JNNTafTOS0ztc",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "C_INT", "C_STRING" ],
+            "conditions" : [ {
+              "alias" : "AUTOMATION_SNOWFLAKE_LOGS_SEED_1725900715787",
+              "expression" : {
+                "expression" : "AUTOMATION_SNOWFLAKE_LOGS_SEED_1725900715787.C_INT = C_TEST_USEALL_ALIAS.C_INT AND AUTOMATION_SNOWFLAKE_LOGS_SEED_1725900715787.C_STRING = C_TEST_USEALL_ALIAS.C_STRING"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "AUTOMATION_SNOWFLAKE_LOGS_SEED_1725900715787.C_BIGNUMERIC"
+              },
+              "alias" : "C_BIGNUMERIC"
+            }, {
+              "expression" : {
+                "expression" : "AUTOMATION_SNOWFLAKE_LOGS_SEED_1725900715787.C_FLOAT64"
+              },
+              "alias" : "C_FLOAT64"
+            }, {
+              "expression" : {
+                "expression" : "AUTOMATION_SNOWFLAKE_LOGS_SEED_1725900715787.C_BOOL"
+              },
+              "alias" : "C_BOOL"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.SERVICE_LABEL_1"
+              },
+              "alias" : "SERVICE_LABEL_1"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_INT1"
+              },
+              "alias" : "C_INT1"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_AVG"
+              },
+              "alias" : "C_AVG"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_ARRAY_INT"
+              },
+              "alias" : "C_ARRAY_INT"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_INT"
+              },
+              "alias" : "C_INT"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_STRING"
+              },
+              "alias" : "C_STRING"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_TIMESTAMP"
+              },
+              "alias" : "C_TIMESTAMP"
+            } ],
+            "headAlias" : "AUTOMATION_SNOWFLAKE_LOGS_SEED_1725900715787",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "C_INT", "C_STRING" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "SNOW_CAN_CORRUPT_MODEL_STAGING",
+            "sourceName" : "QA_DATABASE.QA_SCHEMA_QA_SCHEMA",
+            "sourceType" : "Source"
+          }
+        },
+        "sourceComponentKind" : "Source",
+        "sourceLabel" : "SNOW_CAN_CORRUPT_MODEL_STAGING",
+        "canJoinWith" : [ {
+          "processLabel" : "C_TEST_USEALL_ALIAS",
+          "processId" : "IBp1AhP6JNNTafTOS0ztc",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "C_INT", "C_STRING", "C_TIMESTAMP" ],
+            "conditions" : [ {
+              "alias" : "SNOW_CAN_CORRUPT_MODEL_STAGING",
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_INT = C_TEST_USEALL_ALIAS.C_INT AND SNOW_CAN_CORRUPT_MODEL_STAGING.C_STRING = C_TEST_USEALL_ALIAS.C_STRING AND SNOW_CAN_CORRUPT_MODEL_STAGING.C_TIMESTAMP = C_TEST_USEALL_ALIAS.C_TIMESTAMP"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_NUM"
+              },
+              "alias" : "C_NUM"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_NUM10"
+              },
+              "alias" : "C_NUM10"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_DEC"
+              },
+              "alias" : "C_DEC"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_NUMERIC"
+              },
+              "alias" : "C_NUMERIC"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_INTEGER"
+              },
+              "alias" : "C_INTEGER"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_DOUBLE"
+              },
+              "alias" : "C_DOUBLE"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_FLOAT"
+              },
+              "alias" : "C_FLOAT"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_COUBLE_PRECISION"
+              },
+              "alias" : "C_COUBLE_PRECISION"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_REAL"
+              },
+              "alias" : "C_REAL"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_VARCHAR"
+              },
+              "alias" : "C_VARCHAR"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_VARCHAR50"
+              },
+              "alias" : "C_VARCHAR50"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_CHAR"
+              },
+              "alias" : "C_CHAR"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_CHAR10"
+              },
+              "alias" : "C_CHAR10"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_STRING20"
+              },
+              "alias" : "C_STRING20"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_TEXT"
+              },
+              "alias" : "C_TEXT"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_TEXT30"
+              },
+              "alias" : "C_TEXT30"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_BINARY"
+              },
+              "alias" : "C_BINARY"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_BINARY100"
+              },
+              "alias" : "C_BINARY100"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_VARBINARY"
+              },
+              "alias" : "C_VARBINARY"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_BOOL"
+              },
+              "alias" : "C_BOOL"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_DATE"
+              },
+              "alias" : "C_DATE"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_DATETIME"
+              },
+              "alias" : "C_DATETIME"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_TIME"
+              },
+              "alias" : "C_TIME"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_TIMESTAMPLTZ"
+              },
+              "alias" : "C_TIMESTAMPLTZ"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_TIMESTAMP_NTZ"
+              },
+              "alias" : "C_TIMESTAMP_NTZ"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_VARIANT"
+              },
+              "alias" : "C_VARIANT"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_ARRAY"
+              },
+              "alias" : "C_ARRAY"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_OBJECT"
+              },
+              "alias" : "C_OBJECT"
+            }, {
+              "expression" : {
+                "expression" : "SNOW_CAN_CORRUPT_MODEL_STAGING.C_GEOGRAPHY"
+              },
+              "alias" : "C_GEOGRAPHY"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.SERVICE_LABEL_1"
+              },
+              "alias" : "SERVICE_LABEL_1"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_INT1"
+              },
+              "alias" : "C_INT1"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_AVG"
+              },
+              "alias" : "C_AVG"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_ARRAY_INT"
+              },
+              "alias" : "C_ARRAY_INT"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_INT"
+              },
+              "alias" : "C_INT"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_STRING"
+              },
+              "alias" : "C_STRING"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_TIMESTAMP"
+              },
+              "alias" : "C_TIMESTAMP"
+            } ],
+            "headAlias" : "SNOW_CAN_CORRUPT_MODEL_STAGING",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "C_INT", "C_STRING", "C_TIMESTAMP" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "TESTMODELSCHDRUN_AUTOMATION_SNOWFLAKE_PROJECT_AIRFLOWSCHEDULED",
+            "sourceName" : "QA_DATABASE.QA_SCHEMA",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "TESTMODELSCHDRUN_AUTOMATION_SNOWFLAKE_PROJECT_AIRFLOWSCHEDULED",
+        "canJoinWith" : [ {
+          "processLabel" : "C_TEST_USEALL_ALIAS",
+          "processId" : "IBp1AhP6JNNTafTOS0ztc",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "C_STRING", "C_INT" ],
+            "conditions" : [ {
+              "alias" : "TESTMODELSCHDRUN_AUTOMATION_SNOWFLAKE_PROJECT_AIRFLOWSCHEDULED",
+              "expression" : {
+                "expression" : "TESTMODELSCHDRUN_AUTOMATION_SNOWFLAKE_PROJECT_AIRFLOWSCHEDULED.C_INT64 = C_TEST_USEALL_ALIAS.C_INT AND TESTMODELSCHDRUN_AUTOMATION_SNOWFLAKE_PROJECT_AIRFLOWSCHEDULED.C_STRING = C_TEST_USEALL_ALIAS.C_STRING"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "TESTMODELSCHDRUN_AUTOMATION_SNOWFLAKE_PROJECT_AIRFLOWSCHEDULED.C_BIGNUMERIC"
+              },
+              "alias" : "C_BIGNUMERIC"
+            }, {
+              "expression" : {
+                "expression" : "TESTMODELSCHDRUN_AUTOMATION_SNOWFLAKE_PROJECT_AIRFLOWSCHEDULED.C_FLOAT64"
+              },
+              "alias" : "C_FLOAT64"
+            }, {
+              "expression" : {
+                "expression" : "TESTMODELSCHDRUN_AUTOMATION_SNOWFLAKE_PROJECT_AIRFLOWSCHEDULED.C_BOOL"
+              },
+              "alias" : "C_BOOL"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.SERVICE_LABEL_1"
+              },
+              "alias" : "SERVICE_LABEL_1"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_INT1"
+              },
+              "alias" : "C_INT1"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_AVG"
+              },
+              "alias" : "C_AVG"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_ARRAY_INT"
+              },
+              "alias" : "C_ARRAY_INT"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_INT"
+              },
+              "alias" : "C_INT"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_STRING"
+              },
+              "alias" : "C_STRING"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_TIMESTAMP"
+              },
+              "alias" : "C_TIMESTAMP"
+            } ],
+            "headAlias" : "TESTMODELSCHDRUN_AUTOMATION_SNOWFLAKE_PROJECT_AIRFLOWSCHEDULED",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "C_STRING", "C_INT" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "TESTSEED_PARTIAL_1699380524358",
+            "sourceName" : "QA_DATABASE.QA_SCHEMA",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "TESTSEED_PARTIAL_1699380524358",
+        "canJoinWith" : [ {
+          "processLabel" : "C_TEST_USEALL_ALIAS",
+          "processId" : "IBp1AhP6JNNTafTOS0ztc",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "C_INT", "C_STRING" ],
+            "conditions" : [ {
+              "alias" : "TESTSEED_PARTIAL_1699380524358",
+              "expression" : {
+                "expression" : "TESTSEED_PARTIAL_1699380524358.C_INT = C_TEST_USEALL_ALIAS.C_INT AND TESTSEED_PARTIAL_1699380524358.C_STRING = C_TEST_USEALL_ALIAS.C_STRING"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "TESTSEED_PARTIAL_1699380524358.C_BIGNUMERIC"
+              },
+              "alias" : "C_BIGNUMERIC"
+            }, {
+              "expression" : {
+                "expression" : "TESTSEED_PARTIAL_1699380524358.C_FLOAT64"
+              },
+              "alias" : "C_FLOAT64"
+            }, {
+              "expression" : {
+                "expression" : "TESTSEED_PARTIAL_1699380524358.C_BOOL"
+              },
+              "alias" : "C_BOOL"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.SERVICE_LABEL_1"
+              },
+              "alias" : "SERVICE_LABEL_1"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_INT1"
+              },
+              "alias" : "C_INT1"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_AVG"
+              },
+              "alias" : "C_AVG"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_ARRAY_INT"
+              },
+              "alias" : "C_ARRAY_INT"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_INT"
+              },
+              "alias" : "C_INT"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_STRING"
+              },
+              "alias" : "C_STRING"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_TIMESTAMP"
+              },
+              "alias" : "C_TIMESTAMP"
+            } ],
+            "headAlias" : "TESTSEED_PARTIAL_1699380524358",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "C_INT", "C_STRING" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "NEW",
+            "sourceName" : "QA_DATABASE.QA_SCHEMA",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "NEW",
+        "canJoinWith" : [ {
+          "processLabel" : "C_TEST_USEALL_ALIAS",
+          "processId" : "IBp1AhP6JNNTafTOS0ztc",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "C_INT" ],
+            "conditions" : [ {
+              "alias" : "NEW",
+              "expression" : {
+                "expression" : "NEW.C_INT = C_TEST_USEALL_ALIAS.C_INT"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "NEW.UUID"
+              },
+              "alias" : "UUID"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.SERVICE_LABEL_1"
+              },
+              "alias" : "SERVICE_LABEL_1"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_INT1"
+              },
+              "alias" : "C_INT1"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_AVG"
+              },
+              "alias" : "C_AVG"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_ARRAY_INT"
+              },
+              "alias" : "C_ARRAY_INT"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_INT"
+              },
+              "alias" : "C_INT"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_STRING"
+              },
+              "alias" : "C_STRING"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_TIMESTAMP"
+              },
+              "alias" : "C_TIMESTAMP"
+            } ],
+            "headAlias" : "NEW",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "C_INT" ],
+          "isRecommended" : false
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "SANITY_SIMPLE_MODEL_1",
+            "sourceName" : "QA_DATABASE.QA_SCHEMA",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "SANITY_SIMPLE_MODEL_1",
+        "canJoinWith" : [ {
+          "processLabel" : "C_TEST_USEALL_ALIAS",
+          "processId" : "IBp1AhP6JNNTafTOS0ztc",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "C_INT", "C_STRING", "C_TIMESTAMP" ],
+            "conditions" : [ {
+              "alias" : "SANITY_SIMPLE_MODEL_1",
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_INT = C_TEST_USEALL_ALIAS.C_INT AND SANITY_SIMPLE_MODEL_1.C_STRING = C_TEST_USEALL_ALIAS.C_STRING AND SANITY_SIMPLE_MODEL_1.C_TIMESTAMP = C_TEST_USEALL_ALIAS.C_TIMESTAMP"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_NUM"
+              },
+              "alias" : "C_NUM"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_NUM10"
+              },
+              "alias" : "C_NUM10"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_DEC"
+              },
+              "alias" : "C_DEC"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_NUMERIC"
+              },
+              "alias" : "C_NUMERIC"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_INTEGER"
+              },
+              "alias" : "C_INTEGER"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_DOUBLE"
+              },
+              "alias" : "C_DOUBLE"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_FLOAT"
+              },
+              "alias" : "C_FLOAT"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_COUBLE_PRECISION"
+              },
+              "alias" : "C_COUBLE_PRECISION"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_REAL"
+              },
+              "alias" : "C_REAL"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_VARCHAR"
+              },
+              "alias" : "C_VARCHAR"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_VARCHAR50"
+              },
+              "alias" : "C_VARCHAR50"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_CHAR"
+              },
+              "alias" : "C_CHAR"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_CHAR10"
+              },
+              "alias" : "C_CHAR10"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_STRING20"
+              },
+              "alias" : "C_STRING20"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_TEXT"
+              },
+              "alias" : "C_TEXT"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_TEXT30"
+              },
+              "alias" : "C_TEXT30"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_BINARY"
+              },
+              "alias" : "C_BINARY"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_BINARY100"
+              },
+              "alias" : "C_BINARY100"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_VARBINARY"
+              },
+              "alias" : "C_VARBINARY"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_BOOL"
+              },
+              "alias" : "C_BOOL"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_DATE"
+              },
+              "alias" : "C_DATE"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_DATETIME"
+              },
+              "alias" : "C_DATETIME"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_TIME"
+              },
+              "alias" : "C_TIME"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_TIMESTAMPLTZ"
+              },
+              "alias" : "C_TIMESTAMPLTZ"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_TIMESTAMP_NTZ"
+              },
+              "alias" : "C_TIMESTAMP_NTZ"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_VARIANT"
+              },
+              "alias" : "C_VARIANT"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_ARRAY"
+              },
+              "alias" : "C_ARRAY"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_OBJECT"
+              },
+              "alias" : "C_OBJECT"
+            }, {
+              "expression" : {
+                "expression" : "SANITY_SIMPLE_MODEL_1.C_GEOGRAPHY"
+              },
+              "alias" : "C_GEOGRAPHY"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.SERVICE_LABEL_1"
+              },
+              "alias" : "SERVICE_LABEL_1"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_INT1"
+              },
+              "alias" : "C_INT1"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_AVG"
+              },
+              "alias" : "C_AVG"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_ARRAY_INT"
+              },
+              "alias" : "C_ARRAY_INT"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_INT"
+              },
+              "alias" : "C_INT"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_STRING"
+              },
+              "alias" : "C_STRING"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_TIMESTAMP"
+              },
+              "alias" : "C_TIMESTAMP"
+            } ],
+            "headAlias" : "SANITY_SIMPLE_MODEL_1",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "C_INT", "C_STRING", "C_TIMESTAMP" ],
+          "isRecommended" : false
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "TESTSEED_PARTIAL_1699513497908",
+            "sourceName" : "QA_DATABASE.QA_SCHEMA",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "TESTSEED_PARTIAL_1699513497908",
+        "canJoinWith" : [ {
+          "processLabel" : "C_TEST_USEALL_ALIAS",
+          "processId" : "IBp1AhP6JNNTafTOS0ztc",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "C_INT", "C_STRING" ],
+            "conditions" : [ {
+              "alias" : "TESTSEED_PARTIAL_1699513497908",
+              "expression" : {
+                "expression" : "TESTSEED_PARTIAL_1699513497908.C_INT = C_TEST_USEALL_ALIAS.C_INT AND TESTSEED_PARTIAL_1699513497908.C_STRING = C_TEST_USEALL_ALIAS.C_STRING"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "TESTSEED_PARTIAL_1699513497908.C_BIGNUMERIC"
+              },
+              "alias" : "C_BIGNUMERIC"
+            }, {
+              "expression" : {
+                "expression" : "TESTSEED_PARTIAL_1699513497908.C_FLOAT64"
+              },
+              "alias" : "C_FLOAT64"
+            }, {
+              "expression" : {
+                "expression" : "TESTSEED_PARTIAL_1699513497908.C_BOOL"
+              },
+              "alias" : "C_BOOL"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.SERVICE_LABEL_1"
+              },
+              "alias" : "SERVICE_LABEL_1"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_INT1"
+              },
+              "alias" : "C_INT1"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_AVG"
+              },
+              "alias" : "C_AVG"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_ARRAY_INT"
+              },
+              "alias" : "C_ARRAY_INT"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_INT"
+              },
+              "alias" : "C_INT"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_STRING"
+              },
+              "alias" : "C_STRING"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_TIMESTAMP"
+              },
+              "alias" : "C_TIMESTAMP"
+            } ],
+            "headAlias" : "TESTSEED_PARTIAL_1699513497908",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "C_INT", "C_STRING" ],
+          "isRecommended" : false
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "TESTSEED_PARTIAL_1724820193081",
+            "sourceName" : "QA_DATABASE.QA_SCHEMA",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "TESTSEED_PARTIAL_1724820193081",
+        "canJoinWith" : [ {
+          "processLabel" : "C_TEST_USEALL_ALIAS",
+          "processId" : "IBp1AhP6JNNTafTOS0ztc",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "C_INT", "C_STRING" ],
+            "conditions" : [ {
+              "alias" : "TESTSEED_PARTIAL_1724820193081",
+              "expression" : {
+                "expression" : "TESTSEED_PARTIAL_1724820193081.C_INT = C_TEST_USEALL_ALIAS.C_INT AND TESTSEED_PARTIAL_1724820193081.C_STRING = C_TEST_USEALL_ALIAS.C_STRING"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "TESTSEED_PARTIAL_1724820193081.C_BIGNUMERIC"
+              },
+              "alias" : "C_BIGNUMERIC"
+            }, {
+              "expression" : {
+                "expression" : "TESTSEED_PARTIAL_1724820193081.C_FLOAT64"
+              },
+              "alias" : "C_FLOAT64"
+            }, {
+              "expression" : {
+                "expression" : "TESTSEED_PARTIAL_1724820193081.C_BOOL"
+              },
+              "alias" : "C_BOOL"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.SERVICE_LABEL_1"
+              },
+              "alias" : "SERVICE_LABEL_1"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_INT1"
+              },
+              "alias" : "C_INT1"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_AVG"
+              },
+              "alias" : "C_AVG"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_ARRAY_INT"
+              },
+              "alias" : "C_ARRAY_INT"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_INT"
+              },
+              "alias" : "C_INT"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_STRING"
+              },
+              "alias" : "C_STRING"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_TIMESTAMP"
+              },
+              "alias" : "C_TIMESTAMP"
+            } ],
+            "headAlias" : "TESTSEED_PARTIAL_1724820193081",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "C_INT", "C_STRING" ],
+          "isRecommended" : false
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "TEST_1_AUTOMATIONABHI_MODEL",
+            "sourceName" : "QA_DATABASE.QA_SCHEMA",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "TEST_1_AUTOMATIONABHI_MODEL",
+        "canJoinWith" : [ {
+          "processLabel" : "C_TEST_USEALL_ALIAS",
+          "processId" : "IBp1AhP6JNNTafTOS0ztc",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "SERVICE_LABEL_1" ],
+            "conditions" : [ {
+              "alias" : "TEST_1_AUTOMATIONABHI_MODEL",
+              "expression" : {
+                "expression" : "TEST_1_AUTOMATIONABHI_MODEL.SERVICE_LABEL_1 = C_TEST_USEALL_ALIAS.SERVICE_LABEL_1"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "TEST_1_AUTOMATIONABHI_MODEL.COUNTRY_CODE"
+              },
+              "alias" : "COUNTRY_CODE"
+            }, {
+              "expression" : {
+                "expression" : "TEST_1_AUTOMATIONABHI_MODEL.COUNTRY_LABEL"
+              },
+              "alias" : "COUNTRY_LABEL"
+            }, {
+              "expression" : {
+                "expression" : "TEST_1_AUTOMATIONABHI_MODEL.CODE_1"
+              },
+              "alias" : "CODE_1"
+            }, {
+              "expression" : {
+                "expression" : "TEST_1_AUTOMATIONABHI_MODEL.C_MACRO2"
+              },
+              "alias" : "C_MACRO2"
+            }, {
+              "expression" : {
+                "expression" : "TEST_1_AUTOMATIONABHI_MODEL.SERIES_REFERENCE"
+              },
+              "alias" : "SERIES_REFERENCE"
+            }, {
+              "expression" : {
+                "expression" : "TEST_1_AUTOMATIONABHI_MODEL.PERIOD_1"
+              },
+              "alias" : "PERIOD_1"
+            }, {
+              "expression" : {
+                "expression" : "TEST_1_AUTOMATIONABHI_MODEL.DATA_VALUE"
+              },
+              "alias" : "DATA_VALUE"
+            }, {
+              "expression" : {
+                "expression" : "TEST_1_AUTOMATIONABHI_MODEL.SUPPRESSED_1"
+              },
+              "alias" : "SUPPRESSED_1"
+            }, {
+              "expression" : {
+                "expression" : "TEST_1_AUTOMATIONABHI_MODEL.STATUS_1"
+              },
+              "alias" : "STATUS_1"
+            }, {
+              "expression" : {
+                "expression" : "TEST_1_AUTOMATIONABHI_MODEL.UNITS_1"
+              },
+              "alias" : "UNITS_1"
+            }, {
+              "expression" : {
+                "expression" : "TEST_1_AUTOMATIONABHI_MODEL.MAGNITUDE_1"
+              },
+              "alias" : "MAGNITUDE_1"
+            }, {
+              "expression" : {
+                "expression" : "TEST_1_AUTOMATIONABHI_MODEL.SUBJECT_1"
+              },
+              "alias" : "SUBJECT_1"
+            }, {
+              "expression" : {
+                "expression" : "TEST_1_AUTOMATIONABHI_MODEL.GROUP_1"
+              },
+              "alias" : "GROUP_1"
+            }, {
+              "expression" : {
+                "expression" : "TEST_1_AUTOMATIONABHI_MODEL.SERIES_TITLE_1"
+              },
+              "alias" : "SERIES_TITLE_1"
+            }, {
+              "expression" : {
+                "expression" : "TEST_1_AUTOMATIONABHI_MODEL.SERIES_TITLE_2"
+              },
+              "alias" : "SERIES_TITLE_2"
+            }, {
+              "expression" : {
+                "expression" : "TEST_1_AUTOMATIONABHI_MODEL.SERIES_TITLE_3"
+              },
+              "alias" : "SERIES_TITLE_3"
+            }, {
+              "expression" : {
+                "expression" : "TEST_1_AUTOMATIONABHI_MODEL.SERIES_TITLE_4"
+              },
+              "alias" : "SERIES_TITLE_4"
+            }, {
+              "expression" : {
+                "expression" : "TEST_1_AUTOMATIONABHI_MODEL.SERIES_TITLE_5"
+              },
+              "alias" : "SERIES_TITLE_5"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.SERVICE_LABEL_1"
+              },
+              "alias" : "SERVICE_LABEL_1"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_INT1"
+              },
+              "alias" : "C_INT1"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_AVG"
+              },
+              "alias" : "C_AVG"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_ARRAY_INT"
+              },
+              "alias" : "C_ARRAY_INT"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_INT"
+              },
+              "alias" : "C_INT"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_STRING"
+              },
+              "alias" : "C_STRING"
+            }, {
+              "expression" : {
+                "expression" : "C_TEST_USEALL_ALIAS.C_TIMESTAMP"
+              },
+              "alias" : "C_TIMESTAMP"
+            } ],
+            "headAlias" : "TEST_1_AUTOMATIONABHI_MODEL",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "SERVICE_LABEL_1" ],
+          "isRecommended" : false
+        } ]
+      } ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "datatest1##yiywUQeE" : {
+      "id" : "datatest1##yiywUQeE",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "datatest1",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "Retrieves all data from the main testing dataset for analysis.",
+        "autoUpdateComment" : true
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM C_TEST_USEALL_ALIAS\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "MN8uMsDc",
+          "slug" : "C_TEST_USEALL_ALIAS"
+        } ],
+        "outputs" : [ {
+          "id" : "HHqd6Wei",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Model"
+}

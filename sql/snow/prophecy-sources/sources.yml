@@ -1,0 +1,204 @@
+---
+version: 2
+sources:
+- name: "QA_DATABASE.QA_SIMPLE_SCHEMA_JASVINDER"
+  database: "QA_DATABASE"
+  schema: "QA_SIMPLE_SCHEMA_JASVINDER"
+  config:
+    enabled: true
+  tables:
+  - name: "STG_CUSTOMERS"
+    description: "Customer information dataset capturing essential details such as\
+      \ names and unique identifiers for effective customer management."
+    columns:
+    - name: "CUSTOMER_ID"
+      description: "Unique identifier for each customer"
+      dataType:
+        type: "Number"
+    - name: "FIRST_NAME"
+      description: "The first name of the customer"
+      dataType:
+        type: "String"
+    - name: "LAST_NAME"
+      description: "The last name of the customer"
+      dataType:
+        type: "String"
+- name: "QA_DATABASE.QA_SCHEMA_QA_SCHEMA"
+  database: "QA_DATABASE"
+  schema: "QA_SCHEMA_QA_SCHEMA"
+  config:
+    enabled: true
+  tables:
+  - name: "SNOW_CAN_CORRUPT_MODEL_STAGING"
+    description: "A staging dataset containing various data types for potential data\
+      \ corruption analysis and model training."
+    columns:
+    - name: "C_NUM"
+      description: "A numeric value representing a general number."
+      dataType:
+        type: "Number"
+    - name: "C_NUM10"
+      description: "A numeric value with a precision of 10."
+      dataType:
+        type: "Number"
+    - name: "C_DEC"
+      description: "A decimal value used for precise calculations."
+      dataType:
+        type: "Number"
+    - name: "C_NUMERIC"
+      description: "A numeric value that can represent decimal numbers"
+      dataType:
+        type: "Number"
+    - name: "C_INT"
+      description: "An integer value representing whole numbers"
+      dataType:
+        type: "Number"
+    - name: "C_INTEGER"
+      description: "A standard integer value for whole number representation"
+      dataType:
+        type: "Number"
+    - name: "C_DOUBLE"
+      description: "A double-precision floating-point number used for precise calculations."
+      dataType:
+        type: "Float"
+    - name: "C_FLOAT"
+      description: "A single-precision floating-point number used for less precise\
+        \ calculations."
+      dataType:
+        type: "Float"
+    - name: "C_COUBLE_PRECISION"
+      description: "A high-precision floating-point number for calculations requiring\
+        \ significant accuracy."
+      dataType:
+        type: "Float"
+    - name: "C_REAL"
+      description: "A real number value representing a specific measurement."
+      dataType:
+        type: "Float"
+    - name: "C_VARCHAR"
+      description: "A variable-length string for storing text data."
+      dataType:
+        type: "String"
+    - name: "C_VARCHAR50"
+      description: "A variable-length string with a maximum of 50 characters for storing\
+        \ shorter text data."
+      dataType:
+        type: "String"
+    - name: "C_CHAR"
+      description: "A fixed-length character string"
+      dataType:
+        type: "String"
+    - name: "C_CHAR10"
+      description: "A fixed-length character string with a maximum length of 10"
+      dataType:
+        type: "String"
+    - name: "C_STRING"
+      description: "A variable-length string for text data"
+      dataType:
+        type: "String"
+    - name: "C_STRING20"
+      description: "A string field that can hold up to 20 characters."
+      dataType:
+        type: "String"
+    - name: "C_TEXT"
+      description: "A text field for storing larger amounts of text."
+      dataType:
+        type: "String"
+    - name: "C_TEXT30"
+      description: "A text field that can hold up to 30 characters."
+      dataType:
+        type: "String"
+    - name: "C_BINARY"
+      description: "Binary data storage for unstructured data"
+      dataType:
+        type: "Binary"
+    - name: "C_BINARY100"
+      description: "Binary data storage with a maximum size of 100 bytes"
+      dataType:
+        type: "Binary"
+    - name: "C_VARBINARY"
+      description: "Variable-length binary data storage for unstructured data"
+      dataType:
+        type: "Binary"
+    - name: "C_BOOL"
+      description: "Indicates a true or false condition"
+      dataType:
+        type: "Boolean"
+    - name: "C_TIMESTAMP"
+      description: "Records the exact date and time of an event"
+      dataType:
+        type: "Timestamp"
+    - name: "C_DATE"
+      description: "Represents a specific date without time"
+      dataType:
+        type: "Date"
+    - name: "C_DATETIME"
+      description: "Date and time of the event recorded"
+      dataType:
+        type: "Timestamp"
+    - name: "C_TIME"
+      description: "Time of the event recorded"
+      dataType:
+        type: "Time"
+    - name: "C_TIMESTAMPLTZ"
+      description: "Timestamp with local time zone information"
+      dataType:
+        type: "Timestamp"
+    - name: "C_TIMESTAMP_NTZ"
+      description: "Timestamp without time zone information for event tracking."
+      dataType:
+        type: "Timestamp"
+    - name: "C_VARIANT"
+      description: "Flexible data type that can hold different types of values."
+      dataType:
+        type: "Variant"
+    - name: "C_ARRAY"
+      description: "Collection of values stored in an array format."
+      dataType:
+        type: "Array"
+    - name: "C_OBJECT"
+      description: "A flexible data structure that can hold various types of data"
+      dataType:
+        type: "Object"
+    - name: "C_GEOGRAPHY"
+      description: "Geographical data representing location information"
+      dataType:
+        type: "Geography"
+  - name: "C_TEST_USEALL_ALIAS"
+    description: "Comprehensive dataset capturing various metrics and service labels,\
+      \ enabling detailed analysis of user interactions and performance."
+    columns:
+    - name: "C_INT"
+      description: "An integer value representing a specific metric or identifier."
+      dataType:
+        type: "Number"
+    - name: "C_STRING"
+      description: "A string value representing descriptive information."
+      dataType:
+        type: "String"
+    - name: "C_TIMESTAMP"
+      description: "Timestamp indicating when the record was created or last updated"
+      dataType:
+        type: "Timestamp"
+    - name: "C_INT1"
+      description: "An integer value representing a specific metric or identifier."
+      dataType:
+        type: "Number"
+    - name: "C_AVG"
+      description: "Average value calculated from the dataset"
+      dataType:
+        type: "Number"
+    - name: "SERVICE_LABEL_1"
+      description: "Label describing the service associated with the record"
+      dataType:
+        type: "String"
+    - name: "C_ARRAY_INT"
+      description: "An array of integer values associated with the record"
+      dataType:
+        type: "Array"
+- name: "\"qa_database\".\"qa_SCHEMA\""
+  database: "\"qa_database\""
+  schema: "\"qa_SCHEMA\""
+  config:
+    enabled: true
+  tables: []

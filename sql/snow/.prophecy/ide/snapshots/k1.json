@@ -1,0 +1,94 @@
+{
+  "id" : "k1",
+  "metainfo" : {
+    "label" : "k1",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "strategy" : "\"timestamp\"",
+        "updated_at" : "\"C_DOUBLE\"",
+        "target_schema" : "\"qa_schema\"",
+        "unique_key" : "\"C_NUM\"",
+        "type" : "SnapshotConfig"
+      }
+    },
+    "version" : 0
+  },
+  "processes" : {
+    "k1##jDxi4cgV" : {
+      "id" : "k1##jDxi4cgV",
+      "component" : "TargetSnapshot",
+      "metadata" : {
+        "label" : "k1",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "Accesses staging data for the snow can corrupt model for review or analysis.",
+        "autoUpdateComment" : true
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM SNOW_CAN_CORRUPT_MODEL_STAGING\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "PsIy4Z5Q",
+          "slug" : "SNOW_CAN_CORRUPT_MODEL_STAGING"
+        } ],
+        "outputs" : [ {
+          "id" : "H1EB8XOk",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "K0M4TI3sB5ZbmowxVwuCF" : {
+      "id" : "K0M4TI3sB5ZbmowxVwuCF",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "SNOW_CAN_CORRUPT_MODEL_STAGING",
+        "slug" : "SNOW_CAN_CORRUPT_MODEL_STAGING",
+        "x" : -340,
+        "y" : -220,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "SNOW_CAN_CORRUPT_MODEL_STAGING",
+          "sourceType" : "Source",
+          "sourceName" : "QA_DATABASE.QA_SCHEMA_QA_SCHEMA",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "x6QAY_tpCurqr2t0R20Wi",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "aB3bBIiZwN6dtaR614Pf9",
+    "source" : "K0M4TI3sB5ZbmowxVwuCF",
+    "sourcePort" : "x6QAY_tpCurqr2t0R20Wi",
+    "target" : "k1##jDxi4cgV",
+    "targetPort" : "PsIy4Z5Q"
+  } ],
+  "component" : "Snapshot"
+}

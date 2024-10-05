@@ -1,0 +1,586 @@
+name: snow_datatest
+description: ''
+version: 0.0.1
+author: sony@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2024-09-25 08:58:52'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/datatest1:
+    name: datatest1
+    schema: null
+    description: null
+    author: sony@prophecy.io
+    files:
+    - models/datatest1.sql
+    - .prophecy/ide/models/datatest1.json
+    - models/schema.yml
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-09-25 09:01:22'
+  .prophecy/metadata/sqlmodels/datatest2:
+    name: datatest2
+    schema:
+      entityType: ''
+      providerType: Snowflake
+      fields:
+      - name: C_INT
+        dataType:
+          type: Number
+      - name: C_STRING
+        dataType:
+          type: String
+      - name: C_TIMESTAMP
+        dataType:
+          type: Timestamp
+      - name: C_INT1
+        dataType:
+          type: Number
+      - name: C_AVG
+        dataType:
+          type: Number
+      - name: SERVICE_LABEL_1
+        dataType:
+          type: String
+      - name: C_ARRAY_INT
+        dataType:
+          type: Array
+    description: null
+    author: sony@prophecy.io
+    files:
+    - models/datatest2.sql
+    - .prophecy/ide/models/datatest2.json
+    - models/schema.yml
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-09-25 09:46:36'
+  .prophecy/metadata/sqlmodels/kajari:
+    name: kajari
+    schema:
+      entityType: ''
+      providerType: Snowflake
+      fields:
+      - name: C_NUM
+        dataType:
+          type: Number
+      - name: C_NUM10
+        dataType:
+          type: Number
+      - name: C_DEC
+        dataType:
+          type: Number
+      - name: C_NUMERIC
+        dataType:
+          type: Number
+      - name: C_INT
+        dataType:
+          type: Number
+      - name: C_INTEGER
+        dataType:
+          type: Number
+      - name: C_DOUBLE
+        dataType:
+          type: Float
+      - name: C_FLOAT
+        dataType:
+          type: Float
+      - name: C_COUBLE_PRECISION
+        dataType:
+          type: Float
+      - name: C_REAL
+        dataType:
+          type: Float
+      - name: C_VARCHAR
+        dataType:
+          type: String
+      - name: C_VARCHAR50
+        dataType:
+          type: String
+      - name: C_CHAR
+        dataType:
+          type: String
+      - name: C_CHAR10
+        dataType:
+          type: String
+      - name: C_STRING
+        dataType:
+          type: String
+      - name: C_STRING20
+        dataType:
+          type: String
+      - name: C_TEXT
+        dataType:
+          type: String
+      - name: C_TEXT30
+        dataType:
+          type: String
+      - name: C_BINARY
+        dataType:
+          type: Binary
+      - name: C_BINARY100
+        dataType:
+          type: Binary
+      - name: C_VARBINARY
+        dataType:
+          type: Binary
+      - name: C_BOOL
+        dataType:
+          type: Boolean
+      - name: C_TIMESTAMP
+        dataType:
+          type: Timestamp
+      - name: C_DATE
+        dataType:
+          type: Date
+      - name: C_DATETIME
+        dataType:
+          type: Timestamp
+      - name: C_TIME
+        dataType:
+          type: Time
+      - name: C_TIMESTAMPLTZ
+        dataType:
+          type: Timestamp
+      - name: C_TIMESTAMP_NTZ
+        dataType:
+          type: Timestamp
+      - name: C_VARIANT
+        dataType:
+          type: Variant
+      - name: C_ARRAY
+        dataType:
+          type: Array
+      - name: C_OBJECT
+        dataType:
+          type: Object
+      - name: C_GEOGRAPHY
+        dataType:
+          type: Geography
+    description: null
+    author: sony@prophecy.io
+    files:
+    - models/kajari.sql
+    - .prophecy/ide/models/kajari.json
+    - models/schema.yml
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-10-03 12:11:08'
+sqlSnapshots:
+  .prophecy/metadata/sqlsnapshots/k1:
+    name: k1
+    schema:
+      entityType: ''
+      providerType: Snowflake
+      fields:
+      - name: C_NUM
+        dataType:
+          type: Number
+      - name: C_NUM10
+        dataType:
+          type: Number
+      - name: C_DEC
+        dataType:
+          type: Number
+      - name: C_NUMERIC
+        dataType:
+          type: Number
+      - name: C_INT
+        dataType:
+          type: Number
+      - name: C_INTEGER
+        dataType:
+          type: Number
+      - name: C_DOUBLE
+        dataType:
+          type: Float
+      - name: C_FLOAT
+        dataType:
+          type: Float
+      - name: C_COUBLE_PRECISION
+        dataType:
+          type: Float
+      - name: C_REAL
+        dataType:
+          type: Float
+      - name: C_VARCHAR
+        dataType:
+          type: String
+      - name: C_VARCHAR50
+        dataType:
+          type: String
+      - name: C_CHAR
+        dataType:
+          type: String
+      - name: C_CHAR10
+        dataType:
+          type: String
+      - name: C_STRING
+        dataType:
+          type: String
+      - name: C_STRING20
+        dataType:
+          type: String
+      - name: C_TEXT
+        dataType:
+          type: String
+      - name: C_TEXT30
+        dataType:
+          type: String
+      - name: C_BINARY
+        dataType:
+          type: Binary
+      - name: C_BINARY100
+        dataType:
+          type: Binary
+      - name: C_VARBINARY
+        dataType:
+          type: Binary
+      - name: C_BOOL
+        dataType:
+          type: Boolean
+      - name: C_TIMESTAMP
+        dataType:
+          type: Timestamp
+      - name: C_DATE
+        dataType:
+          type: Date
+      - name: C_DATETIME
+        dataType:
+          type: Timestamp
+      - name: C_TIME
+        dataType:
+          type: Time
+      - name: C_TIMESTAMPLTZ
+        dataType:
+          type: Timestamp
+      - name: C_TIMESTAMP_NTZ
+        dataType:
+          type: Timestamp
+      - name: C_VARIANT
+        dataType:
+          type: Variant
+      - name: C_ARRAY
+        dataType:
+          type: Array
+      - name: C_OBJECT
+        dataType:
+          type: Object
+      - name: C_GEOGRAPHY
+        dataType:
+          type: Geography
+      - name: DBT_SCD_ID
+        dataType:
+          type: String
+      - name: DBT_UPDATED_AT
+        dataType:
+          type: Float
+      - name: DBT_VALID_FROM
+        dataType:
+          type: Float
+      - name: DBT_VALID_TO
+        dataType:
+          type: Float
+    description: null
+    author: sony@prophecy.io
+    files:
+    - snapshots/k1.sql
+    - .prophecy/ide/snapshots/k1.json
+    - snapshots/schema.yml
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-09-26 09:14:21'
+  .prophecy/metadata/sqlsnapshots/newtest_check:
+    name: newtest_check
+    schema:
+      entityType: ''
+      providerType: Snowflake
+      fields:
+      - name: C_INT
+        dataType:
+          type: Number
+      - name: C_STRING
+        dataType:
+          type: String
+      - name: C_TIMESTAMP
+        dataType:
+          type: Timestamp
+      - name: C_INT1
+        dataType:
+          type: Number
+      - name: C_AVG
+        dataType:
+          type: Number
+      - name: SERVICE_LABEL_1
+        dataType:
+          type: String
+      - name: C_ARRAY_INT
+        dataType:
+          type: Array
+      - name: DBT_SCD_ID
+        dataType:
+          type: String
+      - name: DBT_UPDATED_AT
+        dataType:
+          type: String
+      - name: DBT_VALID_FROM
+        dataType:
+          type: String
+      - name: DBT_VALID_TO
+        dataType:
+          type: String
+    description: null
+    author: sony@prophecy.io
+    files:
+    - snapshots/newtest_check.sql
+    - .prophecy/ide/snapshots/newtest_check.json
+    - snapshots/schema.yml
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-09-25 10:59:49'
+sqlTests:
+  .prophecy/metadata/sqltests/testdef:
+    name: testdef
+    description: null
+    author: sony@prophecy.io
+    files:
+    - tests/generic/testdef.sql
+    testType: GenericDataTest
+    createdAt: '2024-09-25 09:02:41'
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: sony@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2024-09-25 08:58:59'
+sqlSeeds: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/_qa_database___qa_SCHEMA_:
+    name: '"qa_database"."qa_SCHEMA"'
+    description: null
+    author: sony@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2024-09-26 08:01:49'
+    tables: []
+  .prophecy/metadata/sqlsources/QA_DATABASE_QA_SCHEMA_QA_SCHEMA:
+    name: QA_DATABASE.QA_SCHEMA_QA_SCHEMA
+    description: null
+    author: sony@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2024-09-25 09:01:46'
+    tables:
+    - name: SNOW_CAN_CORRUPT_MODEL_STAGING
+      schema:
+        entityType: ''
+        providerType: snowflake
+        fields:
+        - name: C_NUM
+          dataType:
+            type: Number
+        - name: C_NUM10
+          dataType:
+            type: Number
+        - name: C_DEC
+          dataType:
+            type: Number
+        - name: C_NUMERIC
+          dataType:
+            type: Number
+        - name: C_INT
+          dataType:
+            type: Number
+        - name: C_INTEGER
+          dataType:
+            type: Number
+        - name: C_DOUBLE
+          dataType:
+            type: Float
+        - name: C_FLOAT
+          dataType:
+            type: Float
+        - name: C_COUBLE_PRECISION
+          dataType:
+            type: Float
+        - name: C_REAL
+          dataType:
+            type: Float
+        - name: C_VARCHAR
+          dataType:
+            type: String
+        - name: C_VARCHAR50
+          dataType:
+            type: String
+        - name: C_CHAR
+          dataType:
+            type: String
+        - name: C_CHAR10
+          dataType:
+            type: String
+        - name: C_STRING
+          dataType:
+            type: String
+        - name: C_STRING20
+          dataType:
+            type: String
+        - name: C_TEXT
+          dataType:
+            type: String
+        - name: C_TEXT30
+          dataType:
+            type: String
+        - name: C_BINARY
+          dataType:
+            type: Binary
+        - name: C_BINARY100
+          dataType:
+            type: Binary
+        - name: C_VARBINARY
+          dataType:
+            type: Binary
+        - name: C_BOOL
+          dataType:
+            type: Boolean
+        - name: C_TIMESTAMP
+          dataType:
+            type: Timestamp
+        - name: C_DATE
+          dataType:
+            type: Date
+        - name: C_DATETIME
+          dataType:
+            type: Timestamp
+        - name: C_TIME
+          dataType:
+            type: Time
+        - name: C_TIMESTAMPLTZ
+          dataType:
+            type: Timestamp
+        - name: C_TIMESTAMP_NTZ
+          dataType:
+            type: Timestamp
+        - name: C_VARIANT
+          dataType:
+            type: Variant
+        - name: C_ARRAY
+          dataType:
+            type: Array
+        - name: C_OBJECT
+          dataType:
+            type: Object
+        - name: C_GEOGRAPHY
+          dataType:
+            type: Geography
+      description: A staging dataset containing various data types for potential data
+        corruption analysis and model training.
+      author: sony@prophecy.io
+      createdAt: '2024-09-25 09:01:46'
+    - name: C_TEST_USEALL_ALIAS
+      schema:
+        entityType: ''
+        providerType: snowflake
+        fields:
+        - name: C_INT
+          dataType:
+            type: Number
+        - name: C_STRING
+          dataType:
+            type: String
+        - name: C_TIMESTAMP
+          dataType:
+            type: Timestamp
+        - name: C_INT1
+          dataType:
+            type: Number
+        - name: C_AVG
+          dataType:
+            type: Number
+        - name: SERVICE_LABEL_1
+          dataType:
+            type: String
+        - name: C_ARRAY_INT
+          dataType:
+            type: Array
+      description: Comprehensive dataset capturing various metrics and service labels,
+        enabling detailed analysis of user interactions and performance.
+      author: sony@prophecy.io
+      createdAt: '2024-09-25 09:02:03'
+  .prophecy/metadata/sqlsources/QA_DATABASE_QA_SIMPLE_SCHEMA_JASVINDER:
+    name: QA_DATABASE.QA_SIMPLE_SCHEMA_JASVINDER
+    description: null
+    author: sony@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2024-09-25 09:01:24'
+    tables:
+    - name: STG_CUSTOMERS
+      schema:
+        entityType: ''
+        providerType: snowflake
+        fields:
+        - name: CUSTOMER_ID
+          dataType:
+            type: Number
+        - name: FIRST_NAME
+          dataType:
+            type: String
+        - name: LAST_NAME
+          dataType:
+            type: String
+      description: Customer information dataset capturing essential details such as
+        names and unique identifiers for effective customer management.
+      author: sony@prophecy.io
+      createdAt: '2024-09-25 09:01:24'
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: sony@prophecy.io
+  createdAt: '2024-09-25 08:58:52'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}

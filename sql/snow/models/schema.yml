@@ -1,0 +1,169 @@
+---
+version: 2
+models:
+- name: "datatest1"
+  columns: []
+  tests:
+  - saddsds:
+      config:
+        fail_calc: "count(*)"
+      column_name: "\"C_NUM10\""
+  - testdef:
+      config:
+        fail_calc: "count(*)"
+      column_name: "\"C_NUMERIC\""
+      col1: "'fdfdfsd'"
+  - not_null:
+      config:
+        fail_calc: "count(*)"
+      column_name: "\"C_NUM10\""
+- name: "datatest2"
+  columns:
+  - name: "C_INT"
+    tests: []
+    dataType:
+      type: "Number"
+  - name: "C_STRING"
+    tests:
+    - not_null:
+        config:
+          fail_calc: "count(*)"
+    dataType:
+      type: "String"
+  - name: "C_TIMESTAMP"
+    tests: []
+    dataType:
+      type: "Timestamp"
+  - name: "C_INT1"
+    tests: []
+    dataType:
+      type: "Number"
+  - name: "C_AVG"
+    tests:
+    - unique:
+        config:
+          fail_calc: "count(*)"
+          warn_if: ""
+          error_if: ""
+          severity: "error"
+        column_name: "\"C_AVG\""
+    dataType:
+      type: "Number"
+  - name: "SERVICE_LABEL_1"
+    tests: []
+    dataType:
+      type: "String"
+  - name: "C_ARRAY_INT"
+    tests:
+    - unique:
+        config:
+          fail_calc: "count(*)"
+          warn_if: ""
+        column_name: "\"C_ARRAY_INT\""
+    dataType:
+      type: "Array"
+  - name: "test4567"
+    tests: []
+    dataType:
+      type: "String"
+  tests: []
+- name: "kajari"
+  columns:
+  - name: "C_NUM"
+    dataType:
+      type: "Number"
+  - name: "C_NUM10"
+    dataType:
+      type: "Number"
+  - name: "C_DEC"
+    dataType:
+      type: "Number"
+  - name: "C_NUMERIC"
+    dataType:
+      type: "Number"
+  - name: "C_INT"
+    dataType:
+      type: "Number"
+  - name: "C_INTEGER"
+    dataType:
+      type: "Number"
+  - name: "C_DOUBLE"
+    dataType:
+      type: "Float"
+  - name: "C_FLOAT"
+    dataType:
+      type: "Float"
+  - name: "C_COUBLE_PRECISION"
+    dataType:
+      type: "Float"
+  - name: "C_REAL"
+    dataType:
+      type: "Float"
+  - name: "C_VARCHAR"
+    dataType:
+      type: "String"
+  - name: "C_VARCHAR50"
+    dataType:
+      type: "String"
+  - name: "C_CHAR"
+    dataType:
+      type: "String"
+  - name: "C_CHAR10"
+    dataType:
+      type: "String"
+  - name: "C_STRING"
+    dataType:
+      type: "String"
+  - name: "C_STRING20"
+    dataType:
+      type: "String"
+  - name: "C_TEXT"
+    dataType:
+      type: "String"
+  - name: "C_TEXT30"
+    dataType:
+      type: "String"
+  - name: "C_BINARY"
+    dataType:
+      type: "Binary"
+  - name: "C_BINARY100"
+    dataType:
+      type: "Binary"
+  - name: "C_VARBINARY"
+    dataType:
+      type: "Binary"
+  - name: "C_BOOL"
+    dataType:
+      type: "Boolean"
+  - name: "C_TIMESTAMP"
+    dataType:
+      type: "Timestamp"
+  - name: "C_DATE"
+    dataType:
+      type: "Date"
+  - name: "C_DATETIME"
+    dataType:
+      type: "Timestamp"
+  - name: "C_TIME"
+    dataType:
+      type: "Time"
+  - name: "C_TIMESTAMPLTZ"
+    dataType:
+      type: "Timestamp"
+  - name: "C_TIMESTAMP_NTZ"
+    dataType:
+      type: "Timestamp"
+  - name: "C_VARIANT"
+    dataType:
+      type: "Variant"
+  - name: "C_ARRAY"
+    dataType:
+      type: "Array"
+  - name: "C_OBJECT"
+    dataType:
+      type: "Object"
+  - name: "C_GEOGRAPHY"
+    dataType:
+      type: "Geography"
+  tests: []
+sources: []

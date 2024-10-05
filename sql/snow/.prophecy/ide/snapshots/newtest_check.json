@@ -1,0 +1,133 @@
+{
+  "id" : "newtest_check",
+  "metainfo" : {
+    "label" : "newtest_check",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "strategy" : "\"timestamp\"",
+        "updated_at" : "\"SERVICE_LABEL_1\"",
+        "target_schema" : "\"qa_schema\"",
+        "unique_key" : "\"C_TIMESTAMP\"",
+        "type" : "SnapshotConfig"
+      }
+    },
+    "version" : 0
+  },
+  "processes" : {
+    "newtest_check##uYg4J3dF" : {
+      "id" : "newtest_check##uYg4J3dF",
+      "component" : "TargetSnapshot",
+      "metadata" : {
+        "label" : "newtest_check",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "Retrieves data from a specified limit for review or analysis.",
+        "autoUpdateComment" : true
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM Limit_1\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "OpHX3cwZ",
+          "slug" : "Limit_1"
+        } ],
+        "outputs" : [ {
+          "id" : "PuWf35Fm",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "MraelielZlfPzo7pLLy6V" : {
+      "id" : "MraelielZlfPzo7pLLy6V",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "C_TEST_USEALL_ALIAS",
+        "slug" : "C_TEST_USEALL_ALIAS",
+        "x" : -600,
+        "y" : -220,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "C_TEST_USEALL_ALIAS",
+          "sourceType" : "Source",
+          "sourceName" : "QA_DATABASE.QA_SCHEMA_QA_SCHEMA",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "0v9CoNxzhBao6BJozMz1k",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "4_sC33pQyhF_6AjyOUCc4$$WKyTI0k3kmzRsjd2RlPqR" : {
+      "id" : "4_sC33pQyhF_6AjyOUCc4$$WKyTI0k3kmzRsjd2RlPqR",
+      "component" : "Limit",
+      "metadata" : {
+        "label" : "Limit_1",
+        "slug" : "Limit_1",
+        "x" : -240,
+        "y" : -240,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "Selects a limited number of records for focused analysis.",
+        "autoUpdateComment" : true
+      },
+      "properties" : {
+        "limit" : {
+          "expression" : "5"
+        },
+        "fetchEnabled" : false,
+        "fetchType" : "First"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "YxPOOzuMmqQ9zbr57aeso$$Gh9l__eTG0NnCR3Y8bxJK",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "BMK8y_7Qg-ceytwhkZbO_$$xmoy5Q3gaEIbIpzhwszmT",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "r4OqauoYnmFFzBwLueu8p",
+    "source" : "4_sC33pQyhF_6AjyOUCc4$$WKyTI0k3kmzRsjd2RlPqR",
+    "sourcePort" : "BMK8y_7Qg-ceytwhkZbO_$$xmoy5Q3gaEIbIpzhwszmT",
+    "target" : "newtest_check##uYg4J3dF",
+    "targetPort" : "OpHX3cwZ"
+  }, {
+    "id" : "bUdc_Cj19KQQI2ZnJDa5o",
+    "source" : "MraelielZlfPzo7pLLy6V",
+    "sourcePort" : "0v9CoNxzhBao6BJozMz1k",
+    "target" : "4_sC33pQyhF_6AjyOUCc4$$WKyTI0k3kmzRsjd2RlPqR",
+    "targetPort" : "YxPOOzuMmqQ9zbr57aeso$$Gh9l__eTG0NnCR3Y8bxJK"
+  } ],
+  "component" : "Snapshot"
+}

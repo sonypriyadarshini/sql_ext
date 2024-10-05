@@ -1,0 +1,93 @@
+{
+  "id" : "kajari",
+  "metainfo" : {
+    "label" : "kajari",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "strategy" : "\"timestamp\"",
+        "materialized" : "table",
+        "target_schema" : "\"qa_schema\"",
+        "type" : "ModelConfig"
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "kajari##UIgYnFff" : {
+      "id" : "kajari##UIgYnFff",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "kajari",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "Accesses data from a staging area for further analysis or processing.",
+        "autoUpdateComment" : true
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM SNOW_CAN_CORRUPT_MODEL_STAGING\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Oe9cNDGt",
+          "slug" : "SNOW_CAN_CORRUPT_MODEL_STAGING"
+        } ],
+        "outputs" : [ {
+          "id" : "iIrCiDwb",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "YfWqLPxB0EJ6RsnpRpA6O" : {
+      "id" : "YfWqLPxB0EJ6RsnpRpA6O",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "SNOW_CAN_CORRUPT_MODEL_STAGING",
+        "slug" : "SNOW_CAN_CORRUPT_MODEL_STAGING",
+        "x" : -600,
+        "y" : -180,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "SNOW_CAN_CORRUPT_MODEL_STAGING",
+          "sourceType" : "Source",
+          "sourceName" : "QA_DATABASE.QA_SCHEMA_QA_SCHEMA",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "1o5SfsDzDDALFEsbWDopR",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "LOpPr2jcMkRwT5bygs542",
+    "source" : "YfWqLPxB0EJ6RsnpRpA6O",
+    "sourcePort" : "1o5SfsDzDDALFEsbWDopR",
+    "target" : "kajari##UIgYnFff",
+    "targetPort" : "Oe9cNDGt"
+  } ],
+  "component" : "Model"
+}
