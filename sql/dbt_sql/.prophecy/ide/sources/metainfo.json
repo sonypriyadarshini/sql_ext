@@ -1,0 +1,913 @@
+{
+  "name" : "dbt_sql",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "databricks",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "externalSources" : {
+    "type" : "Project",
+    "name" : "",
+    "children" : [ {
+      "type" : "Catalog",
+      "name" : "hive_metastore",
+      "children" : [ {
+        "type" : "Schema",
+        "name" : "6b418a6c8a0d64099bf222f6b86d0b51",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "aditya",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "asadas",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "bad_schema",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "chirag",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "dbt_test__audit",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "dddd",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "default",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "default1",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "default_dbt_test__audit",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "default_gaga1",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "default_pp_test",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "default_qa_database",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "default_qa_schema",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "delta01",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "dev",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "dsdsdsds",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "eeewe",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "gaga",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "gaga1",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "khagesh",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "kishore",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "lakehouse",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "maciej",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "new_schema_random",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "nnmmnm",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "poc_fedex",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "pooja",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "pp_test",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy___prophecy_url_placeholder__",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_abhishek_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_anshul1_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_app",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_appdr_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_ash_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_ashishk3s_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_ashk3s_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_beta",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_beta_app",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_byos",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_chiragk3s_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_cz_app",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_darkcluster_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_deeptanshuk3s_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_execution_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_executionk3s_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_gembuilder_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_hotfix",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_hotfix1_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_hotfix_test_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_hsbctest_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_jasvinder_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_jasvinderk3s_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_jnjtest_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_jnjupgrade_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_khageshk3s_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_kishore_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_kishorek3s_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_kshitiz1_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_kshitizk3s_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_kuldeeps1k3s_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_metadata_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_nadeesh_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_onboarding_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_performance_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_perftest",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_poc",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_prashantpk3s_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_rajat_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_rajat_dev_cloud234",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_rajat_dev_cloud2345",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_rajatk3s_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_regression1_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_regression2_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_regression3_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_regression_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_rohitk3s_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_saik3s_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_slimimage5_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_slimimage_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_sony_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_staging",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_staging_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_sumit_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_tanmayk3s_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_test",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_uitesting",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_utkarshgk3s_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_vaibhavgk3s_dev_cloud",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_zionsbank_app",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "qa_20k_tables_test",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "qa_database",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "qa_database_acl",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "qa_database_acl_no_view",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "qa_db_warehouse",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "qa_db_warehouse_dbt_test__audit",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "qa_db_warehouse_qa_upload_schema",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "qa_db_warehouse_unique_latest",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "qa_dlt_database",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "qa_dlt_python_database",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "qa_schema",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "qa_suggestion_database",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "qa_test_copilot_analytical_10_tables",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "qa_test_copilot_analytical_20_tables",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "qa_test_copilot_expressions",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "qa_test_jnj",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "qa_test_random",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "qa_tpcds",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "qa_upload_schema",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "refresh_schema",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "refresh_schema_new",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "refresh_schema_new_1",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "refresh_schema_new_123",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "rohit",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "schema",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "sdsdsdds",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "sparklearnerdev",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "unique_latest",
+        "tables" : {
+          "alias_updated" : {
+            "entityType" : "TABLE",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "Segment",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Country",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Product",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Discount_Band",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Units_Sold",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Manufacturing_Price",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Sale_Price",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Gross_Sales",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Discounts",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Sales",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "COGS",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Profit",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Date",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Month_Number",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Month_Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Year",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "_rescued_data",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "parquet_all" : {
+            "entityType" : "TABLE",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "c_short",
+              "dataType" : {
+                "type" : "SmallInt"
+              }
+            }, {
+              "name" : "c_int",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "c_long",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "c_decimal",
+              "dataType" : {
+                "type" : "Decimal"
+              }
+            }, {
+              "name" : "c_float",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "c_boolean",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "c_double",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "c_string",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "c_timestamp",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "c_array_int",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_array_string",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "c_array_long",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Bigint"
+                }
+              }
+            }, {
+              "name" : "c_array_boolean",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Boolean"
+                }
+              }
+            }, {
+              "name" : "c_array_date",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Date"
+                }
+              }
+            }, {
+              "name" : "c_array_timestamp",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Timestamp"
+                }
+              }
+            }, {
+              "name" : "c_array_float",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Float"
+                }
+              }
+            }, {
+              "name" : "c_array_decimal",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "Decimal"
+                }
+              }
+            }, {
+              "name" : "c_struct",
+              "dataType" : {
+                "type" : "Struct",
+                "fields" : [ {
+                  "name" : "c_short",
+                  "dataType" : {
+                    "type" : "SmallInt"
+                  }
+                }, {
+                  "name" : "c_int",
+                  "dataType" : {
+                    "type" : "Integer"
+                  }
+                }, {
+                  "name" : "c_long",
+                  "dataType" : {
+                    "type" : "Bigint"
+                  }
+                }, {
+                  "name" : "c_decimal",
+                  "dataType" : {
+                    "type" : "Decimal"
+                  }
+                }, {
+                  "name" : "c_float",
+                  "dataType" : {
+                    "type" : "Float"
+                  }
+                }, {
+                  "name" : "c_boolean",
+                  "dataType" : {
+                    "type" : "Boolean"
+                  }
+                }, {
+                  "name" : "c_double",
+                  "dataType" : {
+                    "type" : "Double"
+                  }
+                }, {
+                  "name" : "c_string",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "c_date",
+                  "dataType" : {
+                    "type" : "Date"
+                  }
+                }, {
+                  "name" : "c_timestamp",
+                  "dataType" : {
+                    "type" : "Timestamp"
+                  }
+                }, {
+                  "name" : "c_array_int",
+                  "dataType" : {
+                    "type" : "Array",
+                    "dataType" : {
+                      "type" : "Integer"
+                    }
+                  }
+                } ]
+              }
+            }, {
+              "name" : "_rescued_data",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "segment_country_1" : {
+            "entityType" : "TABLE",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "Segment",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Country",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Product",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Discount_Band",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Units_Sold",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Manufacturing_Price",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Sale_Price",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Gross_Sales",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Discounts",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Sales",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "COGS",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Profit",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Date",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Month_Number",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "Month_Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Year",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "_rescued_data",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          }
+        }
+      }, {
+        "type" : "Schema",
+        "name" : "upload_latest",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "werwr",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "wqqw",
+        "children" : [ ]
+      } ]
+    }, {
+      "type" : "Catalog",
+      "name" : "main",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa-team",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "samples",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "system",
+      "children" : [ ]
+    } ]
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : { }
+  },
+  "entitiesToSync" : [ {
+    "name" : "mtest_1_latest",
+    "type" : "Model",
+    "syncedOnce" : false
+  } ],
+  "frontEndLanguage" : "sql"
+}

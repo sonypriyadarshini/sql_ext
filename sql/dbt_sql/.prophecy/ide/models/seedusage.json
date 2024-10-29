@@ -1,0 +1,126 @@
+{
+  "id" : "seedusage",
+  "metainfo" : {
+    "label" : "seedusage",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "seedusage##LT8TQRLz" : {
+      "id" : "seedusage##LT8TQRLz",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "seedusage",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "Retrieves the latest updates on names for further processing.",
+        "autoUpdateComment" : true
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM updated_names\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "HWvGd8rA",
+          "slug" : "updated_names"
+        } ],
+        "outputs" : [ {
+          "id" : "WhbwNqT0",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "775Fnoi-j8JGDgRdcKqkR" : {
+      "id" : "775Fnoi-j8JGDgRdcKqkR",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "checkseed",
+        "slug" : "checkseed",
+        "x" : -600,
+        "y" : -180,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "checkseed",
+          "sourceType" : "Seed",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "dIpz0yd8wMxxedY7mJZ1L",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "PZor9b8lyqh7JYYiWkCQT$$VI1YPHPyAjCW9GCexEFND" : {
+      "id" : "PZor9b8lyqh7JYYiWkCQT$$VI1YPHPyAjCW9GCexEFND",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "updated_names",
+        "slug" : "updated_names",
+        "x" : -280,
+        "y" : -260,
+        "phase" : 0,
+        "macroDependencies" : [ "dbt_sql.func_1" ],
+        "comment" : "Updates names in the dataset for consistency or accuracy.",
+        "autoUpdateComment" : true,
+        "isLabelGrayed" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "{{ dbt_sql.func_1('name') }}"
+          },
+          "alias" : "name_updated"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "924X-DNNbN7Z9J0gZPADk$$ehPyvJyuGsrFMJD0wLtnS",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "Lr6-5ivhO1IHCEue7kiJf$$fn3Y0ew4ppZi_TSUyCwp8",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "M5lkuU4X_omSgUJV_1tp3",
+    "source" : "775Fnoi-j8JGDgRdcKqkR",
+    "sourcePort" : "dIpz0yd8wMxxedY7mJZ1L",
+    "target" : "PZor9b8lyqh7JYYiWkCQT$$VI1YPHPyAjCW9GCexEFND",
+    "targetPort" : "924X-DNNbN7Z9J0gZPADk$$ehPyvJyuGsrFMJD0wLtnS"
+  }, {
+    "id" : "MdmgNlc04aYH_GAtKSlxc",
+    "source" : "PZor9b8lyqh7JYYiWkCQT$$VI1YPHPyAjCW9GCexEFND",
+    "sourcePort" : "Lr6-5ivhO1IHCEue7kiJf$$fn3Y0ew4ppZi_TSUyCwp8",
+    "target" : "seedusage##LT8TQRLz",
+    "targetPort" : "HWvGd8rA"
+  } ],
+  "component" : "Model"
+}

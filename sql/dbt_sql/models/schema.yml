@@ -1,0 +1,13 @@
+---
+version: 2
+models:
+- name: "seedusage"
+  columns:
+  - name: "name_updated"
+    tests:
+    - not_null:
+        config:
+          fail_calc: "count(*)"
+    dataType:
+      type: "String"
+  tests: []

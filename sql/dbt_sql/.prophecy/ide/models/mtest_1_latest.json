@@ -1,0 +1,84 @@
+{
+  "id" : "mtest_1_latest",
+  "metainfo" : {
+    "label" : "mtest_1_latest",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "mtest_1_latest##yyXCe8Xo" : {
+      "id" : "mtest_1_latest##yyXCe8Xo",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "mtest_1_latest",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM alias_updated\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "snCp5s27",
+          "slug" : "alias_updated"
+        } ],
+        "outputs" : [ {
+          "id" : "pHjdJUzV",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "vGgcKkxonYzAzpRHyHozH" : {
+      "id" : "vGgcKkxonYzAzpRHyHozH",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "alias_updated",
+        "slug" : "alias_updated",
+        "x" : -600,
+        "y" : -180,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "alias_updated",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.unique_latest",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "o3K9m49I9FGkSRYqqo5en",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "Z9zA_rc79EJ2IqZiP1SDX",
+    "source" : "vGgcKkxonYzAzpRHyHozH",
+    "sourcePort" : "o3K9m49I9FGkSRYqqo5en",
+    "target" : "mtest_1_latest##yyXCe8Xo",
+    "targetPort" : "snCp5s27"
+  } ],
+  "component" : "Model"
+}

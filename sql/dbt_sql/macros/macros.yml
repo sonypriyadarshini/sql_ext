@@ -1,0 +1,9 @@
+---
+version: 2
+macros:
+- name: "func_1"
+  arguments:
+  - name: "col1"
+    type: "value"
+    description: "{\"ProphecyType\": \"value\"}"
+  macroType: "expression"

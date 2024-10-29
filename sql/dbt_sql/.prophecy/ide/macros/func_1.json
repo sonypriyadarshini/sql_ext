@@ -1,0 +1,41 @@
+{
+  "func_1" : {
+    "name" : "func_1",
+    "macroType" : "expression",
+    "definition" : "concat({{col1}}, \"__\", \"updated\")",
+    "parameters" : {
+      "type" : "record",
+      "fields" : [ {
+        "name" : "col1",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false,
+        "isReferenced" : false
+      } ]
+    },
+    "staleState" : "none",
+    "propertiesFile" : {
+      "name" : "macros",
+      "content" : "---\nversion: 2\nmacros:\n- name: \"func_1\"\n  arguments:\n  - name: \"col1\"\n    type: \"value\"\n    description: \"{\\\"ProphecyType\\\": \\\"value\\\"}\"\n  macroType: \"expression\"\n",
+      "path" : "dbt_sql/macros/macros.yml",
+      "projectConfiguration" : null,
+      "folderConfiguration" : {
+        "version" : 2,
+        "macros" : [ {
+          "name" : "func_1",
+          "arguments" : [ {
+            "name" : "col1",
+            "type" : "value",
+            "description" : "{\"ProphecyType\": \"value\"}"
+          } ],
+          "macroType" : "expression"
+        } ]
+      },
+      "packagesYml" : null,
+      "editable" : true
+    },
+    "version" : 0
+  }
+}

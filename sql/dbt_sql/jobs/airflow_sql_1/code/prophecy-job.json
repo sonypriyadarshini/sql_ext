@@ -1,0 +1,142 @@
+{
+  "metainfo" : {
+    "type" : "Composer",
+    "fabricId" : "2745",
+    "jobId" : "jobs/airflow_sql_1",
+    "name" : "airflow_sql_1",
+    "dagName" : "sony_dbt_sql_airflow_sql_1",
+    "schedule" : "None",
+    "enabled" : true,
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "ignore_first_depends_on_past" : true,
+      "do_xcom_push" : true
+    },
+    "maxActiveRuns" : 1,
+    "catchup" : false,
+    "scheduleTimeZone" : "UTC",
+    "dagParams" : {
+      "instances" : {
+        "default" : { }
+      },
+      "params" : { },
+      "selected" : "default"
+    },
+    "airflowFunctions" : [ ],
+    "dynamicPipelineStatus" : {
+      "databricks" : false,
+      "dataproc" : false,
+      "emr" : false,
+      "onprem" : false
+    }
+  },
+  "processes" : {
+    "UKMo9CVZUB17rSRGgYk4n$$R75u2QY6hRLPDp5ElG2-O" : {
+      "id" : "UKMo9CVZUB17rSRGgYk4n$$R75u2QY6hRLPDp5ElG2-O",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : -660,
+        "y" : -240
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "FnGb3A-johWppPrg1xUYl$$kwISxMeSt8c4Z3DlCFUoB",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "1KGVGHzl97xPMkCXOmeec$$FlZqEFxgX4GnszL2uoSOT",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "entityId" : null,
+        "cacheSelectedOnly" : null,
+        "gitSubPath" : null,
+        "runModelWithParents" : false,
+        "defer" : null,
+        "noDefer" : null,
+        "runSeed" : true,
+        "gitEntity" : "branch",
+        "noPartialParse" : null,
+        "model" : null,
+        "warnErrorOptions" : null,
+        "gitTokenSecret" : null,
+        "state" : null,
+        "useExperimentalParser" : null,
+        "currentProjectSnapshots" : null,
+        "gitSshUrl" : null,
+        "indirectSelection" : null,
+        "partialParse" : null,
+        "vars" : null,
+        "isAdhocRunFromSameProject" : null,
+        "noPrint" : null,
+        "quiet" : null,
+        "projectId" : "35638",
+        "runMode" : "project",
+        "runOnlyModel" : false,
+        "favorState" : null,
+        "failFast" : null,
+        "noStaticParser" : null,
+        "loadingModels" : false,
+        "runTest" : true,
+        "select" : null,
+        "recordTimingInfo" : null,
+        "fullRefresh" : null,
+        "entityName" : null,
+        "noCacheSelectedOnly" : null,
+        "gitEntityValueTag" : null,
+        "noFavorState" : null,
+        "snapshot" : null,
+        "isProphecyManaged" : false,
+        "profile" : null,
+        "noVersionCheck" : null,
+        "noWriteJson" : null,
+        "printerWidth" : null,
+        "sqlFabricId" : "8630",
+        "gitEntityValue" : null,
+        "logFormat" : null,
+        "runModelWithChildren" : false,
+        "dbtProfileSecret" : null,
+        "gitEntityValueCommit" : null,
+        "target" : null,
+        "exclude" : null,
+        "runDeps" : null,
+        "loadingSnapshots" : false,
+        "gitEntityValueBranch" : null,
+        "noAnonymousUsageStats" : null,
+        "selector" : null,
+        "targetPath" : null,
+        "threads" : null,
+        "warnError" : null,
+        "currentProjectModels" : [ {
+          "label" : "seedusage",
+          "value" : "seedusage",
+          "id" : "35638/.prophecy/metadata/sqlmodels/seedusage",
+          "name" : "seedusage"
+        }, {
+          "label" : "mtest_1_latest",
+          "value" : "mtest_1_latest",
+          "id" : "35638/.prophecy/metadata/sqlmodels/mtest_1_latest",
+          "name" : "mtest_1_latest"
+        } ],
+        "profilesDir" : null,
+        "taskId" : null,
+        "logPath" : null,
+        "storeFailures" : null,
+        "entityKind" : null
+      },
+      "connections" : [ ],
+      "processes" : { }
+    }
+  },
+  "connections" : [ ]
+}

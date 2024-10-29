@@ -1,0 +1,84 @@
+{
+  "id" : "generic_test",
+  "metainfo" : {
+    "label" : "generic_test",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "error_if" : "\">1\"",
+        "warn_if" : "\">3\"",
+        "type" : "TestConfig"
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "generic_test##u1DS10cq" : {
+      "id" : "generic_test##u1DS10cq",
+      "component" : "TargetSingularDataTest",
+      "metadata" : {
+        "label" : "generic_test",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "query" : "SELECT * \n\nFROM seedusage\n",
+        "customQuery" : false,
+        "customQueryDisabled" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "hy4VIVnH",
+          "slug" : "seedusage"
+        } ],
+        "outputs" : [ {
+          "id" : "JcOxaFuz",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "SGUfcca4PjdmOxy3egSzM" : {
+      "id" : "SGUfcca4PjdmOxy3egSzM",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "seedusage",
+        "slug" : "seedusage",
+        "x" : -600,
+        "y" : -180,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "seedusage",
+          "sourceType" : "Model",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "lw7QKV9_IrUq9GqRFmUFE",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "MqZkT9iTvkJXSm-Vj55KU",
+    "source" : "SGUfcca4PjdmOxy3egSzM",
+    "sourcePort" : "lw7QKV9_IrUq9GqRFmUFE",
+    "target" : "generic_test##u1DS10cq",
+    "targetPort" : "hy4VIVnH"
+  } ],
+  "component" : "SingularDataTest"
+}
