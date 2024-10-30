@@ -1,0 +1,394 @@
+{
+  "id" : "model_1_1",
+  "metainfo" : {
+    "label" : "model_1_1",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ {
+        "source" : {
+          "table" : {
+            "name" : "checkseed",
+            "sourceType" : "Seed"
+          }
+        },
+        "sourceComponentKind" : "Seed",
+        "sourceLabel" : "checkseed_1",
+        "canJoinWith" : [ {
+          "processLabel" : "xyz_1",
+          "processId" : "EmWv84hlF5lu0AP96KLZd",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "age", "name" ],
+            "conditions" : [ {
+              "alias" : "checkseed_1",
+              "expression" : {
+                "expression" : "checkseed_1.age = xyz_1.age AND checkseed_1.name = xyz_1.name"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "xyz_1.name"
+              },
+              "alias" : "name"
+            }, {
+              "expression" : {
+                "expression" : "xyz_1.age"
+              },
+              "alias" : "age"
+            }, {
+              "expression" : {
+                "expression" : "xyz_1.iuwe"
+              },
+              "alias" : "iuwe"
+            } ],
+            "headAlias" : "checkseed_1",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "age", "name" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "seedusage",
+            "sourceType" : "Model"
+          }
+        },
+        "sourceComponentKind" : "Model",
+        "sourceLabel" : "seedusage",
+        "canJoinWith" : [ {
+          "processLabel" : "checkseed",
+          "processId" : "HufrxW29O5P0xUvWcKGGi",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "name" ],
+            "conditions" : [ {
+              "alias" : "seedusage",
+              "expression" : {
+                "expression" : "seedusage.name_updated = checkseed.name"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "checkseed.name"
+              },
+              "alias" : "name"
+            }, {
+              "expression" : {
+                "expression" : "checkseed.age"
+              },
+              "alias" : "age"
+            } ],
+            "headAlias" : "seedusage",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "name" ],
+          "isRecommended" : true
+        }, {
+          "processLabel" : "xyz_1",
+          "processId" : "EmWv84hlF5lu0AP96KLZd",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "name" ],
+            "conditions" : [ {
+              "alias" : "seedusage",
+              "expression" : {
+                "expression" : "seedusage.name_updated = xyz_1.name"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "xyz_1.name"
+              },
+              "alias" : "name"
+            }, {
+              "expression" : {
+                "expression" : "xyz_1.age"
+              },
+              "alias" : "age"
+            }, {
+              "expression" : {
+                "expression" : "xyz_1.iuwe"
+              },
+              "alias" : "iuwe"
+            } ],
+            "headAlias" : "seedusage",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "name" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "xyz_1",
+            "sourceType" : "Seed"
+          }
+        },
+        "sourceComponentKind" : "Seed",
+        "sourceLabel" : "xyz_1_1",
+        "canJoinWith" : [ {
+          "processLabel" : "checkseed",
+          "processId" : "HufrxW29O5P0xUvWcKGGi",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "age", "name" ],
+            "conditions" : [ {
+              "alias" : "xyz_1_1",
+              "expression" : {
+                "expression" : "xyz_1_1.age = checkseed.age AND xyz_1_1.name = checkseed.name"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "xyz_1_1.iuwe"
+              },
+              "alias" : "iuwe"
+            }, {
+              "expression" : {
+                "expression" : "checkseed.name"
+              },
+              "alias" : "name"
+            }, {
+              "expression" : {
+                "expression" : "checkseed.age"
+              },
+              "alias" : "age"
+            } ],
+            "headAlias" : "xyz_1_1",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "age", "name" ],
+          "isRecommended" : true
+        } ]
+      } ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "GMrJ5cUQUsy4P1r9FnYNK$$NdOF7kfaoJKF2CUjGrX0_" : {
+      "id" : "GMrJ5cUQUsy4P1r9FnYNK$$NdOF7kfaoJKF2CUjGrX0_",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : -360,
+        "y" : -240,
+        "phase" : 0,
+        "macroDependencies" : [ "dbt_sql.func_1" ],
+        "comment" : "Updates segment names for better clarity in reporting.",
+        "autoUpdateComment" : true
+      },
+      "properties" : {
+        "columnsSelector" : [ "cQ9I0K9MWipUXljQYbzQ7$$w-tFu52HW7wpYtX8paRb3##Segment" ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "concat(Segment, \"updated\")"
+          },
+          "alias" : "t1"
+        }, {
+          "expression" : {
+            "expression" : "{{ dbt_sql.func_1('Segment') }}"
+          },
+          "alias" : "test1"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "cQ9I0K9MWipUXljQYbzQ7$$w-tFu52HW7wpYtX8paRb3",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "n5b9Ieme5u67FqPDjqz6q$$2l2dFEq4nP0QiGcx7SPeD",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "model_1_1##cZqu8Tsi" : {
+      "id" : "model_1_1##cZqu8Tsi",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "model_1_1",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "Reuses the dataset of patients with chronic conditions born before 2000 for further analysis.",
+        "autoUpdateComment" : true
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM Reformat_1\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "qlo3fdz5",
+          "slug" : "Reformat_1"
+        } ],
+        "outputs" : [ {
+          "id" : "rhghcU40",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "EmWv84hlF5lu0AP96KLZd" : {
+      "id" : "EmWv84hlF5lu0AP96KLZd",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "xyz_1",
+        "slug" : "xyz_1",
+        "x" : -120,
+        "y" : -260,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "xyz_1",
+          "sourceType" : "Seed",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "xa4xmpHOSlytbcK4vsGQw",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "HufrxW29O5P0xUvWcKGGi" : {
+      "id" : "HufrxW29O5P0xUvWcKGGi",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "checkseed",
+        "slug" : "checkseed",
+        "x" : -500,
+        "y" : 140,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "checkseed",
+          "sourceType" : "Seed",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "xcFrKQKOlEu7BKHzMY71O",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "Ngoyj4fBmlMzXYwHj8DE7$$vF8AfiX5qNUlosILwP9F9" : {
+      "id" : "Ngoyj4fBmlMzXYwHj8DE7$$vF8AfiX5qNUlosILwP9F9",
+      "component" : "gem1",
+      "metadata" : {
+        "label" : "gem1_alias_updated",
+        "slug" : "gem1_alias_updated",
+        "x" : -200,
+        "y" : 80,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "Updates and retrieves data from the gem1 model for improved insights."
+      },
+      "properties" : {
+        "parameter1" : "'alias_updated'",
+        "_oldMacroProperties" : {
+          "macroName" : "gem1",
+          "projectName" : "dbt_sql",
+          "parameters" : [ {
+            "name" : "parameter1",
+            "value" : "'alias_updated'"
+          } ]
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "0i0zr-TNMbKCfrwnPFD6u$$mnJ3hkU5OUZG8V7ISMmak",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "gYc0AgdqBhoAbMLn8sw4E$$MBX4tyMqQhGpE8WXlmO-C",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "componentInfo" : {
+        "gemId" : "gem1_dbt_sql",
+        "name" : "gem1",
+        "projectName" : "dbt_sql",
+        "sourceProjectName" : "dbt_sql"
+      }
+    },
+    "sWfIF9_iNTDMnqezl2KvB" : {
+      "id" : "sWfIF9_iNTDMnqezl2KvB",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "alias_updated",
+        "slug" : "alias_updated",
+        "x" : -600,
+        "y" : -180,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "alias_updated",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.unique_latest",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "CbE122hzFcVoH-CxXWGXN",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "c6ATn97S2mru6nxxojpC7$$UPIzeToargQP1d9X_Y3L8",
+    "source" : "sWfIF9_iNTDMnqezl2KvB",
+    "sourcePort" : "CbE122hzFcVoH-CxXWGXN",
+    "target" : "GMrJ5cUQUsy4P1r9FnYNK$$NdOF7kfaoJKF2CUjGrX0_",
+    "targetPort" : "cQ9I0K9MWipUXljQYbzQ7$$w-tFu52HW7wpYtX8paRb3"
+  }, {
+    "id" : "38Cndt_esU_7HTmrts7GI",
+    "source" : "GMrJ5cUQUsy4P1r9FnYNK$$NdOF7kfaoJKF2CUjGrX0_",
+    "sourcePort" : "n5b9Ieme5u67FqPDjqz6q$$2l2dFEq4nP0QiGcx7SPeD",
+    "target" : "model_1_1##cZqu8Tsi",
+    "targetPort" : "qlo3fdz5"
+  }, {
+    "id" : "F4jTalniBC9oz-KBoK_vQ",
+    "source" : "sWfIF9_iNTDMnqezl2KvB",
+    "sourcePort" : "CbE122hzFcVoH-CxXWGXN",
+    "target" : "Ngoyj4fBmlMzXYwHj8DE7$$vF8AfiX5qNUlosILwP9F9",
+    "targetPort" : "0i0zr-TNMbKCfrwnPFD6u$$mnJ3hkU5OUZG8V7ISMmak"
+  } ],
+  "component" : "Model"
+}

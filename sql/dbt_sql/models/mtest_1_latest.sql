@@ -1,4 +1,12 @@
-WITH alias_updated AS (
+WITH model_1_1 AS (
+
+  SELECT * 
+  
+  FROM {{ ref('model_1_1')}}
+
+),
+
+alias_updated AS (
 
   SELECT * 
   
@@ -8,4 +16,4 @@ WITH alias_updated AS (
 
 SELECT *
 
-FROM alias_updated
+FROM model_1_1

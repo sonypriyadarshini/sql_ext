@@ -11,3 +11,16 @@ models:
     dataType:
       type: "String"
   tests: []
+- name: "model_1_1"
+  columns:
+  - name: "t1"
+    tests:
+    - unique:
+        config:
+          fail_calc: "count(*)"
+    dataType:
+      type: "String"
+  - name: "test1"
+    dataType:
+      type: "String"
+  tests: []

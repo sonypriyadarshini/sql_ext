@@ -5,7 +5,1054 @@
     "autoLayout" : false,
     "staleState" : "none",
     "sourceSuggestions" : {
-      "sources" : [ ]
+      "sources" : [ {
+        "source" : {
+          "table" : {
+            "name" : "alias_updated",
+            "sourceName" : "hive_metastore.unique_latest",
+            "sourceType" : "Source"
+          }
+        },
+        "sourceComponentKind" : "Source",
+        "sourceLabel" : "alias_updated_1",
+        "canJoinWith" : [ {
+          "processLabel" : "parquet_all",
+          "processId" : "9sGjnpxvUfEfMppiTo8vS",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "_rescued_data" ],
+            "conditions" : [ {
+              "alias" : "alias_updated_1",
+              "expression" : {
+                "expression" : "alias_updated_1._rescued_data = parquet_all._rescued_data"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "alias_updated_1.Segment"
+              },
+              "alias" : "Segment"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated_1.Country"
+              },
+              "alias" : "Country"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated_1.Product"
+              },
+              "alias" : "Product"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated_1.Discount_Band"
+              },
+              "alias" : "Discount_Band"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated_1.Units_Sold"
+              },
+              "alias" : "Units_Sold"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated_1.Manufacturing_Price"
+              },
+              "alias" : "Manufacturing_Price"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated_1.Sale_Price"
+              },
+              "alias" : "Sale_Price"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated_1.Gross_Sales"
+              },
+              "alias" : "Gross_Sales"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated_1.Discounts"
+              },
+              "alias" : "Discounts"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated_1.Sales"
+              },
+              "alias" : "Sales"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated_1.COGS"
+              },
+              "alias" : "COGS"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated_1.Profit"
+              },
+              "alias" : "Profit"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated_1.Date"
+              },
+              "alias" : "Date"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated_1.Month_Number"
+              },
+              "alias" : "Month_Number"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated_1.Month_Name"
+              },
+              "alias" : "Month_Name"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated_1.Year"
+              },
+              "alias" : "Year"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_decimal"
+              },
+              "alias" : "c_array_decimal"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_timestamp"
+              },
+              "alias" : "c_array_timestamp"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_date"
+              },
+              "alias" : "c_date"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_long"
+              },
+              "alias" : "c_array_long"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_double"
+              },
+              "alias" : "c_double"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_string"
+              },
+              "alias" : "c_array_string"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_int"
+              },
+              "alias" : "c_array_int"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_long"
+              },
+              "alias" : "c_long"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_struct"
+              },
+              "alias" : "c_struct"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_boolean"
+              },
+              "alias" : "c_array_boolean"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_decimal"
+              },
+              "alias" : "c_decimal"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all._rescued_data"
+              },
+              "alias" : "_rescued_data"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_boolean"
+              },
+              "alias" : "c_boolean"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_float"
+              },
+              "alias" : "c_float"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_int"
+              },
+              "alias" : "c_int"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_short"
+              },
+              "alias" : "c_short"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_date"
+              },
+              "alias" : "c_array_date"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_timestamp"
+              },
+              "alias" : "c_timestamp"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_string"
+              },
+              "alias" : "c_string"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_float"
+              },
+              "alias" : "c_array_float"
+            } ],
+            "headAlias" : "alias_updated_1",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "_rescued_data" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "model_1_1",
+            "sourceType" : "Model"
+          }
+        },
+        "sourceComponentKind" : "Model",
+        "sourceLabel" : "model_1_1_1",
+        "canJoinWith" : [ {
+          "processLabel" : "alias_updated",
+          "processId" : "vGgcKkxonYzAzpRHyHozH",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "COGS", "Country", "Date" ],
+            "conditions" : [ {
+              "alias" : "model_1_1_1",
+              "expression" : {
+                "expression" : "model_1_1_1.COGS = alias_updated.COGS AND model_1_1_1.Country = alias_updated.Country AND model_1_1_1.Date = alias_updated.Date"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "alias_updated.Sale_Price"
+              },
+              "alias" : "Sale_Price"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Units_Sold"
+              },
+              "alias" : "Units_Sold"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Discount_Band"
+              },
+              "alias" : "Discount_Band"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Date"
+              },
+              "alias" : "Date"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Discounts"
+              },
+              "alias" : "Discounts"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Manufacturing_Price"
+              },
+              "alias" : "Manufacturing_Price"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Profit"
+              },
+              "alias" : "Profit"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Segment"
+              },
+              "alias" : "Segment"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Year"
+              },
+              "alias" : "Year"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Country"
+              },
+              "alias" : "Country"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Month_Number"
+              },
+              "alias" : "Month_Number"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Sales"
+              },
+              "alias" : "Sales"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Month_Name"
+              },
+              "alias" : "Month_Name"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.COGS"
+              },
+              "alias" : "COGS"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Gross_Sales"
+              },
+              "alias" : "Gross_Sales"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated._rescued_data"
+              },
+              "alias" : "_rescued_data"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Product"
+              },
+              "alias" : "Product"
+            } ],
+            "headAlias" : "model_1_1_1",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "COGS", "Country", "Date" ],
+          "isRecommended" : true
+        }, {
+          "processLabel" : "parquet_all",
+          "processId" : "9sGjnpxvUfEfMppiTo8vS",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "_rescued_data" ],
+            "conditions" : [ {
+              "alias" : "model_1_1_1",
+              "expression" : {
+                "expression" : "model_1_1_1._rescued_data = parquet_all._rescued_data"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "model_1_1_1.Segment"
+              },
+              "alias" : "Segment"
+            }, {
+              "expression" : {
+                "expression" : "model_1_1_1.Country"
+              },
+              "alias" : "Country"
+            }, {
+              "expression" : {
+                "expression" : "model_1_1_1.Product"
+              },
+              "alias" : "Product"
+            }, {
+              "expression" : {
+                "expression" : "model_1_1_1.Discount_Band"
+              },
+              "alias" : "Discount_Band"
+            }, {
+              "expression" : {
+                "expression" : "model_1_1_1.Units_Sold"
+              },
+              "alias" : "Units_Sold"
+            }, {
+              "expression" : {
+                "expression" : "model_1_1_1.Manufacturing_Price"
+              },
+              "alias" : "Manufacturing_Price"
+            }, {
+              "expression" : {
+                "expression" : "model_1_1_1.Sale_Price"
+              },
+              "alias" : "Sale_Price"
+            }, {
+              "expression" : {
+                "expression" : "model_1_1_1.Gross_Sales"
+              },
+              "alias" : "Gross_Sales"
+            }, {
+              "expression" : {
+                "expression" : "model_1_1_1.Discounts"
+              },
+              "alias" : "Discounts"
+            }, {
+              "expression" : {
+                "expression" : "model_1_1_1.Sales"
+              },
+              "alias" : "Sales"
+            }, {
+              "expression" : {
+                "expression" : "model_1_1_1.COGS"
+              },
+              "alias" : "COGS"
+            }, {
+              "expression" : {
+                "expression" : "model_1_1_1.Profit"
+              },
+              "alias" : "Profit"
+            }, {
+              "expression" : {
+                "expression" : "model_1_1_1.Date"
+              },
+              "alias" : "Date"
+            }, {
+              "expression" : {
+                "expression" : "model_1_1_1.Month_Number"
+              },
+              "alias" : "Month_Number"
+            }, {
+              "expression" : {
+                "expression" : "model_1_1_1.Month_Name"
+              },
+              "alias" : "Month_Name"
+            }, {
+              "expression" : {
+                "expression" : "model_1_1_1.Year"
+              },
+              "alias" : "Year"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_decimal"
+              },
+              "alias" : "c_array_decimal"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_timestamp"
+              },
+              "alias" : "c_array_timestamp"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_date"
+              },
+              "alias" : "c_date"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_long"
+              },
+              "alias" : "c_array_long"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_double"
+              },
+              "alias" : "c_double"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_string"
+              },
+              "alias" : "c_array_string"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_int"
+              },
+              "alias" : "c_array_int"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_long"
+              },
+              "alias" : "c_long"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_struct"
+              },
+              "alias" : "c_struct"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_boolean"
+              },
+              "alias" : "c_array_boolean"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_decimal"
+              },
+              "alias" : "c_decimal"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all._rescued_data"
+              },
+              "alias" : "_rescued_data"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_boolean"
+              },
+              "alias" : "c_boolean"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_float"
+              },
+              "alias" : "c_float"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_int"
+              },
+              "alias" : "c_int"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_short"
+              },
+              "alias" : "c_short"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_date"
+              },
+              "alias" : "c_array_date"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_timestamp"
+              },
+              "alias" : "c_timestamp"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_string"
+              },
+              "alias" : "c_string"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_float"
+              },
+              "alias" : "c_array_float"
+            } ],
+            "headAlias" : "model_1_1_1",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "_rescued_data" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "parquet_all",
+            "sourceName" : "hive_metastore.unique_latest",
+            "sourceType" : "Source"
+          }
+        },
+        "sourceComponentKind" : "Source",
+        "sourceLabel" : "parquet_all_1",
+        "canJoinWith" : [ {
+          "processLabel" : "alias_updated",
+          "processId" : "vGgcKkxonYzAzpRHyHozH",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "_rescued_data" ],
+            "conditions" : [ {
+              "alias" : "parquet_all_1",
+              "expression" : {
+                "expression" : "parquet_all_1._rescued_data = alias_updated._rescued_data"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "parquet_all_1.c_short"
+              },
+              "alias" : "c_short"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all_1.c_int"
+              },
+              "alias" : "c_int"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all_1.c_long"
+              },
+              "alias" : "c_long"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all_1.c_decimal"
+              },
+              "alias" : "c_decimal"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all_1.c_float"
+              },
+              "alias" : "c_float"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all_1.c_boolean"
+              },
+              "alias" : "c_boolean"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all_1.c_double"
+              },
+              "alias" : "c_double"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all_1.c_string"
+              },
+              "alias" : "c_string"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all_1.c_date"
+              },
+              "alias" : "c_date"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all_1.c_timestamp"
+              },
+              "alias" : "c_timestamp"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all_1.c_array_int"
+              },
+              "alias" : "c_array_int"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all_1.c_array_string"
+              },
+              "alias" : "c_array_string"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all_1.c_array_long"
+              },
+              "alias" : "c_array_long"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all_1.c_array_boolean"
+              },
+              "alias" : "c_array_boolean"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all_1.c_array_date"
+              },
+              "alias" : "c_array_date"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all_1.c_array_timestamp"
+              },
+              "alias" : "c_array_timestamp"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all_1.c_array_float"
+              },
+              "alias" : "c_array_float"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all_1.c_array_decimal"
+              },
+              "alias" : "c_array_decimal"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all_1.c_struct"
+              },
+              "alias" : "c_struct"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Sale_Price"
+              },
+              "alias" : "Sale_Price"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Units_Sold"
+              },
+              "alias" : "Units_Sold"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Discount_Band"
+              },
+              "alias" : "Discount_Band"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Date"
+              },
+              "alias" : "Date"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Discounts"
+              },
+              "alias" : "Discounts"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Manufacturing_Price"
+              },
+              "alias" : "Manufacturing_Price"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Profit"
+              },
+              "alias" : "Profit"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Segment"
+              },
+              "alias" : "Segment"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Year"
+              },
+              "alias" : "Year"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Country"
+              },
+              "alias" : "Country"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Month_Number"
+              },
+              "alias" : "Month_Number"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Sales"
+              },
+              "alias" : "Sales"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Month_Name"
+              },
+              "alias" : "Month_Name"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.COGS"
+              },
+              "alias" : "COGS"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Gross_Sales"
+              },
+              "alias" : "Gross_Sales"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated._rescued_data"
+              },
+              "alias" : "_rescued_data"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Product"
+              },
+              "alias" : "Product"
+            } ],
+            "headAlias" : "parquet_all_1",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "_rescued_data" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "segment_country_1",
+            "sourceName" : "hive_metastore.unique_latest",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "segment_country_1",
+        "canJoinWith" : [ {
+          "processLabel" : "alias_updated",
+          "processId" : "vGgcKkxonYzAzpRHyHozH",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "COGS", "Country", "Date" ],
+            "conditions" : [ {
+              "alias" : "segment_country_1",
+              "expression" : {
+                "expression" : "segment_country_1.COGS = alias_updated.COGS AND segment_country_1.Country = alias_updated.Country AND segment_country_1.Date = alias_updated.Date"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "alias_updated.Sale_Price"
+              },
+              "alias" : "Sale_Price"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Units_Sold"
+              },
+              "alias" : "Units_Sold"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Discount_Band"
+              },
+              "alias" : "Discount_Band"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Date"
+              },
+              "alias" : "Date"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Discounts"
+              },
+              "alias" : "Discounts"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Manufacturing_Price"
+              },
+              "alias" : "Manufacturing_Price"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Profit"
+              },
+              "alias" : "Profit"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Segment"
+              },
+              "alias" : "Segment"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Year"
+              },
+              "alias" : "Year"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Country"
+              },
+              "alias" : "Country"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Month_Number"
+              },
+              "alias" : "Month_Number"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Sales"
+              },
+              "alias" : "Sales"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Month_Name"
+              },
+              "alias" : "Month_Name"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.COGS"
+              },
+              "alias" : "COGS"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Gross_Sales"
+              },
+              "alias" : "Gross_Sales"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated._rescued_data"
+              },
+              "alias" : "_rescued_data"
+            }, {
+              "expression" : {
+                "expression" : "alias_updated.Product"
+              },
+              "alias" : "Product"
+            } ],
+            "headAlias" : "segment_country_1",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "COGS", "Country", "Date" ],
+          "isRecommended" : true
+        }, {
+          "processLabel" : "parquet_all",
+          "processId" : "9sGjnpxvUfEfMppiTo8vS",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "_rescued_data" ],
+            "conditions" : [ {
+              "alias" : "segment_country_1",
+              "expression" : {
+                "expression" : "segment_country_1._rescued_data = parquet_all._rescued_data"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "segment_country_1.Segment"
+              },
+              "alias" : "Segment"
+            }, {
+              "expression" : {
+                "expression" : "segment_country_1.Country"
+              },
+              "alias" : "Country"
+            }, {
+              "expression" : {
+                "expression" : "segment_country_1.Product"
+              },
+              "alias" : "Product"
+            }, {
+              "expression" : {
+                "expression" : "segment_country_1.Discount_Band"
+              },
+              "alias" : "Discount_Band"
+            }, {
+              "expression" : {
+                "expression" : "segment_country_1.Units_Sold"
+              },
+              "alias" : "Units_Sold"
+            }, {
+              "expression" : {
+                "expression" : "segment_country_1.Manufacturing_Price"
+              },
+              "alias" : "Manufacturing_Price"
+            }, {
+              "expression" : {
+                "expression" : "segment_country_1.Sale_Price"
+              },
+              "alias" : "Sale_Price"
+            }, {
+              "expression" : {
+                "expression" : "segment_country_1.Gross_Sales"
+              },
+              "alias" : "Gross_Sales"
+            }, {
+              "expression" : {
+                "expression" : "segment_country_1.Discounts"
+              },
+              "alias" : "Discounts"
+            }, {
+              "expression" : {
+                "expression" : "segment_country_1.Sales"
+              },
+              "alias" : "Sales"
+            }, {
+              "expression" : {
+                "expression" : "segment_country_1.COGS"
+              },
+              "alias" : "COGS"
+            }, {
+              "expression" : {
+                "expression" : "segment_country_1.Profit"
+              },
+              "alias" : "Profit"
+            }, {
+              "expression" : {
+                "expression" : "segment_country_1.Date"
+              },
+              "alias" : "Date"
+            }, {
+              "expression" : {
+                "expression" : "segment_country_1.Month_Number"
+              },
+              "alias" : "Month_Number"
+            }, {
+              "expression" : {
+                "expression" : "segment_country_1.Month_Name"
+              },
+              "alias" : "Month_Name"
+            }, {
+              "expression" : {
+                "expression" : "segment_country_1.Year"
+              },
+              "alias" : "Year"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_decimal"
+              },
+              "alias" : "c_array_decimal"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_timestamp"
+              },
+              "alias" : "c_array_timestamp"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_date"
+              },
+              "alias" : "c_date"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_long"
+              },
+              "alias" : "c_array_long"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_double"
+              },
+              "alias" : "c_double"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_string"
+              },
+              "alias" : "c_array_string"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_int"
+              },
+              "alias" : "c_array_int"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_long"
+              },
+              "alias" : "c_long"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_struct"
+              },
+              "alias" : "c_struct"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_boolean"
+              },
+              "alias" : "c_array_boolean"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_decimal"
+              },
+              "alias" : "c_decimal"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all._rescued_data"
+              },
+              "alias" : "_rescued_data"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_boolean"
+              },
+              "alias" : "c_boolean"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_float"
+              },
+              "alias" : "c_float"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_int"
+              },
+              "alias" : "c_int"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_short"
+              },
+              "alias" : "c_short"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_date"
+              },
+              "alias" : "c_array_date"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_timestamp"
+              },
+              "alias" : "c_timestamp"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_string"
+              },
+              "alias" : "c_string"
+            }, {
+              "expression" : {
+                "expression" : "parquet_all.c_array_float"
+              },
+              "alias" : "c_array_float"
+            } ],
+            "headAlias" : "segment_country_1",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "_rescued_data" ],
+          "isRecommended" : false
+        } ]
+      } ]
     },
     "version" : 3
   },
@@ -24,7 +1071,7 @@
         "customQueryDisabled" : true,
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
-        "query" : "SELECT * \n\nFROM alias_updated\n",
+        "query" : "SELECT * \n\nFROM model_1_1\n",
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -33,7 +1080,7 @@
       "ports" : {
         "inputs" : [ {
           "id" : "snCp5s27",
-          "slug" : "alias_updated"
+          "slug" : "model_1_1"
         } ],
         "outputs" : [ {
           "id" : "pHjdJUzV",
@@ -71,12 +1118,39 @@
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       }
+    },
+    "dF7hkZC9W2lN9scVXkASu" : {
+      "id" : "dF7hkZC9W2lN9scVXkASu",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_1_1",
+        "slug" : "model_1_1",
+        "x" : -920,
+        "y" : -280,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "model_1_1",
+          "sourceType" : "Model",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "9OlQjxGD9UDfxVTiLZXM5",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
     }
   },
   "connections" : [ {
-    "id" : "Z9zA_rc79EJ2IqZiP1SDX",
-    "source" : "vGgcKkxonYzAzpRHyHozH",
-    "sourcePort" : "o3K9m49I9FGkSRYqqo5en",
+    "id" : "g24zVlliTweApleInDgqu",
+    "source" : "dF7hkZC9W2lN9scVXkASu",
+    "sourcePort" : "9OlQjxGD9UDfxVTiLZXM5",
     "target" : "mtest_1_latest##yyXCe8Xo",
     "targetPort" : "snCp5s27"
   } ],

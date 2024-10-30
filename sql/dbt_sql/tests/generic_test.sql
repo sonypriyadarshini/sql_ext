@@ -1,7 +1,7 @@
 {{
   config({    
-    "error_if": ">1",
-    "warn_if": ">3"
+    "error_if": ">10",
+    "warn_if": ">30"
   })
 }}
 

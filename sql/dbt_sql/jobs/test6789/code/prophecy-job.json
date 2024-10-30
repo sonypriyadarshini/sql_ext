@@ -1,0 +1,94 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "8630",
+    "jobId" : "jobs/test6789",
+    "name" : "test6789",
+    "schedule" : "0 0 0 1 1 ? *",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : true,
+    "defaultClusterSize" : "prophecy_internal_jobs",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "retries" : 0,
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    }
+  },
+  "processes" : {
+    "xSAPebGBRiIhyW8iNwCre$$jRLRsL0vIFQhjK69vJq9o" : {
+      "id" : "xSAPebGBRiIhyW8iNwCre$$jRLRsL0vIFQhjK69vJq9o",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : -660,
+        "y" : -240
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "vl55Cgy_trbBhvaCoXA4_$$fVB_QtOx19b66yUFq2NMb",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "eZlm9BGcAupFuJ0rak8Hm$$bFsOrkyB2aHyMuDoyrOgV",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "entityId" : null,
+        "execSeed" : true,
+        "execRun" : false,
+        "gitEntity" : "branch",
+        "model" : "35638/.prophecy/metadata/sqlmodels/seedusage",
+        "customVersion" : true,
+        "projectId" : "35638",
+        "runOnlyModel" : "true",
+        "loadingModels" : false,
+        "entityName" : null,
+        "gitEntityValueTag" : null,
+        "profile" : "run_profile",
+        "sqlFabricId" : "8630",
+        "gitEntityValue" : "test67",
+        "execDeps" : false,
+        "gitEntityValueCommit" : null,
+        "gitEntityValueBranch" : "test67",
+        "execTest" : true,
+        "currentProjectModels" : [ {
+          "label" : "model_1_1",
+          "value" : "model_1_1",
+          "id" : "35638/.prophecy/metadata/sqlmodels/model_1_1",
+          "name" : "model_1_1"
+        }, {
+          "label" : "seedusage",
+          "value" : "seedusage",
+          "id" : "35638/.prophecy/metadata/sqlmodels/seedusage",
+          "name" : "seedusage"
+        }, {
+          "label" : "mtest_1_latest",
+          "value" : "mtest_1_latest",
+          "id" : "35638/.prophecy/metadata/sqlmodels/mtest_1_latest",
+          "name" : "mtest_1_latest"
+        } ]
+      }
+    }
+  },
+  "connections" : [ ]
+}

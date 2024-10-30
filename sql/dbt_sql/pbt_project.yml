@@ -61,6 +61,32 @@ jobs:
     models: []
     sqlProjects:
     - '35638'
+  jobs/test6789:
+    name: test6789
+    description: ''
+    fabricUID: 8630
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: prophecy_internal_jobs
+    scheduleCron: 0 0 0 1 1 ? *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: true
+    createdAt: '2024-10-30 06:01:52'
+    author: sony@prophecy.io
+    models:
+    - 35638/.prophecy/metadata/sqlmodels/seedusage
+    sqlProjects: []
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
@@ -76,61 +102,41 @@ functions:
   businessRules: {}
 subgraphs: {}
 sqlModels:
+  .prophecy/metadata/sqlmodels/model_1_1:
+    name: model_1_1
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: t1
+        dataType:
+          type: String
+      - name: test1
+        dataType:
+          type: String
+    description: null
+    author: sony@prophecy.io
+    files:
+    - models/model_1_1.sql
+    - .prophecy/ide/models/model_1_1.json
+    - models/schema.yml
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-10-30 05:41:05'
   .prophecy/metadata/sqlmodels/mtest_1_latest:
     name: mtest_1_latest
     schema:
       entityType: ''
       providerType: Databricks
       fields:
-      - name: Segment
+      - name: t1
         dataType:
           type: String
-      - name: Country
-        dataType:
-          type: String
-      - name: Product
-        dataType:
-          type: String
-      - name: Discount_Band
-        dataType:
-          type: String
-      - name: Units_Sold
-        dataType:
-          type: Double
-      - name: Manufacturing_Price
-        dataType:
-          type: Double
-      - name: Sale_Price
-        dataType:
-          type: Double
-      - name: Gross_Sales
-        dataType:
-          type: Double
-      - name: Discounts
-        dataType:
-          type: String
-      - name: Sales
-        dataType:
-          type: Double
-      - name: COGS
-        dataType:
-          type: Double
-      - name: Profit
-        dataType:
-          type: String
-      - name: Date
-        dataType:
-          type: String
-      - name: Month_Number
-        dataType:
-          type: Double
-      - name: Month_Name
-        dataType:
-          type: String
-      - name: Year
-        dataType:
-          type: Double
-      - name: _rescued_data
+      - name: test1
         dataType:
           type: String
     description: null
@@ -189,6 +195,17 @@ sqlMacros:
     - .prophecy/ide/macros/func_1.json
     - macros/macros.yml
     createdAt: '2024-10-29 15:04:37'
+  .prophecy/metadata/sqlmacros/gem1:
+    name: gem1
+    macroType: query
+    description: null
+    author: sony@prophecy.io
+    files:
+    - macros/test7899/gem1.sql
+    - .prophecy/ide/macros/gem1.json
+    - macros/test7899/test7899.yml
+    - gems/gem1.py
+    createdAt: '2024-10-30 05:53:50'
   .prophecy/metadata/sqlmacros/generate_schema_name:
     name: generate_schema_name
     macroType: expression
@@ -216,6 +233,26 @@ sqlSeeds:
     files:
     - seeds/checkseed.csv
     createdAt: '2024-10-29 15:02:50'
+  .prophecy/metadata/sqlseeds/xyz_1:
+    name: xyz_1
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: name
+        dataType:
+          type: String
+      - name: age
+        dataType:
+          type: Integer
+      - name: iuwe
+        dataType:
+          type: String
+    description: null
+    author: sony@prophecy.io
+    files:
+    - seeds/xyz_1.csv
+    createdAt: '2024-10-30 05:47:46'
 sqlSources:
   .prophecy/metadata/sqlsources/hive_metastore_unique_latest:
     name: hive_metastore.unique_latest
@@ -285,6 +322,141 @@ sqlSources:
         sales metrics, aiding in financial analysis and decision-making.
       author: sony@prophecy.io
       createdAt: '2024-10-29 14:59:51'
+    - name: parquet_all
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: c_short
+          dataType:
+            type: SmallInt
+        - name: c_int
+          dataType:
+            type: Integer
+        - name: c_long
+          dataType:
+            type: Bigint
+        - name: c_decimal
+          dataType:
+            type: Decimal
+        - name: c_float
+          dataType:
+            type: Float
+        - name: c_boolean
+          dataType:
+            type: Boolean
+        - name: c_double
+          dataType:
+            type: Double
+        - name: c_string
+          dataType:
+            type: String
+        - name: c_date
+          dataType:
+            type: Date
+        - name: c_timestamp
+          dataType:
+            type: Timestamp
+        - name: c_array_int
+          dataType:
+            type: Array
+            dataType:
+              type: Integer
+        - name: c_array_string
+          dataType:
+            type: Array
+            dataType:
+              type: String
+        - name: c_array_long
+          dataType:
+            type: Array
+            dataType:
+              type: Bigint
+        - name: c_array_boolean
+          dataType:
+            type: Array
+            dataType:
+              type: Boolean
+        - name: c_array_date
+          dataType:
+            type: Array
+            dataType:
+              type: Date
+        - name: c_array_timestamp
+          dataType:
+            type: Array
+            dataType:
+              type: Timestamp
+        - name: c_array_float
+          dataType:
+            type: Array
+            dataType:
+              type: Float
+        - name: c_array_decimal
+          dataType:
+            type: Array
+            dataType:
+              type: Decimal
+        - name: c_struct
+          dataType:
+            type: Struct
+            fields:
+            - name: c_short
+              dataType:
+                type: SmallInt
+              description: A short integer value within the structured data.
+            - name: c_int
+              dataType:
+                type: Integer
+              description: An integer value within the structured data.
+            - name: c_long
+              dataType:
+                type: Bigint
+              description: Long integer value within the structured data
+            - name: c_decimal
+              dataType:
+                type: Decimal
+              description: Decimal value within the structured data
+            - name: c_float
+              dataType:
+                type: Float
+              description: Floating-point value within the structured data
+            - name: c_boolean
+              dataType:
+                type: Boolean
+              description: Boolean value indicating a specific condition within the
+                structured data
+            - name: c_double
+              dataType:
+                type: Double
+              description: Double precision value representing a measurement within
+                the structured data
+            - name: c_string
+              dataType:
+                type: String
+              description: String value containing descriptive information within
+                the structured data
+            - name: c_date
+              dataType:
+                type: Date
+              description: Date value within the structured data
+            - name: c_timestamp
+              dataType:
+                type: Timestamp
+              description: Timestamp value within the structured data
+            - name: c_array_int
+              dataType:
+                type: Array
+                dataType:
+                  type: Integer
+              description: Array of integer values within the structured data
+        - name: _rescued_data
+          dataType:
+            type: String
+      description: Comprehensive dataset capturing various data types and structures,
+        enabling detailed analysis across multiple dimensions.
+      author: sony@prophecy.io
+      createdAt: '2024-10-30 05:45:08'
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline
