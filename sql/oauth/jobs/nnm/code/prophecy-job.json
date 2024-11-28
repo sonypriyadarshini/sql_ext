@@ -1,0 +1,87 @@
+{
+  "metainfo" : {
+    "type" : "Composer",
+    "fabricId" : "735",
+    "jobId" : "jobs/nnm",
+    "name" : "nnm",
+    "dagName" : "staging_sony_sql_oauth_nnm",
+    "schedule" : "None",
+    "enabled" : true,
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "ignore_first_depends_on_past" : true,
+      "do_xcom_push" : true
+    },
+    "maxActiveRuns" : 1,
+    "catchup" : false,
+    "scheduleTimeZone" : "UTC",
+    "dagParams" : {
+      "instances" : {
+        "default" : { }
+      },
+      "params" : { },
+      "selected" : "default"
+    },
+    "airflowFunctions" : [ ],
+    "dynamicPipelineStatus" : {
+      "databricks" : false,
+      "dataproc" : false,
+      "emr" : false,
+      "onprem" : false
+    }
+  },
+  "processes" : {
+    "hYZN_rgX3NWYc5qoFwiFv" : {
+      "id" : "hYZN_rgX3NWYc5qoFwiFv",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : 100,
+        "y" : 100
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "in",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "out",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "entityId" : null,
+        "runModelWithParents" : false,
+        "runSeed" : true,
+        "gitEntity" : "branch",
+        "customVersion" : true,
+        "projectId" : "17384",
+        "runMode" : "project",
+        "loadingModels" : false,
+        "runTest" : true,
+        "entityName" : null,
+        "sqlFabricId" : "4193",
+        "gitEntityValue" : "mmm",
+        "runModelWithChildren" : false,
+        "gitEntityValueBranch" : "mmm",
+        "currentProjectModels" : [ {
+          "label" : "test1",
+          "value" : "test1",
+          "id" : "17384/.prophecy/metadata/sqlmodels/test1",
+          "name" : "test1"
+        } ]
+      },
+      "connections" : [ ],
+      "processes" : { }
+    }
+  },
+  "connections" : [ ]
+}

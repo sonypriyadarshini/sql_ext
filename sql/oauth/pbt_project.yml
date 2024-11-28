@@ -1,0 +1,232 @@
+name: sql_oauth
+description: ''
+version: 0.0.1
+author: sony@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs:
+  jobs/nnm:
+    name: nnm
+    description: ''
+    fabricUID: 735
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Multi: {}
+      clusterId: null
+    enabled: true
+    createdAt: '2024-11-28 14:44:24'
+    author: sony@prophecy.io
+    models:
+    - ''
+    sqlProjects:
+    - '17384'
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2024-11-28 14:42:47'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/test1:
+    name: test1
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: Segment
+        dataType:
+          type: String
+      - name: Country
+        dataType:
+          type: String
+      - name: Product
+        dataType:
+          type: String
+      - name: Discount_Band
+        dataType:
+          type: String
+      - name: Units_Sold
+        dataType:
+          type: Double
+      - name: Manufacturing_Price
+        dataType:
+          type: Double
+      - name: Sale_Price
+        dataType:
+          type: Double
+      - name: Gross_Sales
+        dataType:
+          type: Double
+      - name: Discounts
+        dataType:
+          type: String
+      - name: Sales
+        dataType:
+          type: Double
+      - name: COGS
+        dataType:
+          type: Double
+      - name: Profit
+        dataType:
+          type: String
+      - name: Date
+        dataType:
+          type: String
+      - name: Month_Number
+        dataType:
+          type: Double
+      - name: Month_Name
+        dataType:
+          type: String
+      - name: Year
+        dataType:
+          type: Double
+      - name: _rescued_data
+        dataType:
+          type: String
+    description: null
+    author: sony@prophecy.io
+    files:
+    - models/test1.sql
+    - .prophecy/ide/models/test1.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-11-28 14:43:20'
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: sony@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2024-11-28 14:42:54'
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/test5789:
+    name: test5789
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: we
+        dataType:
+          type: String
+      - name: we
+        dataType:
+          type: String
+    description: null
+    author: sony@prophecy.io
+    files:
+    - seeds/test5789.csv
+    createdAt: '2024-11-28 14:43:45'
+sqlSources:
+  .prophecy/metadata/sqlsources/hive_metastore_default_1:
+    name: hive_metastore.default_1
+    description: null
+    author: sony@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2024-11-28 14:43:36'
+    tables:
+    - name: test567
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: Segment
+          dataType:
+            type: String
+        - name: Country
+          dataType:
+            type: String
+        - name: Product
+          dataType:
+            type: String
+        - name: Discount_Band
+          dataType:
+            type: String
+        - name: Units_Sold
+          dataType:
+            type: Double
+        - name: Manufacturing_Price
+          dataType:
+            type: Double
+        - name: Sale_Price
+          dataType:
+            type: Double
+        - name: Gross_Sales
+          dataType:
+            type: Double
+        - name: Discounts
+          dataType:
+            type: String
+        - name: Sales
+          dataType:
+            type: Double
+        - name: COGS
+          dataType:
+            type: Double
+        - name: Profit
+          dataType:
+            type: String
+        - name: Date
+          dataType:
+            type: String
+        - name: Month_Number
+          dataType:
+            type: Double
+        - name: Month_Name
+          dataType:
+            type: String
+        - name: Year
+          dataType:
+            type: Double
+        - name: _rescued_data
+          dataType:
+            type: String
+      description: Sales performance data capturing monthly metrics such as gross
+        sales, profit, and units sold across different products and segments.
+      author: sony@prophecy.io
+      createdAt: '2024-11-28 14:43:36'
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: sony@prophecy.io
+  createdAt: '2024-11-28 14:42:47'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}

@@ -1,0 +1,83 @@
+---
+version: 2
+sources:
+- name: "hive_metastore.default_1"
+  database: "hive_metastore"
+  schema: "default_1"
+  config:
+    enabled: true
+  tables:
+  - name: "test567"
+    description: "Sales performance data capturing monthly metrics such as gross sales,\
+      \ profit, and units sold across different products and segments."
+    quoting:
+      identifier: true
+    columns:
+    - name: "Segment"
+      description: "The market segment to which the product belongs"
+      dataType:
+        type: "String"
+    - name: "Country"
+      description: "The country where the product was sold"
+      dataType:
+        type: "String"
+    - name: "Product"
+      description: "Name of the product sold"
+      dataType:
+        type: "String"
+    - name: "Discount_Band"
+      description: "Category of discount applied to the product"
+      dataType:
+        type: "String"
+    - name: "Units_Sold"
+      description: "Total number of units sold for the product"
+      dataType:
+        type: "Double"
+    - name: "Manufacturing_Price"
+      description: "The cost incurred to manufacture the product"
+      dataType:
+        type: "Double"
+    - name: "Sale_Price"
+      description: "The price at which the product is sold to customers"
+      dataType:
+        type: "Double"
+    - name: "Gross_Sales"
+      description: "Total revenue generated from sales before any discounts."
+      dataType:
+        type: "Double"
+    - name: "Discounts"
+      description: "Details of discounts applied to sales"
+      dataType:
+        type: "String"
+    - name: "Sales"
+      description: "Total revenue generated from sales transactions."
+      dataType:
+        type: "Double"
+    - name: "COGS"
+      description: "Cost of goods sold for the product"
+      dataType:
+        type: "Double"
+    - name: "Profit"
+      description: "The profit generated from sales after deducting costs"
+      dataType:
+        type: "String"
+    - name: "Date"
+      description: "The date when the sales transaction occurred"
+      dataType:
+        type: "String"
+    - name: "Month_Number"
+      description: "Numeric representation of the month in which the sales occurred"
+      dataType:
+        type: "Double"
+    - name: "Month_Name"
+      description: "Name of the month in which the sales occurred"
+      dataType:
+        type: "String"
+    - name: "Year"
+      description: "The year in which the sales occurred"
+      dataType:
+        type: "Double"
+    - name: "_rescued_data"
+      description: "Additional data that was recovered during processing"
+      dataType:
+        type: "String"

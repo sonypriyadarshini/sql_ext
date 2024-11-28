@@ -1,0 +1,84 @@
+{
+  "id" : "test1",
+  "metainfo" : {
+    "label" : "test1",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "test1##MM9ArGji" : {
+      "id" : "test1##MM9ArGji",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "test1",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM test567\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ICmuspd5",
+          "slug" : "test567"
+        } ],
+        "outputs" : [ {
+          "id" : "WC4SmEQv",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "kO8nyg5Od2fye9cN5iKHF" : {
+      "id" : "kO8nyg5Od2fye9cN5iKHF",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "test567",
+        "slug" : "test567",
+        "x" : -600,
+        "y" : -180,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "test567",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.default_1",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "ZZDBTDBtas7AIXLa-_AvT",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "fruhfX94kpf-suU9jtMz-",
+    "source" : "kO8nyg5Od2fye9cN5iKHF",
+    "sourcePort" : "ZZDBTDBtas7AIXLa-_AvT",
+    "target" : "test1##MM9ArGji",
+    "targetPort" : "ICmuspd5"
+  } ],
+  "component" : "Model"
+}
